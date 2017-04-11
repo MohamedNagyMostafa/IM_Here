@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "189593678087",
+    "firebase_url": "https://im-here-7b6c1.firebaseio.com",
+    "project_id": "im-here-7b6c1",
+    "storage_bucket": "im-here-7b6c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189593678087:android:8f483afa6eebf1a8",
+        "android_client_info": {
+          "package_name": "com.here.iam.nagy.mohamed.imhere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189593678087-rcd01qtlcqgc8ri34t0rr8vl3l6p5pjq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.here.iam.nagy.mohamed.imhere",
+            "certificate_hash": "C8C8A3F796E73E6FFE9D8C141A6BB2B266D3FAA2"
+          }
+        },
+        {
+          "client_id": "189593678087-rr7u9a04sugpe8otiba2uv3c81a3oant.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5BCV3JYq6aYPcNuL3idR9c8RKiUsrXMs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189593678087-rr7u9a04sugpe8otiba2uv3c81a3oant.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

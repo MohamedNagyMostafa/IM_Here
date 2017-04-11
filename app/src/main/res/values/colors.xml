@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/active_tab</color>
+    <color name="colorPrimaryDark">#1b5e20</color>
+    <color name="colorAccent">#76ff03</color>
+
+    <color name="colorPrimarySecondary">#ffca28</color>
+    <color name="colorPrimaryDarkSecondary">#fffd61</color>
+    <color name="colorAccentSecondary">#c79a00</color>
+
+    <color name="help_color">#f44336</color>
+    <color name="safe_color">#009688</color>
+    <color name="user_profile_color">#E0F2F1</color>
+    <color name="lines_color_safe">#1DE9B6</color>
+    <color name="non_active_tab">#e0e0e0</color>
+    <color name="active_tab">#00c853</color>
+    <color name="dark_green">#1b5e20</color>
+
+    <!-- new theme -->
+
+    <color name="loginEditTextFocusColor">@color/active_tab</color>
+    <color name="loginEditTextInFocusColor">#00000000</color>
+
+
+</resources>

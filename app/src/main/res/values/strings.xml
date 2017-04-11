@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">I\'M Here</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="image_logo">logo of I\'M Here app</string>
+
+    <!-- LoginActivity Strings -->
+    <string name="email_login">Enter Your Email</string>
+    <string name="password_login">Enter Your Password</string>
+    <string name="login_button">SIGN IN</string>
+    <string name="do_not_have_Account">Don\'t have an account?</string>
+    <string name="login_sign_up">Sign Up</string>
+    <string name="title_activity_create_account">CreateAccountActivity</string>
+
+    <!-- CreateAccountActivity Strings -->
+    <string name="username_account">Enter Your Name</string>
+    <string name="user_email_account">Enter Your Email</string>
+    <string name="user_password_account">Enter Your Password</string>
+    <string name="create_account_button">CREATE ACCOUNT</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="sign_in_account">Sign In</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="error_invalid_email_not_valid">%s is not a valid email</string>
+    <string name="progress_dialog_creating_user_with_firebase">Attempting to create account…</string>
+
+    <!-- User Profile strings -->
+    <string name="all_notification_list">Notifications</string>
+    <string name="all_friends_list">Friends List</string>
+    <string name="user_events">Current Events</string>
+    <string name="title_activity_friends_list">FriendsList</string>
+    <string name="exit">Exit</string>
+    <string name="make_me_invisible">Make Me Invisible</string>
+    <string name="help_me">Help Me</string>
+    <string name="events">Events</string>
+    <string name="create_new_event">Create New Event</string>
+    <string name="events_list">Open Events List</string>
+    <string name="location_visible_friends">Make my location visible to friends</string>
+    <string name="show_public_flags">Receive public flags </string>
+    <string name="show_friends_flags">Receive friends flags</string>
+    <string name="new_flag">Create New Flag</string>
+    <!-- FriendsListActivity Strings -->
+    <string name="friend_location">Where Are You</string>
+    <string name="remove_friend">Remove</string>
+    <string name="title_activity_notifications">NotificationsActivity</string>
+
+    <!-- NotificationsActivity Strings -->
+    <string name="notification_accept">Accept</string>
+    <string name="notification_ignore">Ignore</string>
+    <string name="notification_friend_request">Wants to be friend</string>
+
+    <!-- EventActivityString -->
+    <string name="event_name">Event Title</string>
+    <string name="event_Description">Description</string>
+    <string name="event_members">Members</string>
+    <string name="event_location">Location</string>
+    <string name="event_latitude">Lat : </string>
+    <string name="event_longitude">Lng : </string>
+    <string name="event_map">Map</string>
+    <string name="create_event">Create</string>
+    <string name="cancel_event">Cancel</string>
+
+    <!-- FlagActivity strings -->
+    <string name="flag_title">Flag Title</string>
+    <string name="flag_description">Flag Details</string>
+    <string name="flag_longitude">Lng</string>
+    <string name="flag_latitude">Lat</string>
+    <string name="flag_map">Map</string>
+    <string name="public_flag">Public</string>
+    <string name="friends_flag">Friends</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search Using Email</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="accept_friend">Accept</string>
+    <string name="ignore_friend">Ignore</string>
+    <string name="remove_friend_request">Remove Friend Request</string>
+    <string name="title_activity_map_">Map_Activity</string>
+    <string name="title_activity_event_create">EventCreate</string>
+    <string name="title_activity_flag">FlagActivity</string>
+    <string name="title_activity_flag_details">FlagDetailsActivity</string>
+    <string name="title_activity_create_new_flag">CreateNewFlag</string>
+    <string name="title_activity_create_new_event">CreateNewEventActivity</string>
+    <string name="title_activity_events_list">EventsListActivity</string>
+    <string name="online">ONLINE</string>
+    <string name="offline">OFFLINE</string>
+
+</resources>
