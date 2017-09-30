@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "E:\\I'MHere\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "E:\\I'MHere\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\10.0.1\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
+        "source": "C:\\Users\\mohamednagy.mohamednagy-PC\\.android\\build-cache\\6d26b254d92b8531733a31ac537321087cfc9959\\output\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "C:\\Users\\mohamednagy.mohamednagy-PC\\.android\\build-cache\\6d26b254d92b8531733a31ac537321087cfc9959\\output\\res\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "E:\\I'MHere\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "E:\\I'MHere\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\10.0.1\\res\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "C:\\Users\\mohamednagy.mohamednagy-PC\\.android\\build-cache\\6d26b254d92b8531733a31ac537321087cfc9959\\output\\res\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png"
+    },
+    {
+        "merged": "E:\\I'MHere\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "E:\\I'MHere\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\10.0.1\\res\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "C:\\Users\\mohamednagy.mohamednagy-PC\\.android\\build-cache\\6d26b254d92b8531733a31ac537321087cfc9959\\output\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "E:\\I'MHere\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
+        "source": "E:\\I'MHere\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\10.0.1\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
+    }
+]

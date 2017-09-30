@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding='utf-8' standalone='no'?>
+<resources>
+<!-- blaze-out/gcc-4.X.Y-crosstool-v18-hybrid-grtev4-k8-opt/genfiles/java/com/google/android/gmscore/integ/client/wallet/res/values-de/wallet_strings.xml -->
+<eat-comment/>
+<string name="wallet_buy_button_place_holder" msgid="363496807345461806">"Über Google kaufen"</string>
+</resources>

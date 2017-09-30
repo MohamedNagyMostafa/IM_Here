@@ -1,0 +1,492 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:2:1-60:12
+	package
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:3:5-47
+		INJECTED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml
+		INJECTED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml
+		INJECTED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml
+		INJECTED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\093c56acaa513d303cb88f1235b1455f3c9e22d4\output\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\42c1879dec0110cae771a4565c108d59bfffb2a4\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cc15c80880b08e519a11e4c19befe644a7c0b732\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-crash:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d561c6bd6ad01095faf1c2622ba491cb5437c731\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-gcm:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\624b5f4519a02abed6fd5dae0bbe2abe0f71b28d\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\e33e2d2eb23ae899f6e8973745bc1f6770fd99db\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\0afcfff342ecb43e1a1256ce51a15f496249f3ed\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\331b203de339d1176fa4acf27a3fa3634d7c445b\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\68d0d637cab0076cc01ece6b9467fff7d8b5438f\output\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\093c56acaa513d303cb88f1235b1455f3c9e22d4\output\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\42c1879dec0110cae771a4565c108d59bfffb2a4\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-nearby:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\965635c0982357ef44ddd505894f3749e8d5a745\output\AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\0afcfff342ecb43e1a1256ce51a15f496249f3ed\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\331b203de339d1176fa4acf27a3fa3634d7c445b\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\68d0d637cab0076cc01ece6b9467fff7d8b5438f\output\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:8:22-76
+uses-feature#0x00020000
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:10:5-12:35
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\68d0d637cab0076cc01ece6b9467fff7d8b5438f\output\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:11:9-41
+	android:required
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:12:9-32
+application
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:14:5-58:19
+MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\f59d42da46107f2ba527f4a3973d130f1eb5e635\output\AndroidManifest.xml:5:5-20
+MERGED from [com.android.support:design:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\825b1dcfbe4df970e79692f50a793eda00f4b3f8\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:transition:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\0cb6a9c911e5da9b0d75478a58986f0dcf49195c\output\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\51a6c202dba5ccd4047ae14218d885e6962e8e06\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\093c56acaa513d303cb88f1235b1455f3c9e22d4\output\AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\42c1879dec0110cae771a4565c108d59bfffb2a4\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cc15c80880b08e519a11e4c19befe644a7c0b732\output\AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\87c7d81ff0ed5e44baf08ecd51d66239e8900071\output\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\f6899c6e8fe59c0e3fab717329042cad485b4012\output\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\aa205fbd6ecdf244d65595ddc4de2b70e8a5f0ea\output\AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:mediarouter-v7:24.0.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\8cda01ddb33611b64e97aed08fe2512da7c13df5\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:palette-v7:24.0.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\ebabad79130bde913e38c1bc77afd82a7c1435b2\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\1dedc3b902b756ca0eaa6c947a398fde738539a3\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\ddf55fdbb67bb886eb3b16f6e36c963ed8f1e6a9\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\e6cf33a1ebaa29f4b3b13f0d7bbd0427139d5c00\output\AndroidManifest.xml:23:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\80696333a4f12d81e9784f6ed9a78f559bd90ca4\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-config:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d600fbabd157cab7072cce7e2fa8c30741619b51\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\ba1b0b28a007f0e012c1634a302435a2bdaef87e\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-crash:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d561c6bd6ad01095faf1c2622ba491cb5437c731\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5fb5b717f3a716cc73e85fa0338964572b1ae16c\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d832372f31d6c95fcf0edadf9a31fe40975f0a2f\output\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.android.gms:play-services-fitness:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\2d95e80278b5bebb2704a9a49a44c1793b034278\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\a35995e6474a2439608ddc00c55fdc82f91a7191\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\534ea61c3f4ef1f936ce31208d91ae7604da9a32\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\a74cd7b966c500c4df2ce5ac0d4f9b3bdce72dc3\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gcm:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\624b5f4519a02abed6fd5dae0bbe2abe0f71b28d\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.firebase:firebase-appindexing:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\483af761e83ff34e9db917db0351c616f50d0907\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\e33e2d2eb23ae899f6e8973745bc1f6770fd99db\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-location:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\2d66af72e08c8d22df79b50804aae97e1f49233e\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-nearby:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\965635c0982357ef44ddd505894f3749e8d5a745\output\AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-panorama:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\6a2a11d7e6517888be997b29a4586b7e5c20fada\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-places:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\a62c433cb8402d25a74172a672f9986981541626\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\6d26b254d92b8531733a31ac537321087cfc9959\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\b86ebe7226f8b87f27a1d7440de96e0e9d5db34a\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\0afcfff342ecb43e1a1256ce51a15f496249f3ed\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\42ed825a3524a1aa623c09181386edf5dbc3c34d\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\82d2f0ca8a71bc3ca8340758931edb0b874700f7\output\AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\331b203de339d1176fa4acf27a3fa3634d7c445b\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-vision:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\e3bdd508052f3f61559213ef41270e0c5a5b4fc8\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-identity:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\27434cffc9379cbb18ee41e4d3558ccd22463805\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\68d0d637cab0076cc01ece6b9467fff7d8b5438f\output\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-wearable:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\ac5eee7df3387206e7cff72569d3cea32934b646\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\a921b76b61f62251ae3cf5a36d13eccf3b57bed5\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\2d948d8e67f01f2bbf291f9a89eed42bd7393c54\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\10f9c4a4405bec68f853e173727bce9b0083f714\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.astuetz:pagerslidingtabstrip:1.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\0ca0e633f2b6d0913ee0ff19e5ca6bcf10a0c222\output\AndroidManifest.xml:4:5-19
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\714ef6a4c30f68684ac47db564511314a9d7ddd5\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\bb15acb5b29dbf81b6d6e45212c39b9c939d848d\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\719bc2d37a5df12f791be11fe9ee0a5709d07d89\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\eff08c97337e2e4ea4bbc66d69a22f60aa8dbd2a\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\9e204a518675768d2ddf6d599613946512d985e3\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cdc15453fe061b4ca8e91b32ed5a524d506e9a29\output\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:17:9-41
+	android:supportsRtl
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:20:9-35
+	android:hardwareAccelerated
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:16:9-44
+	android:allowBackup
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:15:9-35
+	android:icon
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:18:9-43
+	android:largeHeap
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:19:9-33
+	android:theme
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:21:9-40
+meta-data#com.google.android.gms.version
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:22:9-24:69
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\10f9c4a4405bec68f853e173727bce9b0083f714\output\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:24:13-66
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:23:13-58
+meta-data#com.google.android.geo.API_KEY
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:25:9-27:71
+	android:value
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:27:13-68
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:26:13-58
+activity#com.here.iam.nagy.mohamed.imhere.user_account.LoginActivity
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:29:9-39:20
+	android:windowSoftInputMode
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:32:13-55
+	android:theme
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:31:13-56
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:30:13-55
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:34:13-38:29
+action#android.intent.action.MAIN
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:35:17-69
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:35:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:37:17-77
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:37:27-74
+activity#com.here.iam.nagy.mohamed.imhere.user_account.CreateAccountActivity
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:40:9-42:59
+	android:theme
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:42:13-56
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:41:13-63
+activity#com.here.iam.nagy.mohamed.imhere.ui.main_ui.MainUserActivity
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:43:9-45:59
+	android:theme
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:45:13-56
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:44:13-56
+activity#com.here.iam.nagy.mohamed.imhere.ui.properties_ui.location_map.MapActivity
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:46:9-49:59
+	android:label
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:48:13-56
+	android:theme
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:49:13-56
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:47:13-70
+activity#com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag.FlagDetailsActivity
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:50:9-53:59
+	android:label
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:52:13-40
+	android:theme
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:53:13-56
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:51:13-70
+activity#com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag.CreateNewFlag
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:54:9-57:59
+	android:label
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:56:13-67
+	android:theme
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:57:13-56
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:55:13-64
+uses-sdk
+INJECTED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\f59d42da46107f2ba527f4a3973d130f1eb5e635\output\AndroidManifest.xml:4:5-42
+MERGED from [com.android.support:design:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\825b1dcfbe4df970e79692f50a793eda00f4b3f8\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\aa734e04f2b2dca2a96e6dced77b7eb557b4ed50\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\0cb6a9c911e5da9b0d75478a58986f0dcf49195c\output\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\51a6c202dba5ccd4047ae14218d885e6962e8e06\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-ads:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\c26df26ea98d0b9e9778d7cb7c8a6370663d5d6f\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\093c56acaa513d303cb88f1235b1455f3c9e22d4\output\AndroidManifest.xml:22:5-42
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\42c1879dec0110cae771a4565c108d59bfffb2a4\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cc15c80880b08e519a11e4c19befe644a7c0b732\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\87c7d81ff0ed5e44baf08ecd51d66239e8900071\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth-base:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\1bb2fca8c35701a2297492e87ee20a76fcfd0a53\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\f6899c6e8fe59c0e3fab717329042cad485b4012\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-cast:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\aa205fbd6ecdf244d65595ddc4de2b70e8a5f0ea\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:mediarouter-v7:24.0.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\8cda01ddb33611b64e97aed08fe2512da7c13df5\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:24.0.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\ebabad79130bde913e38c1bc77afd82a7c1435b2\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\1dedc3b902b756ca0eaa6c947a398fde738539a3\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\ddf55fdbb67bb886eb3b16f6e36c963ed8f1e6a9\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\e6cf33a1ebaa29f4b3b13f0d7bbd0427139d5c00\output\AndroidManifest.xml:21:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\80696333a4f12d81e9784f6ed9a78f559bd90ca4\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-config:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d600fbabd157cab7072cce7e2fa8c30741619b51\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-awareness:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\ba1b0b28a007f0e012c1634a302435a2bdaef87e\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-crash:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d561c6bd6ad01095faf1c2622ba491cb5437c731\output\AndroidManifest.xml:20:5-42
+MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5fb5b717f3a716cc73e85fa0338964572b1ae16c\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-database:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\70338298a39eb7408c1127c0716dc7eeb8e152a6\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database-connection:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\48f4b5387ee7d688febfa0d67d986989db9241d8\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d832372f31d6c95fcf0edadf9a31fe40975f0a2f\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-storage:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5af22981a45ba1037ab8e0e6663a214619cb20cb\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage-common:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\e98684c631ed5bf6b547feae8b5df309b7ab4dde\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-fitness:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\2d95e80278b5bebb2704a9a49a44c1793b034278\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-games:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\a35995e6474a2439608ddc00c55fdc82f91a7191\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-drive:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\534ea61c3f4ef1f936ce31208d91ae7604da9a32\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\a74cd7b966c500c4df2ce5ac0d4f9b3bdce72dc3\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-gcm:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\624b5f4519a02abed6fd5dae0bbe2abe0f71b28d\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-appindexing:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\483af761e83ff34e9db917db0351c616f50d0907\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\e33e2d2eb23ae899f6e8973745bc1f6770fd99db\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-instantapps:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\79b000c77ed6da9c08f52a854e8c925dbbc7b527\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-location:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\2d66af72e08c8d22df79b50804aae97e1f49233e\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-nearby:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\965635c0982357ef44ddd505894f3749e8d5a745\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-panorama:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\6a2a11d7e6517888be997b29a4586b7e5c20fada\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-places:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\a62c433cb8402d25a74172a672f9986981541626\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-plus:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\6d26b254d92b8531733a31ac537321087cfc9959\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-safetynet:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\b86ebe7226f8b87f27a1d7440de96e0e9d5db34a\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\49a8727cace4d210bfb892cf75df0bb5c39ff427\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\0afcfff342ecb43e1a1256ce51a15f496249f3ed\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\42ed825a3524a1aa623c09181386edf5dbc3c34d\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\82d2f0ca8a71bc3ca8340758931edb0b874700f7\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\331b203de339d1176fa4acf27a3fa3634d7c445b\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-vision:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\e3bdd508052f3f61559213ef41270e0c5a5b4fc8\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-wallet:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\2f326e3d52342c15fd5f9801228985b7006ae94f\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-identity:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\27434cffc9379cbb18ee41e4d3558ccd22463805\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\68d0d637cab0076cc01ece6b9467fff7d8b5438f\output\AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-wearable:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\ac5eee7df3387206e7cff72569d3cea32934b646\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\a921b76b61f62251ae3cf5a36d13eccf3b57bed5\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\2d948d8e67f01f2bbf291f9a89eed42bd7393c54\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\10f9c4a4405bec68f853e173727bce9b0083f714\output\AndroidManifest.xml:17:5-42
+MERGED from [com.astuetz:pagerslidingtabstrip:1.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\0ca0e633f2b6d0913ee0ff19e5ca6bcf10a0c222\output\AndroidManifest.xml:2:5-72
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\714ef6a4c30f68684ac47db564511314a9d7ddd5\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\bb15acb5b29dbf81b6d6e45212c39b9c939d848d\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\719bc2d37a5df12f791be11fe9ee0a5709d07d89\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\eff08c97337e2e4ea4bbc66d69a22f60aa8dbd2a\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\9e204a518675768d2ddf6d599613946512d985e3\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cdc15453fe061b4ca8e91b32ed5a524d506e9a29\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\825b1dcfbe4df970e79692f50a793eda00f4b3f8\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml
+		INJECTED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml
+		INJECTED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\093c56acaa513d303cb88f1235b1455f3c9e22d4\output\AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\093c56acaa513d303cb88f1235b1455f3c9e22d4\output\AndroidManifest.xml:25:72-181
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\093c56acaa513d303cb88f1235b1455f3c9e22d4\output\AndroidManifest.xml:25:182-230
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\093c56acaa513d303cb88f1235b1455f3c9e22d4\output\AndroidManifest.xml:25:19-71
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\093c56acaa513d303cb88f1235b1455f3c9e22d4\output\AndroidManifest.xml:26:9-131
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\093c56acaa513d303cb88f1235b1455f3c9e22d4\output\AndroidManifest.xml:26:92-129
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\093c56acaa513d303cb88f1235b1455f3c9e22d4\output\AndroidManifest.xml:26:19-91
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\42c1879dec0110cae771a4565c108d59bfffb2a4\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\0afcfff342ecb43e1a1256ce51a15f496249f3ed\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\331b203de339d1176fa4acf27a3fa3634d7c445b\output\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\42c1879dec0110cae771a4565c108d59bfffb2a4\output\AndroidManifest.xml:24:22-65
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cc15c80880b08e519a11e4c19befe644a7c0b732\output\AndroidManifest.xml:20:9-25:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cc15c80880b08e519a11e4c19befe644a7c0b732\output\AndroidManifest.xml:20:51-74
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cc15c80880b08e519a11e4c19befe644a7c0b732\output\AndroidManifest.xml:20:75-121
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cc15c80880b08e519a11e4c19befe644a7c0b732\output\AndroidManifest.xml:20:19-50
+intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cc15c80880b08e519a11e4c19befe644a7c0b732\output\AndroidManifest.xml:21:13-24:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cc15c80880b08e519a11e4c19befe644a7c0b732\output\AndroidManifest.xml:22:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cc15c80880b08e519a11e4c19befe644a7c0b732\output\AndroidManifest.xml:22:25-87
+category#android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cc15c80880b08e519a11e4c19befe644a7c0b732\output\AndroidManifest.xml:23:17-75
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cc15c80880b08e519a11e4c19befe644a7c0b732\output\AndroidManifest.xml:23:27-73
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\87c7d81ff0ed5e44baf08ecd51d66239e8900071\output\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\87c7d81ff0ed5e44baf08ecd51d66239e8900071\output\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\87c7d81ff0ed5e44baf08ecd51d66239e8900071\output\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\87c7d81ff0ed5e44baf08ecd51d66239e8900071\output\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\87c7d81ff0ed5e44baf08ecd51d66239e8900071\output\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\87c7d81ff0ed5e44baf08ecd51d66239e8900071\output\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\87c7d81ff0ed5e44baf08ecd51d66239e8900071\output\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\87c7d81ff0ed5e44baf08ecd51d66239e8900071\output\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\87c7d81ff0ed5e44baf08ecd51d66239e8900071\output\AndroidManifest.xml:24:18-63
+receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
+ADDED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\f6899c6e8fe59c0e3fab717329042cad485b4012\output\AndroidManifest.xml:5:9-99
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\f6899c6e8fe59c0e3fab717329042cad485b4012\output\AndroidManifest.xml:5:19-97
+service#com.google.android.gms.cast.framework.media.MediaNotificationService
+ADDED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\f6899c6e8fe59c0e3fab717329042cad485b4012\output\AndroidManifest.xml:6:9-103
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\f6899c6e8fe59c0e3fab717329042cad485b4012\output\AndroidManifest.xml:6:18-101
+service#com.google.android.gms.cast.framework.ReconnectionService
+ADDED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\f6899c6e8fe59c0e3fab717329042cad485b4012\output\AndroidManifest.xml:7:9-92
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\f6899c6e8fe59c0e3fab717329042cad485b4012\output\AndroidManifest.xml:7:18-90
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d832372f31d6c95fcf0edadf9a31fe40975f0a2f\output\AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d832372f31d6c95fcf0edadf9a31fe40975f0a2f\output\AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d832372f31d6c95fcf0edadf9a31fe40975f0a2f\output\AndroidManifest.xml:23:18-87
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d832372f31d6c95fcf0edadf9a31fe40975f0a2f\output\AndroidManifest.xml:24:13-26:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d832372f31d6c95fcf0edadf9a31fe40975f0a2f\output\AndroidManifest.xml:24:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d832372f31d6c95fcf0edadf9a31fe40975f0a2f\output\AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\d832372f31d6c95fcf0edadf9a31fe40975f0a2f\output\AndroidManifest.xml:25:25-75
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\624b5f4519a02abed6fd5dae0bbe2abe0f71b28d\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\e33e2d2eb23ae899f6e8973745bc1f6770fd99db\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\624b5f4519a02abed6fd5dae0bbe2abe0f71b28d\output\AndroidManifest.xml:20:22-79
+service#com.google.android.gms.tagmanager.TagManagerService
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:24:9-134
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:24:110-132
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:24:85-109
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:24:18-84
+activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:25:9-32:20
+	android:noHistory
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:25:94-118
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:25:19-93
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:26:13-31:29
+data
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:27:17-71
+	android:scheme
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:27:23-69
+action#android.intent.action.VIEW
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:28:17-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:28:25-66
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\df001f46bd3d2e1b873437cd8851c74dfb4ae2d7\output\AndroidManifest.xml:30:27-75
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\0afcfff342ecb43e1a1256ce51a15f496249f3ed\output\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:27:162-184
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\0afcfff342ecb43e1a1256ce51a15f496249f3ed\output\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\5ca835c369ca112f4a4041f0869cec1c9ddd95f1\output\AndroidManifest.xml:32:16-87
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:30:9-36:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:31:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:32:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:33:17-85
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:33:25-83
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:34:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:40:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:40:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:40:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:44:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:44:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:44:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:45:13-47:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:45:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:46:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\85e9af585d1a59138a506b51f10912cbc41ee70c\output\AndroidManifest.xml:46:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\42ed825a3524a1aa623c09181386edf5dbc3c34d\output\AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\42ed825a3524a1aa623c09181386edf5dbc3c34d\output\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\42ed825a3524a1aa623c09181386edf5dbc3c34d\output\AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\42ed825a3524a1aa623c09181386edf5dbc3c34d\output\AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\42ed825a3524a1aa623c09181386edf5dbc3c34d\output\AndroidManifest.xml:6:79-143
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\a921b76b61f62251ae3cf5a36d13eccf3b57bed5\output\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\a921b76b61f62251ae3cf5a36d13eccf3b57bed5\output\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\a921b76b61f62251ae3cf5a36d13eccf3b57bed5\output\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\a921b76b61f62251ae3cf5a36d13eccf3b57bed5\output\AndroidManifest.xml:19:19-85

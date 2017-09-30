@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding='utf-8' standalone='no'?>
+<resources>
+<!-- java/com/google/android/gmscore/integ/client/cast/framework/res/values-land/cast_dimens.xml -->
+<eat-comment/>
+<dimen name="cast_expanded_controller_ad_background_layout_height">200dp</dimen>
+<dimen name="cast_expanded_controller_ad_background_layout_width">240dp</dimen>
+<dimen name="cast_expanded_controller_ad_layout_height">200dp</dimen>
+<dimen name="cast_expanded_controller_ad_layout_width">240dp</dimen>
+<dimen name="cast_expanded_controller_margin_between_seek_bar_and_control_buttons">8dp</dimen>
+<dimen name="cast_expanded_controller_margin_between_status_text_and_seek_bar">8dp</dimen>
+</resources>

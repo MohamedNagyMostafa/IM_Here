@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "C:\\Users\\mohamednagy.mohamednagy-PC\\.android\\build-cache\\82d2f0ca8a71bc3ca8340758931edb0b874700f7\\output\\res\\raw\\gtm_analytics"
+    },
+    {
+        "merged": "E:\\I'MHere\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "E:\\I'MHere\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-tagmanager-v4-impl\\10.0.1\\res\\raw\\gtm_analytics"
+    }
+]

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding='utf-8' standalone='no'?>
+<resources>
+<!-- blaze-out/gcc-4.X.Y-crosstool-v18-hybrid-grtev4-k8-opt/genfiles/java/com/google/android/gmscore/integ/client/places/res/values-uz/strings.xml -->
+<eat-comment/>
+<string name="place_autocomplete_clear_button" msgid="1303870564366209730">"Qidiruv maydonini tozalash"</string>
+<string name="place_autocomplete_search_hint" msgid="2809095107724486040">"Qidirish"</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding='utf-8' standalone='no'?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- blaze-out/gcc-4.X.Y-crosstool-v18-hybrid-grtev4-k8-opt/genfiles/java/com/google/android/gmscore/integ/client/cast/framework/res/values-fa/cast_strings.xml -->
+<eat-comment/>
+<string name="cast_ad_label" msgid="4778414446709286370">"آگهی"</string>
+<string name="cast_casting_to_device" msgid="366047012176970604">"‏درحال ارسال محتوا به %1$s"</string>
+<string name="cast_closed_captions" msgid="2888745622334830481">"زیرنویس ناشنوایان"</string>
+<string name="cast_closed_captions_unavailable" msgid="4476421850100851087">"زیرنویس ناشنوانایان دردسترس نیست"</string>
+<string name="cast_disconnect" msgid="4431992200264667209">"قطع ارتباط"</string>
+<string name="cast_expanded_controller_ad_image_description" msgid="5668979866539349222">"تصویری که هنگام نمایش آگهی در گیرنده محتوی نشان داده می‌شود"</string>
+<string name="cast_expanded_controller_ad_in_progress" msgid="9069517964239146855">"آگهی درحال اجرا..."</string>
+<string name="cast_expanded_controller_background_image" msgid="8886260998635257149">"عکس روی جلد آلبوم"</string>
+<string name="cast_expanded_controller_live_stream_indicator" msgid="1316611227831672183">"پخش جریانی مستقیم"</string>
+<string name="cast_expanded_controller_loading" msgid="7334411994450681286">"درحال بار کردن…"</string>
+<string name="cast_expanded_controller_skip_ad_label" msgid="8399595886048969508">"پرش"</string>
+<string name="cast_forward" msgid="7884080323096468593">"به جلو"</string>
+<string name="cast_forward_10" msgid="6424889955881797947">"ده ثانیه به جلو"</string>
+<string name="cast_forward_30" msgid="7868672855975238403">"سی ثانیه به جلو"</string>
+<string name="cast_intro_overlay_button_text" msgid="6885943100773268783">"‪@android:string/ok"</string>
+<string name="cast_mute" msgid="5637297909372905371">"بی‌صدا کردن"</string>
+<string name="cast_pause" msgid="5308503786390460607">"مکث"</string>
+<string name="cast_play" msgid="5906987965619702702">"پخش"</string>
+<string name="cast_rewind" msgid="1739665135565985480">"عقب بردن"</string>
+<string name="cast_rewind_10" msgid="6432793028560778843">"ده ثانیه به عقب"</string>
+<string name="cast_rewind_30" msgid="4677199707225681325">"سی ثانیه به عقب"</string>
+<string name="cast_seek_bar" msgid="9078075166993780241">"بازپخش جستجوی کنترل"</string>
+<string name="cast_skip_next" msgid="3991548379225047363">"پرش به مورد بعدی"</string>
+<string name="cast_skip_prev" msgid="8369073097776576935">"پرش به مورد قبلی"</string>
+<string name="cast_stop" msgid="9191388946729723891">"توقف"</string>
+<string name="cast_stop_live_stream" msgid="1219622777438777099">"توقف پخش جریانی زنده"</string>
+<string name="cast_tracks_chooser_dialog_audio" msgid="4250321332248956563">"صوتی"</string>
+<string name="cast_tracks_chooser_dialog_cancel" msgid="1162380934229249476">"لغو"</string>
+<string name="cast_tracks_chooser_dialog_closed_captions" msgid="1779359505126875127">"زیرنویس ناشنوایان"</string>
+<string name="cast_tracks_chooser_dialog_default_track_name" msgid="3012268736704635952">"ردیابی <xliff:g id="POSITION">%1$d</xliff:g>"</string>
+<string name="cast_tracks_chooser_dialog_no_audio_tracks" msgid="5563446400083425854">"تراک صوتی موجود نیست"</string>
+<string name="cast_tracks_chooser_dialog_no_text_tracks" msgid="7413336699113748535">"تراک نوشتاری موجود نیست"</string>
+<string name="cast_tracks_chooser_dialog_none" msgid="1176688358580178396">"هیچ‌کدام"</string>
+<string name="cast_tracks_chooser_dialog_ok" msgid="3804878371876790270">"تأیید"</string>
+<string name="cast_tracks_chooser_dialog_subtitles" msgid="2454147715032376208">"زیرنویس‌ها"</string>
+<string name="cast_unmute" msgid="2913461521603516868">"باصدا"</string>
+</resources>

@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "E:\\I'MHere\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "E:\\I'MHere\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "E:\\I'MHere\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_events_list.xml",
+        "source": "E:\\I'MHere\\app\\src\\main\\res\\menu\\menu_events_list.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_notifications.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\menu\\menu_notifications.xml"
+    },
+    {
+        "merged": "E:\\I'MHere\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_create_new_flag.xml",
+        "source": "E:\\I'MHere\\app\\src\\main\\res\\menu\\menu_create_new_flag.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_events_list.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\menu\\menu_events_list.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_flag_details.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\menu\\menu_flag_details.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_create_new_flag.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\menu\\menu_create_new_flag.xml"
+    },
+    {
+        "merged": "E:\\I'MHere\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_friends_list.xml",
+        "source": "E:\\I'MHere\\app\\src\\main\\res\\menu\\menu_friends_list.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_create_new_event.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\menu\\menu_create_new_event.xml"
+    },
+    {
+        "merged": "E:\\I'MHere\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_flag_details.xml",
+        "source": "E:\\I'MHere\\app\\src\\main\\res\\menu\\menu_flag_details.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_friends_list.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\menu\\menu_friends_list.xml"
+    },
+    {
+        "merged": "E:\\I'MHere\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_map_.xml",
+        "source": "E:\\I'MHere\\app\\src\\main\\res\\menu\\menu_map_.xml"
+    },
+    {
+        "merged": "E:\\I'MHere\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_create_new_event.xml",
+        "source": "E:\\I'MHere\\app\\src\\main\\res\\menu\\menu_create_new_event.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_map_.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\menu\\menu_map_.xml"
+    },
+    {
+        "merged": "E:\\I'MHere\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_notifications.xml",
+        "source": "E:\\I'MHere\\app\\src\\main\\res\\menu\\menu_notifications.xml"
+    }
+]

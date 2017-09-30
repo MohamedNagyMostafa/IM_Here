@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding='utf-8' standalone='no'?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- blaze-out/gcc-4.X.Y-crosstool-v18-hybrid-grtev4-k8-opt/genfiles/java/com/google/android/gmscore/integ/client/cast/framework/res/values-ml/cast_strings.xml -->
+<eat-comment/>
+<string name="cast_ad_label" msgid="4778414446709286370">"പരസ്യം"</string>
+<string name="cast_casting_to_device" msgid="366047012176970604">"%1$s എന്നതിലേക്ക് കാസ്റ്റുചെയ്യുന്നു"</string>
+<string name="cast_closed_captions" msgid="2888745622334830481">"അടച്ച അടിക്കുറിപ്പുകൾ"</string>
+<string name="cast_closed_captions_unavailable" msgid="4476421850100851087">"അടച്ച അടിക്കുറിപ്പുകൾ ലഭ്യമല്ല"</string>
+<string name="cast_disconnect" msgid="4431992200264667209">"വിച്ഛേദിക്കുക"</string>
+<string name="cast_expanded_controller_ad_image_description" msgid="5668979866539349222">"കാസ്റ്റ് റിസീവർ ഒരു പരസ്യം പ്ലേ ചെയ്യുന്ന സമയത്ത് കാണിക്കുന്ന ചിത്രം"</string>
+<string name="cast_expanded_controller_ad_in_progress" msgid="9069517964239146855">"പരസ്യം പുരോഗതിയിൽ…"</string>
+<string name="cast_expanded_controller_background_image" msgid="8886260998635257149">"ആൽബം ആർട്ട്"</string>
+<string name="cast_expanded_controller_live_stream_indicator" msgid="1316611227831672183">"തൽസമയ സ്‌ട്രീം"</string>
+<string name="cast_expanded_controller_loading" msgid="7334411994450681286">"ലോഡുചെയ്യുന്നു..."</string>
+<string name="cast_expanded_controller_skip_ad_label" msgid="8399595886048969508">"ഒഴിവാക്കുക"</string>
+<string name="cast_forward" msgid="7884080323096468593">"കൈമാറുക"</string>
+<string name="cast_forward_10" msgid="6424889955881797947">"പത്ത് സെക്കൻഡ് ഫോർവേഡ്"</string>
+<string name="cast_forward_30" msgid="7868672855975238403">"മുപ്പത് സെക്കൻഡ് ഫോർവേഡ്"</string>
+<string name="cast_intro_overlay_button_text" msgid="6885943100773268783">"@android:string/ok"</string>
+<string name="cast_mute" msgid="5637297909372905371">"മ്യൂട്ടുചെയ്യുക"</string>
+<string name="cast_pause" msgid="5308503786390460607">"തൽക്കാലം നിർത്തുക"</string>
+<string name="cast_play" msgid="5906987965619702702">"പ്ലേ ചെയ്യുക"</string>
+<string name="cast_rewind" msgid="1739665135565985480">"റിവൈൻഡുചെയ്യുക"</string>
+<string name="cast_rewind_10" msgid="6432793028560778843">"പത്ത് സെക്കൻഡ് റി‌വൈൻഡ്"</string>
+<string name="cast_rewind_30" msgid="4677199707225681325">"മുപ്പത് സെക്കൻഡ് റി‌വൈൻഡ്"</string>
+<string name="cast_seek_bar" msgid="9078075166993780241">"പ്ലേബാക്ക് സീക്ക് നിയന്ത്രണം"</string>
+<string name="cast_skip_next" msgid="3991548379225047363">"അടുത്ത ഇനത്തിലേക്ക് പോവുക"</string>
+<string name="cast_skip_prev" msgid="8369073097776576935">"മുമ്പത്തെ ഇനത്തിലേക്ക് പോവുക"</string>
+<string name="cast_stop" msgid="9191388946729723891">"നിർത്തുക"</string>
+<string name="cast_stop_live_stream" msgid="1219622777438777099">"തത്സമയ സ്ട്രീം നിർത്തുക"</string>
+<string name="cast_tracks_chooser_dialog_audio" msgid="4250321332248956563">"ഓഡിയോ"</string>
+<string name="cast_tracks_chooser_dialog_cancel" msgid="1162380934229249476">"റദ്ദാക്കുക"</string>
+<string name="cast_tracks_chooser_dialog_closed_captions" msgid="1779359505126875127">"സബ്‌ടൈറ്റിലുകൾ"</string>
+<string name="cast_tracks_chooser_dialog_default_track_name" msgid="3012268736704635952">"<xliff:g id="POSITION">%1$d</xliff:g> ട്രാക്കുചെയ്യുക"</string>
+<string name="cast_tracks_chooser_dialog_no_audio_tracks" msgid="5563446400083425854">"ഓഡിയോ ട്രാക്കുകളൊന്നും ലഭ്യമല്ല"</string>
+<string name="cast_tracks_chooser_dialog_no_text_tracks" msgid="7413336699113748535">"ടെക്സ്റ്റ് ട്രാക്കുകളൊന്നും ലഭ്യമല്ല"</string>
+<string name="cast_tracks_chooser_dialog_none" msgid="1176688358580178396">"ഒന്നുമില്ല"</string>
+<string name="cast_tracks_chooser_dialog_ok" msgid="3804878371876790270">"ശരി"</string>
+<string name="cast_tracks_chooser_dialog_subtitles" msgid="2454147715032376208">"സബ്‌ടൈറ്റിലുകൾ"</string>
+<string name="cast_unmute" msgid="2913461521603516868">"അൺമ്യൂട്ടുചെയ്യുക"</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="82dp">
+
+    <ImageView
+        android:id="@+id/search_image_view"
+        android:layout_width="62dp"
+        android:src="@drawable/me"
+        android:layout_height="62dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/search_image_view">
+
+        <TextView
+            android:id="@+id/search_first_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/search_second_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/search_ignore_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentEnd="true"
+        android:textSize="10sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#009688"
+        android:layout_alignParentBottom="true"
+        android:padding="4dp"/>
+
+    <Button
+        android:id="@+id/search_accept_text_view"
+        android:layout_toStartOf="@id/search_ignore_text_view"
+        android:layout_alignParentBottom="true"
+        android:textColor="#009688"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="10sp"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:padding="4dp" />
+
+
+</RelativeLayout>

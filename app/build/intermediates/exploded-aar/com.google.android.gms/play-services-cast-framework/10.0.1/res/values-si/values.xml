@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding='utf-8' standalone='no'?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- blaze-out/gcc-4.X.Y-crosstool-v18-hybrid-grtev4-k8-opt/genfiles/java/com/google/android/gmscore/integ/client/cast/framework/res/values-si/cast_strings.xml -->
+<eat-comment/>
+<string name="cast_ad_label" msgid="4778414446709286370">"වෙළඳ දැන්වීම"</string>
+<string name="cast_casting_to_device" msgid="366047012176970604">"%1$s වෙත විකාශ කරමින්"</string>
+<string name="cast_closed_captions" msgid="2888745622334830481">"වැසූ සිරස්තල"</string>
+<string name="cast_closed_captions_unavailable" msgid="4476421850100851087">"වැසූ සිරස්තල ලබා ගත නොහැකිය"</string>
+<string name="cast_disconnect" msgid="4431992200264667209">"විසන්ධි කරන්න"</string>
+<string name="cast_expanded_controller_ad_image_description" msgid="5668979866539349222">"විකාශය ලබන්නා වෙළඳ දැන්වීමක් ධාවනය කරන අතරතුර රූපය සංදර්ශනය කෙරේ"</string>
+<string name="cast_expanded_controller_ad_in_progress" msgid="9069517964239146855">"වෙළඳ දැන්වීම ප්‍රගතියේය…"</string>
+<string name="cast_expanded_controller_background_image" msgid="8886260998635257149">"ඇල්බම කලාව"</string>
+<string name="cast_expanded_controller_live_stream_indicator" msgid="1316611227831672183">"සජීව ප්‍රවාහය"</string>
+<string name="cast_expanded_controller_loading" msgid="7334411994450681286">"පූරණය කරමින්…"</string>
+<string name="cast_expanded_controller_skip_ad_label" msgid="8399595886048969508">"මඟ හරින්න"</string>
+<string name="cast_forward" msgid="7884080323096468593">"ඉදිරියට යවන්න"</string>
+<string name="cast_forward_10" msgid="6424889955881797947">"තත්පර දහයක් ඉදිරියට"</string>
+<string name="cast_forward_30" msgid="7868672855975238403">"තත්පර තිහක් ඉදිරියට"</string>
+<string name="cast_intro_overlay_button_text" msgid="6885943100773268783">"@android:string/ok"</string>
+<string name="cast_mute" msgid="5637297909372905371">"නිහඬ කරන්න"</string>
+<string name="cast_pause" msgid="5308503786390460607">"විරාම කරන්න"</string>
+<string name="cast_play" msgid="5906987965619702702">"ධාවනය කරන්න"</string>
+<string name="cast_rewind" msgid="1739665135565985480">"නැවත ඔතන්න"</string>
+<string name="cast_rewind_10" msgid="6432793028560778843">"තත්පර දහයක් නැවත ඔතන්න"</string>
+<string name="cast_rewind_30" msgid="4677199707225681325">"තප්පර තිහක් නැවත ඔතන්න"</string>
+<string name="cast_seek_bar" msgid="9078075166993780241">"පසුධාවනය පාලනය ඉල්ලයි"</string>
+<string name="cast_skip_next" msgid="3991548379225047363">"ඊළඟ අයිතමය වෙත යන්න"</string>
+<string name="cast_skip_prev" msgid="8369073097776576935">"පෙර අයිතමය වෙත යන්න"</string>
+<string name="cast_stop" msgid="9191388946729723891">"නතර කරන්න"</string>
+<string name="cast_stop_live_stream" msgid="1219622777438777099">"සජීවී ප්‍රවාහය නතර කරන්න"</string>
+<string name="cast_tracks_chooser_dialog_audio" msgid="4250321332248956563">"ශ්‍රව්‍යය"</string>
+<string name="cast_tracks_chooser_dialog_cancel" msgid="1162380934229249476">"අවලංගු කරන්න"</string>
+<string name="cast_tracks_chooser_dialog_closed_captions" msgid="1779359505126875127">"වැසූ සිරස්තල"</string>
+<string name="cast_tracks_chooser_dialog_default_track_name" msgid="3012268736704635952">"ශ්‍රව්‍ය ඛණ්ඩය <xliff:g id="POSITION">%1$d</xliff:g>"</string>
+<string name="cast_tracks_chooser_dialog_no_audio_tracks" msgid="5563446400083425854">"ලබා ගත හැකි ශ්‍රව්‍ය ඛණ්ඩ නැත"</string>
+<string name="cast_tracks_chooser_dialog_no_text_tracks" msgid="7413336699113748535">"ලබා ගත හැකි පෙළ ඛණ්ඩ නැත"</string>
+<string name="cast_tracks_chooser_dialog_none" msgid="1176688358580178396">"කිසිවක් නැත"</string>
+<string name="cast_tracks_chooser_dialog_ok" msgid="3804878371876790270">"හරි"</string>
+<string name="cast_tracks_chooser_dialog_subtitles" msgid="2454147715032376208">"උපසිරැසි"</string>
+<string name="cast_unmute" msgid="2913461521603516868">"නිහඬ කිරීම ඉවත් කරන්න"</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding='utf-8' standalone='no'?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- blaze-out/gcc-4.X.Y-crosstool-v18-hybrid-grtev4-k8-opt/genfiles/java/com/google/android/gmscore/integ/client/cast/framework/res/values-ur/cast_strings.xml -->
+<eat-comment/>
+<string name="cast_ad_label" msgid="4778414446709286370">"اشتہار"</string>
+<string name="cast_casting_to_device" msgid="366047012176970604">"‏%1$s پر کاسٹ ہو رہا ہے"</string>
+<string name="cast_closed_captions" msgid="2888745622334830481">"سب ٹائٹلز"</string>
+<string name="cast_closed_captions_unavailable" msgid="4476421850100851087">"سب ٹائٹلز دستیاب نہیں ہیں"</string>
+<string name="cast_disconnect" msgid="4431992200264667209">"غیر منسلک کریں"</string>
+<string name="cast_expanded_controller_ad_image_description" msgid="5668979866539349222">"کاسٹ ریسیور کے اشتہار چلانے کے دوران تصویر ڈسپلے کی گئی"</string>
+<string name="cast_expanded_controller_ad_in_progress" msgid="9069517964239146855">"اشتہار پیشرفت میں ہے…"</string>
+<string name="cast_expanded_controller_background_image" msgid="8886260998635257149">"البم آرٹ"</string>
+<string name="cast_expanded_controller_live_stream_indicator" msgid="1316611227831672183">"لائیو سلسلہ"</string>
+<string name="cast_expanded_controller_loading" msgid="7334411994450681286">"لوڈ ہو رہا ہے…"</string>
+<string name="cast_expanded_controller_skip_ad_label" msgid="8399595886048969508">"نظر انداز کریں"</string>
+<string name="cast_forward" msgid="7884080323096468593">"فارورڈ کریں"</string>
+<string name="cast_forward_10" msgid="6424889955881797947">"دس سیکنڈ فارورڈ کریں"</string>
+<string name="cast_forward_30" msgid="7868672855975238403">"تیس سیکنڈ فارورڈ کریں"</string>
+<string name="cast_intro_overlay_button_text" msgid="6885943100773268783">"‎ @android:string/ok"</string>
+<string name="cast_mute" msgid="5637297909372905371">"خاموش کریں"</string>
+<string name="cast_pause" msgid="5308503786390460607">"موقوف کریں"</string>
+<string name="cast_play" msgid="5906987965619702702">"چلائیں"</string>
+<string name="cast_rewind" msgid="1739665135565985480">"ریوائینڈ کریں"</string>
+<string name="cast_rewind_10" msgid="6432793028560778843">"دس سیکنڈ ریوائنڈ کریں"</string>
+<string name="cast_rewind_30" msgid="4677199707225681325">"تیس سیکنڈ ریوائنڈ کریں"</string>
+<string name="cast_seek_bar" msgid="9078075166993780241">"پلے بیک تلاش کرنے کا کنٹرول"</string>
+<string name="cast_skip_next" msgid="3991548379225047363">"اگلے آئٹم پر جائیں"</string>
+<string name="cast_skip_prev" msgid="8369073097776576935">"پچھلے آئٹم پر جائیں"</string>
+<string name="cast_stop" msgid="9191388946729723891">"روکیں"</string>
+<string name="cast_stop_live_stream" msgid="1219622777438777099">"لائیو سلسلہ روکیں"</string>
+<string name="cast_tracks_chooser_dialog_audio" msgid="4250321332248956563">"آڈیو"</string>
+<string name="cast_tracks_chooser_dialog_cancel" msgid="1162380934229249476">"منسوخ کریں"</string>
+<string name="cast_tracks_chooser_dialog_closed_captions" msgid="1779359505126875127">"سب ٹائٹلز"</string>
+<string name="cast_tracks_chooser_dialog_default_track_name" msgid="3012268736704635952">"ٹریک <xliff:g id="POSITION">%1$d</xliff:g>"</string>
+<string name="cast_tracks_chooser_dialog_no_audio_tracks" msgid="5563446400083425854">"کوئی آڈیو ٹریکس دستیاب نہیں ہیں"</string>
+<string name="cast_tracks_chooser_dialog_no_text_tracks" msgid="7413336699113748535">"کوئی متنی ٹریکس دستیاب نہیں ہیں"</string>
+<string name="cast_tracks_chooser_dialog_none" msgid="1176688358580178396">"کوئی بھی نہیں"</string>
+<string name="cast_tracks_chooser_dialog_ok" msgid="3804878371876790270">"ٹھیک ہے"</string>
+<string name="cast_tracks_chooser_dialog_subtitles" msgid="2454147715032376208">"سب ٹائٹلز"</string>
+<string name="cast_unmute" msgid="2913461521603516868">"آواز چالو کریں"</string>
+</resources>
