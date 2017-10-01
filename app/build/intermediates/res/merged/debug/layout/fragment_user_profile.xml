@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@android:color/white">
 
-        <RelativeLayout
+    <RelativeLayout
             android:id="@+id/user_identifier"
             android:layout_width="match_parent"
             android:layout_height="95dp"
@@ -90,7 +90,7 @@
 
         </RelativeLayout>
 
-        <android.support.v4.widget.SwipeRefreshLayout
+    <android.support.v4.widget.SwipeRefreshLayout
             android:layout_below="@id/user_identifier"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -341,7 +341,6 @@
         android:translationZ="4dp"
         android:translationY="-3dp"
         android:layout_marginRight="8dp"
-
         android:elevation="3dp">
 
         <android.support.design.widget.FloatingActionButton

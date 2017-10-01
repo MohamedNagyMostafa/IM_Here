@@ -8,12 +8,12 @@
         "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\drawable-xxhdpi\\empty_flag_image.png"
     },
     {
-        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_favorite_black_24dp.png",
-        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\drawable-xxhdpi\\ic_favorite_black_24dp.png"
-    },
-    {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_exit_to_app_black_36dp.png",
         "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\drawable-xxhdpi\\ic_exit_to_app_black_36dp.png"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_favorite_black_24dp.png",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\drawable-xxhdpi\\ic_favorite_black_24dp.png"
     },
     {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\event_marker.png",
@@ -24,12 +24,12 @@
         "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\drawable-xxhdpi\\ic_location_city_black_24dp.png"
     },
     {
-        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\friend_flag.png",
-        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\drawable-xxhdpi\\friend_flag.png"
-    },
-    {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\profile_pic_image.png",
         "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\drawable-xxhdpi\\profile_pic_image.png"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\friend_flag.png",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\drawable-xxhdpi\\friend_flag.png"
     },
     {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_pin_drop_black_24dp.png",

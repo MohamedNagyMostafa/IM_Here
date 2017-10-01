@@ -60,7 +60,7 @@ public class FlagDetailsActivityFragment extends Fragment{
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_flag_details2, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_flag_details, container, false);
 
         USER_LINK_FIREBASE = getActivity().getIntent().getExtras().getString(Constants.USER_EXTRA);
         final ArrayList<String> FLAG_DATA = getActivity().getIntent().getExtras()

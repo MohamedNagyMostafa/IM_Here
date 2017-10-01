@@ -16,7 +16,7 @@ public class FlagDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flag_details2);
+        setContentView(R.layout.activity_flag_details);
 
         //changing statusbar color
         if (android.os.Build.VERSION.SDK_INT >= 21) {

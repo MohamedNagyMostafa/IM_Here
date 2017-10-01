@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:2:1-60:12
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:2:1-66:12
 	package
 		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml
@@ -50,15 +50,25 @@ MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\User
 MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\68d0d637cab0076cc01ece6b9467fff7d8b5438f\output\AndroidManifest.xml:19:5-78
 	android:name
 		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:8:22-76
+supports-screens
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:10:5-14:37
+	android:largeScreens
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:13:9-37
+	android:smallScreens
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:11:9-36
+	android:normalScreens
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:12:9-37
+	android:anyDensity
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:14:9-34
 uses-feature#0x00020000
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:10:5-12:35
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:16:5-18:35
 MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\68d0d637cab0076cc01ece6b9467fff7d8b5438f\output\AndroidManifest.xml:21:5-77
 	android:glEsVersion
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:11:9-41
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:17:9-41
 	android:required
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:12:9-32
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:18:9-32
 application
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:14:5-58:19
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:20:5-64:19
 MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\f59d42da46107f2ba527f4a3973d130f1eb5e635\output\AndroidManifest.xml:5:5-20
 MERGED from [com.android.support:design:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\825b1dcfbe4df970e79692f50a793eda00f4b3f8\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:transition:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\0cb6a9c911e5da9b0d75478a58986f0dcf49195c\output\AndroidManifest.xml:22:5-20
@@ -114,87 +124,88 @@ MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\mohamedna
 MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\eff08c97337e2e4ea4bbc66d69a22f60aa8dbd2a\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\9e204a518675768d2ddf6d599613946512d985e3\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cdc15453fe061b4ca8e91b32ed5a524d506e9a29\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\546cb5d1596098f3f521a7f7494f7c8f5d24ffb9\output\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:17:9-41
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:23:9-41
 	android:supportsRtl
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:26:9-35
 	android:hardwareAccelerated
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:16:9-44
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:22:9-44
 	android:allowBackup
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:21:9-35
 	android:icon
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:18:9-43
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:24:9-43
 	android:largeHeap
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:19:9-33
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:25:9-33
 	android:theme
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:21:9-40
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:27:9-40
 meta-data#com.google.android.gms.version
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:22:9-24:69
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:28:9-30:69
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\10f9c4a4405bec68f853e173727bce9b0083f714\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:24:13-66
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:30:13-66
 	android:name
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:23:13-58
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:29:13-58
 meta-data#com.google.android.geo.API_KEY
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:25:9-27:71
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:31:9-33:71
 	android:value
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:27:13-68
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:33:13-68
 	android:name
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:26:13-58
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:32:13-58
 activity#com.here.iam.nagy.mohamed.imhere.user_account.LoginActivity
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:29:9-39:20
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:35:9-45:20
 	android:windowSoftInputMode
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:32:13-55
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:38:13-55
 	android:theme
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:31:13-56
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:37:13-56
 	android:name
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:30:13-55
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:36:13-55
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:34:13-38:29
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:40:13-44:29
 action#android.intent.action.MAIN
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:35:17-69
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:41:17-69
 	android:name
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:35:25-66
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:41:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:37:17-77
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:43:17-77
 	android:name
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:37:27-74
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:43:27-74
 activity#com.here.iam.nagy.mohamed.imhere.user_account.CreateAccountActivity
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:40:9-42:59
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:46:9-48:59
 	android:theme
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:42:13-56
-	android:name
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:41:13-63
-activity#com.here.iam.nagy.mohamed.imhere.ui.main_ui.MainUserActivity
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:43:9-45:59
-	android:theme
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:45:13-56
-	android:name
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:44:13-56
-activity#com.here.iam.nagy.mohamed.imhere.ui.properties_ui.location_map.MapActivity
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:46:9-49:59
-	android:label
 		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:48:13-56
-	android:theme
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:49:13-56
 	android:name
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:47:13-70
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:47:13-63
+activity#com.here.iam.nagy.mohamed.imhere.ui.main_ui.MainUserActivity
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:49:9-51:59
+	android:theme
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:51:13-56
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:50:13-56
+activity#com.here.iam.nagy.mohamed.imhere.ui.properties_ui.location_map.MapActivity
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:52:9-55:59
+	android:label
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:54:13-56
+	android:theme
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:55:13-56
+	android:name
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:53:13-70
 activity#com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag.FlagDetailsActivity
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:50:9-53:59
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:56:9-59:59
 	android:label
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:52:13-40
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:58:13-40
 	android:theme
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:53:13-56
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:59:13-56
 	android:name
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:51:13-70
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:57:13-70
 activity#com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag.CreateNewFlag
-ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:54:9-57:59
+ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:60:9-63:59
 	android:label
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:56:13-67
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:62:13-67
 	android:theme
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:57:13-56
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:63:13-56
 	android:name
-		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:55:13-64
+		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:61:13-64
 uses-sdk
 INJECTED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\f59d42da46107f2ba527f4a3973d130f1eb5e635\output\AndroidManifest.xml:4:5-42
@@ -262,6 +273,7 @@ MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\mohamedna
 MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\eff08c97337e2e4ea4bbc66d69a22f60aa8dbd2a\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\9e204a518675768d2ddf6d599613946512d985e3\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cdc15453fe061b4ca8e91b32ed5a524d506e9a29\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\546cb5d1596098f3f521a7f7494f7c8f5d24ffb9\output\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\825b1dcfbe4df970e79692f50a793eda00f4b3f8\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
