@@ -14,8 +14,8 @@
 
         <ListView
             android:id="@+id/user_friend_list"
-            android:divider="@android:color/transparent"
-            android:dividerHeight="8dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 

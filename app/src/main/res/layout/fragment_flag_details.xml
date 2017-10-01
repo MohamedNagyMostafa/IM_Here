@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout tools:context="com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag.FlagDetailsActivityFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/flag_details_swipe_refresh"
+    tools:showIn="@layout/activity_flag_details"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/flag_details_image_view"
+                android:src="@drawable/empty_flag_image"
+                android:alpha="1"/>
+
+            <TextView
+                android:id="@+id/flag_details_details_text_view"
+                android:alpha="1"
+                android:layout_gravity="center_horizontal"
+                android:text="flag name"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/flag_details_title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:alpha="0.9"
+                android:textSize="14sp"
+                android:padding="28dp"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="this is a flag description wich include a lot of detail about flag" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/voteImageView"
+                    android:tint="@color/dark_green"
+                    android:src="@drawable/ic_face_black_36dp" />
+
+                <TextView
+                    android:id="@+id/flag_details_user_created_name_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:paddingStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Ahmed Magdy"
+                    android:alpha="0.9"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:text="Created By"
+                android:textSize="12sp"
+                android:alpha="0.7"
+                android:paddingStart="28dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/dark_green"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"/>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:alpha="0.2"
+                android:background="@color/lines_color_safe" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/ratingImageView"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:tint="@color/dark_green"
+                    android:src="@drawable/ic_favorite_black_36dp" />
+
+                <TextView
+                    android:id="@+id/flag_details_loves_number_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:paddingStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="15"
+                    android:alpha="0.9"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="Likes Count"
+                android:textSize="12sp"
+                android:alpha="0.7"
+                android:paddingStart="28dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/dark_green"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"/>
+
+        </LinearLayout>
+
+
+
+</ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:tint="@color/active_tab"
+        app:backgroundTint="@android:color/white"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/love_flag_btn"/>
+
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

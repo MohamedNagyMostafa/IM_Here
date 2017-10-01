@@ -1,9 +1,5 @@
 [
     {
-        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_flag_details2.xml",
-        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout\\content_flag_details2.xml"
-    },
-    {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\search_recycle.xml",
         "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout\\search_recycle.xml"
     },
@@ -34,6 +30,10 @@
     {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_map_.xml",
         "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout\\activity_map_.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_flag_details.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout\\content_flag_details.xml"
     },
     {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_chooser_list_item.xml",
@@ -90,6 +90,10 @@
     {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_playback_control.xml",
         "source": "C:\\Users\\mohamednagy.mohamednagy-PC\\.android\\build-cache\\8cda01ddb33611b64e97aed08fe2512da7c13df5\\output\\res\\layout\\mr_playback_control.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_flag_details.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout\\activity_flag_details.xml"
     },
     {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
@@ -160,10 +164,6 @@
         "source": "C:\\Users\\mohamednagy.mohamednagy-PC\\.android\\build-cache\\825b1dcfbe4df970e79692f50a793eda00f4b3f8\\output\\res\\layout\\design_navigation_menu.xml"
     },
     {
-        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_flag_details2.xml",
-        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout\\activity_flag_details2.xml"
-    },
-    {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_map_.xml",
         "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout\\content_map_.xml"
     },
@@ -186,6 +186,10 @@
     {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
         "source": "C:\\Users\\mohamednagy.mohamednagy-PC\\.android\\build-cache\\1dedc3b902b756ca0eaa6c947a398fde738539a3\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_flag_details.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout\\fragment_flag_details.xml"
     },
     {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
@@ -306,10 +310,6 @@
     {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_user_activity.xml",
         "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout\\main_user_activity.xml"
-    },
-    {
-        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_flag_details2.xml",
-        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout\\fragment_flag_details2.xml"
     },
     {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",

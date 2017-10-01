@@ -1,5 +1,17 @@
 [
     {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout-xhdpi-v4\\content_create_account.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout-xhdpi\\content_create_account.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout-xhdpi-v4\\fragment_flag_details.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout-xhdpi\\fragment_flag_details.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout-xhdpi-v4\\content_login.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout-xhdpi\\content_login.xml"
+    },
+    {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout-xhdpi-v4\\fragment_user_profile.xml",
         "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout-xhdpi\\fragment_user_profile.xml"
     }

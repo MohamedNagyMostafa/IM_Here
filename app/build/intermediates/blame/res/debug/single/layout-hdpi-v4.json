@@ -2,5 +2,17 @@
     {
         "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout-hdpi-v4\\fragment_user_profile.xml",
         "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout-hdpi\\fragment_user_profile.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout-hdpi-v4\\fragment_flag_details.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout-hdpi\\fragment_flag_details.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout-hdpi-v4\\content_login.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout-hdpi\\content_login.xml"
+    },
+    {
+        "merged": "E:\\I'MHere - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout-hdpi-v4\\content_create_account.xml",
+        "source": "E:\\I'MHere - Copy\\app\\src\\main\\res\\layout-hdpi\\content_create_account.xml"
     }
 ]
