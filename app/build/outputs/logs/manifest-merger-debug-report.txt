@@ -114,6 +114,7 @@ MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\mohamedna
 MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\eff08c97337e2e4ea4bbc66d69a22f60aa8dbd2a\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\9e204a518675768d2ddf6d599613946512d985e3\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cdc15453fe061b4ca8e91b32ed5a524d506e9a29\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\546cb5d1596098f3f521a7f7494f7c8f5d24ffb9\output\AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from E:\I'MHere - Copy\app\src\main\AndroidManifest.xml:17:9-41
 	android:supportsRtl
@@ -262,6 +263,7 @@ MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\mohamedna
 MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\eff08c97337e2e4ea4bbc66d69a22f60aa8dbd2a\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\9e204a518675768d2ddf6d599613946512d985e3\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\cdc15453fe061b4ca8e91b32ed5a524d506e9a29\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\546cb5d1596098f3f521a7f7494f7c8f5d24ffb9\output\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.1.0] C:\Users\mohamednagy.mohamednagy-PC\.android\build-cache\825b1dcfbe4df970e79692f50a793eda00f4b3f8\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
