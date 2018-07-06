@@ -14,8 +14,8 @@ import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationServices;
 import com.google.firebase.auth.FirebaseAuth;
@@ -33,6 +33,7 @@ import com.here.iam.nagy.mohamed.imhere.ui.ViewAppHolder;
 import com.here.iam.nagy.mohamed.imhere.ui.properties_ui.location_map.MapActivity;
 import com.here.iam.nagy.mohamed.imhere.user_account.LoginActivity;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.UserAccount;
+import com.squareup.picasso.Picasso;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -285,7 +286,7 @@ public class UserProfileFragment extends Fragment
             userProfileViews.USER_EMAIL_TEXT_VIEW.setText(userAccount.getUserEmail());
 
             if (userAccount.getUserImage() != null) {
-                Glide.with(getContext())
+                Picasso.with(getContext())
                         .load(userAccount.getUserImage())
                         .into(userProfileViews.USER_IMAGE_VIEW);
 
@@ -363,8 +364,8 @@ public class UserProfileFragment extends Fragment
     }
 
     @Override
-    public void onConnected(LocationListener locationListener) {
-        userDataFirebase.setRequestDependOnSettings(locationListener,googleApiClient);
+    public void onConnected(LocationCallback locationCallback) {
+        userDataFirebase.setRequestDependOnSettings(locationCallback,googleApiClient, getContext());
     }
 
     @Override

@@ -10,8 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
@@ -29,6 +30,9 @@ import com.here.iam.nagy.mohamed.imhere.location_service.UserLocationCallback;
 import com.here.iam.nagy.mohamed.imhere.ui.ViewAppHolder;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.FlagsMarkers;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.UserAccount;
+import com.squareup.picasso.Picasso;
+
+import java.util.Objects;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -162,7 +166,7 @@ public class MapActivityFragment extends Fragment
                         usersWindowViewHolder.USER_IMAGE_WINDOW_IMAGE_VIEW
                                 .setImageDrawable(getActivity().getDrawable(R.drawable.me));
                     }else{
-                        Glide.with(getActivity()).load(userAccount.getUserImage())
+                        Picasso.with(getActivity()).load(userAccount.getUserImage())
                                 .into(usersWindowViewHolder.USER_IMAGE_WINDOW_IMAGE_VIEW);
                     }
 
@@ -234,13 +238,15 @@ public class MapActivityFragment extends Fragment
     }
 
     @Override
-    public void onConnected(LocationListener locationListener) {
-        LocationRequest locationRequest = new LocationRequest()
+    public void onConnected(LocationCallback locationCallback) {
+        LocationRequest locationRequest = LocationRequest.create()
                 .setInterval(Constants.ACTIVITY_MODE)
                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
         try {
-            LocationServices.FusedLocationApi.requestLocationUpdates(googleApiClient, locationRequest, locationListener);
+            FusedLocationProviderClient fusedLocationProviderClient =
+                    LocationServices.getFusedLocationProviderClient(Objects.requireNonNull(getContext()));
+            fusedLocationProviderClient.requestLocationUpdates(locationRequest, locationCallback, null);
         }catch(SecurityException e){
 
         }

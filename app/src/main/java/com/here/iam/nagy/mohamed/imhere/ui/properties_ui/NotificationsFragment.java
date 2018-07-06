@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.here.iam.nagy.mohamed.imhere.R;
 import com.here.iam.nagy.mohamed.imhere.firebase_data.UserDataFirebaseNotifications;
 import com.here.iam.nagy.mohamed.imhere.firebase_data.UserNotificationsUi;
@@ -20,6 +19,7 @@ import com.here.iam.nagy.mohamed.imhere.ui.ViewAppHolder;
 import com.here.iam.nagy.mohamed.imhere.ui.properties_adapter_ui.UserPropertiesAdapter;
 import com.here.iam.nagy.mohamed.imhere.ui.properties_adapter_ui.UserPropertiesAdapterUi;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.Notification;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -151,7 +151,7 @@ public class NotificationsFragment extends Fragment
             Notification notification){
 
         if(notification.getNotificationImage() != null) {
-            Glide.with(getContext())
+            Picasso.with(getContext())
                     .load(notification.getNotificationImage())
                     .into(notificationsViewHolder.NOTIFICATION_IMAGE_VIEW);
         }else{
@@ -208,7 +208,7 @@ public class NotificationsFragment extends Fragment
                 });
 
         if(notification.getNotificationImage() != null) {
-            Glide.with(getContext())
+            Picasso.with(getContext())
                     .load(notification.getNotificationImage())
                     .into(notificationsViewHolder.NOTIFICATION_IMAGE_VIEW);
         }else{
@@ -252,7 +252,7 @@ public class NotificationsFragment extends Fragment
                 });
 
         if(notification.getNotificationImage() != null) {
-            Glide.with(getContext())
+            Picasso.with(getContext())
                     .load(notification.getNotificationImage())
                     .into(notificationsViewHolder.NOTIFICATION_IMAGE_VIEW);
         }else{
@@ -271,7 +271,7 @@ public class NotificationsFragment extends Fragment
                 getResources().getColor(R.color.help_color));
 
         if(notification.getNotificationImage() != null) {
-            Glide.with(getContext())
+            Picasso.with(getContext())
                     .load(notification.getNotificationImage())
                     .into(notificationAsHelp.NOTIFICATION_IMAGE_VIEW);
         }else{
@@ -294,7 +294,7 @@ public class NotificationsFragment extends Fragment
         });
 
         if(notification.getNotificationImage() != null) {
-            Glide.with(getContext())
+            Picasso.with(getContext())
                     .load(notification.getNotificationImage())
                     .into(notificationsViewHolder.NOTIFICATION_IMAGE_VIEW);
         }else{

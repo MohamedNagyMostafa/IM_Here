@@ -25,12 +25,7 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDJxqb8RBAgIb9AoTRk_76f04fs-FKiNCQ" />
+
 
         <activity
             android:name=".user_account.LoginActivity"

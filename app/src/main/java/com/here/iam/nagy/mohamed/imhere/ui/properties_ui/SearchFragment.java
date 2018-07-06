@@ -12,7 +12,6 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.here.iam.nagy.mohamed.imhere.R;
 import com.here.iam.nagy.mohamed.imhere.firebase_data.UserDataFirebaseSearch;
 import com.here.iam.nagy.mohamed.imhere.firebase_data.UserSearchUi;
@@ -22,6 +21,7 @@ import com.here.iam.nagy.mohamed.imhere.ui.ViewAppHolder;
 import com.here.iam.nagy.mohamed.imhere.ui.properties_adapter_ui.UserPropertiesAdapter;
 import com.here.iam.nagy.mohamed.imhere.ui.properties_adapter_ui.UserPropertiesAdapterUi;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.UserAccount;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -108,7 +108,7 @@ public class SearchFragment extends Fragment
 
 
         if(currentUserAccount.getUserImage() != null)
-            Glide.with(getContext())
+            Picasso.with(getContext())
                     .load(currentUserAccount.getUserImage())
                     .into(searchViewHolder.SEARCH_IMAGE_VIEW);
         else

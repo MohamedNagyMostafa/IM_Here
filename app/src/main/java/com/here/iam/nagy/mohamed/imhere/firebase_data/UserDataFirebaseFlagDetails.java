@@ -4,7 +4,6 @@ import android.content.Context;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -14,6 +13,7 @@ import com.here.iam.nagy.mohamed.imhere.helper_classes.FirebaseHelper;
 import com.here.iam.nagy.mohamed.imhere.helper_classes.Utility;
 import com.here.iam.nagy.mohamed.imhere.ui.ViewAppHolder;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.FlagsMarkers;
+import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
 
@@ -325,7 +325,7 @@ public class UserDataFirebaseFlagDetails extends UserDataFirebase {
         flagDetailsViewHolder.FLAG_TITLE_TEXT_VIEW.setText(flagsMarkers.getTitle());
 
         if(flagsMarkers.getImage() != null)
-            Glide.with(context).load(flagsMarkers.getImage())
+            Picasso.with(context).load(flagsMarkers.getImage())
                     .into(flagDetailsViewHolder.FLAG_IMAGE_VIEW);
 
         flagDetailsViewHolder.FLAG_DETAILS_TEXT_VIEW.setText(flagsMarkers.getDetails());

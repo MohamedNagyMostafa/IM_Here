@@ -7,13 +7,15 @@ import android.support.annotation.Nullable;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationListener;
+import com.google.android.gms.location.LocationResult;
 
 /**
  * Created by mohamednagy on 12/27/2016.
  */
-public class UserLocation implements GoogleApiClient.ConnectionCallbacks,
-        GoogleApiClient.OnConnectionFailedListener, LocationListener {
+public class UserLocation extends LocationCallback implements GoogleApiClient.ConnectionCallbacks,
+        GoogleApiClient.OnConnectionFailedListener {
 
     private UserLocationCallback userLocationCallback;
 
@@ -33,8 +35,8 @@ public class UserLocation implements GoogleApiClient.ConnectionCallbacks,
     }
 
     @Override
-    public void onLocationChanged(Location location) {
-        userLocationCallback.onLocationChanged(location);
+    public void onLocationResult(LocationResult locationResult) {
+        userLocationCallback.onLocationChanged(locationResult.getLastLocation());
     }
 
     @Override

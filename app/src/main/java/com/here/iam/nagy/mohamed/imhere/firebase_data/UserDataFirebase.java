@@ -6,12 +6,13 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.location.Location;
 import android.net.Uri;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationListener;
+import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -189,7 +190,7 @@ public class UserDataFirebase {
 
                         Map<String,Object> userImage  = new HashMap<String, Object>();
 
-                        userImage.put("userImage",taskSnapshot.getDownloadUrl().toString());
+                        userImage.put("userImage",taskSnapshot.getUploadSessionUri().getPath());
 
                         FirebaseHelper.USERS_DATABASE_REFERENCE.child(USER_LINK_FIREBASE).updateChildren(userImage);
 
@@ -688,8 +689,8 @@ public class UserDataFirebase {
                 .setValue(currentLocation);
     }
 
-    public void setRequestDependOnSettings(final LocationListener locationListener,
-                                           final GoogleApiClient googleApiClient){
+    public void setRequestDependOnSettings(final LocationCallback locationCallback,
+                                           final GoogleApiClient googleApiClient, final Context context){
         FirebaseHelper.getUserAccountSettings(USER_LINK_FIREBASE)
                 .addValueEventListener(userLocationSettingsListeners = new ValueEventListener() {
                     @Override
@@ -697,14 +698,13 @@ public class UserDataFirebase {
                         AccountSettings accountSettings = dataSnapshot.getValue(AccountSettings.class);
                             Log.e("location settings","checked and set new location interval");
                         try { // remove previous request.
-                            if(locationRequest != null) {
-                                LocationServices.FusedLocationApi
+                                LocationServices.getFusedLocationProviderClient(context)
                                         .removeLocationUpdates(
-                                                googleApiClient, locationListener
+                                                locationCallback
                                         );
-                            }
-                            locationRequest = new LocationRequest()
-                                    .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+
+                            locationRequest = LocationRequest.create();
+                            locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
                             if(accountSettings.isHelpModeActive()){
                                 Log.e("Help me interval ","is set");
@@ -719,9 +719,9 @@ public class UserDataFirebase {
 
                             }
 
-                            LocationServices.FusedLocationApi
+                            LocationServices.getFusedLocationProviderClient(context)
                                     .requestLocationUpdates(
-                                            googleApiClient,locationRequest ,locationListener
+                                            locationRequest ,locationCallback, null
                                     );
 
                         }catch (SecurityException e){

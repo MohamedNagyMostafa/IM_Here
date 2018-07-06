@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.here.iam.nagy.mohamed.imhere.R;
 import com.here.iam.nagy.mohamed.imhere.firebase_data.UserDataFirebaseFriendList;
 import com.here.iam.nagy.mohamed.imhere.firebase_data.UserFriendListUi;
@@ -21,6 +20,7 @@ import com.here.iam.nagy.mohamed.imhere.ui.ViewAppHolder;
 import com.here.iam.nagy.mohamed.imhere.ui.properties_adapter_ui.UserPropertiesAdapter;
 import com.here.iam.nagy.mohamed.imhere.ui.properties_adapter_ui.UserPropertiesAdapterUi;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.UserAccount;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -106,7 +106,7 @@ public class FriendsListFragment extends Fragment
         friendsListViewHolder.FRIEND_NAME_TEXT_VIEW.setText(friendAccount.getUserName());
 
         if(friendAccount.getUserImage() != null)
-            Glide.with(getContext())
+            Picasso.with(getContext())
                     .load(friendAccount.getUserImage())
                     .into(friendsListViewHolder.FRIEND_IMAGE_VIEW);
         else

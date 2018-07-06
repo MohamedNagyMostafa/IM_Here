@@ -4,7 +4,6 @@ import android.content.Context;
 import android.net.Uri;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.CameraPosition;
@@ -20,8 +19,10 @@ import com.here.iam.nagy.mohamed.imhere.helper_classes.Utility;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.CurrentLocation;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.FlagsMarkers;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.UserAccount;
+import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 /**
  * Created by mohamednagy on 1/7/2017.
@@ -179,7 +180,7 @@ public class UserDataFirebaseCreateFlag extends UserDataFirebase {
                 .putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                Glide.with(context).load(taskSnapshot.getDownloadUrl().toString())
+                Picasso.with(context).load(Objects.requireNonNull(taskSnapshot.getUploadSessionUri()).getPath())
                         .into(imageView);
             }
         });

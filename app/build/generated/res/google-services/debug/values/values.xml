@@ -7,4 +7,5 @@
     <string name="google_app_id" translatable="false">1:189593678087:android:8f483afa6eebf1a8</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB5BCV3JYq6aYPcNuL3idR9c8RKiUsrXMs</string>
     <string name="google_storage_bucket" translatable="false">im-here-7b6c1.appspot.com</string>
+    <string name="project_id" translatable="false">im-here-7b6c1</string>
 </resources>
