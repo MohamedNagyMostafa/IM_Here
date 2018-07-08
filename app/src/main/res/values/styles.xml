@@ -31,4 +31,21 @@
         <item name="windowActionBarOverlay">true</item>
     </style>
 
+    <style name="user_profile_action_box">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/user_profile_action_box_height</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="user_profile_action_box_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/user_profile_action_box_line_height</item>
+        <item name="android:layout_marginTop">@dimen/user_profile_action_box_line_top_margin</item>
+        <item name="android:layout_marginStart">@dimen/user_profile_action_box_line_start_margin</item>
+        <item name="android:layout_marginEnd">@dimen/user_profile_action_box_line_end_margin</item>
+        <item name="android:background">@color/lines_color_safe</item>
+    </style>
+
 </resources>

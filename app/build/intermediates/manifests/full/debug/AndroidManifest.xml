@@ -43,6 +43,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDJxqb8RBAgIb9AoTRk_76f04fs-FKiNCQ" />
+
         <activity
             android:name="com.here.iam.nagy.mohamed.imhere.user_account.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar"
@@ -148,10 +155,6 @@
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

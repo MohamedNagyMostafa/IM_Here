@@ -1,6 +1,7 @@
 package com.here.iam.nagy.mohamed.imhere.ui.main_ui;
 
 import android.annotation.TargetApi;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -11,67 +12,90 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.here.iam.nagy.mohamed.imhere.R;
 import com.here.iam.nagy.mohamed.imhere.firebase_data.UserDataFirebaseMainActivity;
 import com.here.iam.nagy.mohamed.imhere.helper_classes.Constants;
 import com.here.iam.nagy.mohamed.imhere.ui.ViewAppHolder;
 
+import java.util.Objects;
+
 public class MainUserActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private UserDataFirebaseMainActivity userDataFirebaseMainActivity;
 
-    @TargetApi(Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_user_activity);
 
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        // Hide status bar
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        // Hide App name
-//        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
-        // get User Link and set it to all fragments.
-        final Bundle USER_LINK_FIREBASE =
-                getIntent().getExtras();
+        handleFirebaseAndPager();
 
-        tabLayout = (TabLayout) findViewById(R.id.tabs);
+
+    }
+
+    private void handleFirebaseAndPager(){
+        final Bundle USER_LINK_FIREBASE = getIntent().getExtras();
+
         if(USER_LINK_FIREBASE != null) {
             userDataFirebaseMainActivity = new UserDataFirebaseMainActivity(
                     USER_LINK_FIREBASE.getString(Constants.USER_EXTRA));
-
         }
 
-                // set adapter with user link
-                PagerAppAdapter pagerAppAdapter =
-                        new PagerAppAdapter(getSupportFragmentManager(), USER_LINK_FIREBASE);
+        handlePager(USER_LINK_FIREBASE);
+    }
+
+    private void handlePager(final Bundle USER_LINK_FIREBASE){
+
+        ViewPager viewPager = findViewById(R.id.view_pager);
+        tabLayout = findViewById(R.id.tabs);
+
+        PagerAppAdapter pagerAppAdapter =
+                new PagerAppAdapter(getSupportFragmentManager(), USER_LINK_FIREBASE);
 
         viewPager.setAdapter(pagerAppAdapter);
-
 
         tabLayout.setupWithViewPager(viewPager);
 
         createTabIcons();
 
-        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        tabLayout.setTabTextColors(Color.parseColor("#727272"), Color.parseColor("#ffffff"));
+        tabLayout.addOnTabSelectedListener (new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
 
                 if(tab.getPosition() == Constants.USER_NOTIFICATIONS_TAB)
                     UserDataFirebaseMainActivity.newNotificationsNumberToZero();
 
-                setCurrentTab();
+                assert tab.getCustomView() != null;
+
+                new ViewAppHolder.CustomTabViewHolder(tab.getCustomView()).TAB_IMAGE_VIEW
+                        .setColorFilter(
+                                ContextCompat.getColor(
+                                        MainUserActivity.this,
+                                        R.color.active_tab
+                                )
+                        );
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
                 if(tab.getPosition() == Constants.USER_NOTIFICATIONS_TAB)
                     UserDataFirebaseMainActivity.newNotificationsNumberToZero();
+
+                assert tab.getCustomView() != null;
+
+                new ViewAppHolder.CustomTabViewHolder(tab.getCustomView()).TAB_IMAGE_VIEW
+                        .setColorFilter(
+                                ContextCompat.getColor(
+                                        MainUserActivity.this,
+                                        R.color.non_active_tab
+                                )
+                        );
             }
 
             @Override
@@ -79,7 +103,6 @@ public class MainUserActivity extends AppCompatActivity {
 
             }
         });
-
     }
 
     private void createTabIcons(){
@@ -107,7 +130,7 @@ public class MainUserActivity extends AppCompatActivity {
         customTabFriendsViewHolder.TAB_IMAGE_VIEW
                 .setColorFilter(ContextCompat.getColor(this,R.color.non_active_tab));
 
-        tabLayout.getTabAt(Constants.USER_FRIENDS_TAB).setCustomView(friendsTab);
+        Objects.requireNonNull(tabLayout.getTabAt(Constants.USER_FRIENDS_TAB)).setCustomView(friendsTab);
 
         View notificationTab = LayoutInflater.from(this)
                 .inflate(R.layout.custom_tab,null);
@@ -124,7 +147,7 @@ public class MainUserActivity extends AppCompatActivity {
                 customTabNotificationViewHolder.TAB_TEXT_VIEW
         );
 
-        tabLayout.getTabAt(Constants.USER_NOTIFICATIONS_TAB).setCustomView(notificationTab);
+        Objects.requireNonNull(tabLayout.getTabAt(Constants.USER_NOTIFICATIONS_TAB)).setCustomView(notificationTab);
 
 
         View SearchTab = LayoutInflater.from(this)
@@ -138,39 +161,8 @@ public class MainUserActivity extends AppCompatActivity {
         customTabSearchViewHolder.TAB_IMAGE_VIEW
                 .setColorFilter(ContextCompat.getColor(this,R.color.non_active_tab));
 
-        tabLayout.getTabAt(Constants.USER_SEARCH_TAB).setCustomView(SearchTab);
+        Objects.requireNonNull(tabLayout.getTabAt(Constants.USER_SEARCH_TAB)).setCustomView(SearchTab);
 
-
-
-    }
-
-    private void setCurrentTab() {
-        if (tabLayout != null) {
-            int currentPosition = tabLayout.getSelectedTabPosition();
-            int unSelectedTabs = currentPosition;
-
-            do {
-                unSelectedTabs = (unSelectedTabs + 1) % 4;
-
-                Log.e("un selected ", String.valueOf(unSelectedTabs));
-                Log.e("un selected ", String.valueOf(currentPosition));
-
-                ViewAppHolder.CustomTabViewHolder customTabViewHolder =
-                        new ViewAppHolder.CustomTabViewHolder(
-                                tabLayout.getTabAt(unSelectedTabs).getCustomView()
-                        );
-
-
-                if (unSelectedTabs != currentPosition) {
-                    customTabViewHolder.TAB_IMAGE_VIEW
-                            .setColorFilter(ContextCompat.getColor(this, R.color.non_active_tab));
-                } else {
-                    customTabViewHolder.TAB_IMAGE_VIEW
-                            .setColorFilter(ContextCompat.getColor(this, R.color.active_tab));
-                }
-
-            } while (unSelectedTabs != currentPosition);
-        }
     }
 
     @Override
@@ -178,14 +170,12 @@ public class MainUserActivity extends AppCompatActivity {
         super.onStart();
         userDataFirebaseMainActivity.attachTextNotificationsListener();
         UserDataFirebaseMainActivity.setUserModeOnline();
-        Log.e("is called on start","doooooooneee");
 
     }
     @Override
     protected void onStop() {
         userDataFirebaseMainActivity.detachTextNotificationsListener();
         UserDataFirebaseMainActivity.setUserModeOffline();
-        Log.e("is called on stop","doooooooneee");
         super.onStop();
     }
 

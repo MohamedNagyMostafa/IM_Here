@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/user_profile_header_background"
+    android:layout_width="match_parent"
+    android:layout_marginTop="3dp"
+    android:layout_height="132dp">
+
+    <com.here.iam.nagy.mohamed.imhere.ui.cutom_view.CircleImage
+        android:id="@+id/user_image_profile_idt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/me"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:radius="40dp"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+
+    <ImageView
+        android:id="@+id/user_image_profile_idt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:alpha="0.8"
+        android:padding="12dp"
+        android:src="@drawable/ic_photo_camera_black_18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_image_profile_idt"
+        app:layout_constraintEnd_toEndOf="@+id/user_image_profile_idt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/user_image_profile_idt" />
+
+    <TextView
+        android:id="@+id/user_name_idt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/user_image_profile_idt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="mohamed nagy" />
+
+    <TextView
+        android:id="@+id/user_email_idt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="mohamednagy2015@outlook.com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/user_name_idt"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_idt"
+        tools:test="mohamednagy2016@outlook.com" />
+
+    <TextView
+        android:id="@+id/user_location_idt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/user_name_idt"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/user_name_idt"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_idt"
+        tools:text="Giza, Egypt" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -3,4 +3,11 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="user_profile_action_box_height">72dp</dimen>
+
+    <dimen name="user_profile_action_box_line_height">1dp</dimen>
+    <dimen name="user_profile_action_box_line_top_margin">4dp</dimen>
+    <dimen name="user_profile_action_box_line_start_margin">32dp</dimen>
+    <dimen name="user_profile_action_box_line_end_margin">32dp</dimen>
 </resources>
