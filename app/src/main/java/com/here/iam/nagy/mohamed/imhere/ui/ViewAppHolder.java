@@ -1,5 +1,6 @@
 package com.here.iam.nagy.mohamed.imhere.ui;
 
+import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
@@ -164,10 +165,10 @@ public class ViewAppHolder {
         public final TextView NOTIFICATION_SECOND_TEXT_VIEW;
         public final TextView NOTIFICATION_DATE_TEXT_VIEW;
 
-        public final Button NOTIFICATION_ACCEPT_TEXT_VIEW;
-        public final Button NOTIFICATION_IGNORE_TEXT_VIEW;
+        public final TextView NOTIFICATION_ACCEPT_TEXT_VIEW;
+        public final TextView NOTIFICATION_IGNORE_TEXT_VIEW;
 
-        public final LinearLayout NOTIFICATION_LAYOUT;
+        public final ConstraintLayout NOTIFICATION_LAYOUT;
 
 
         public NotificationsViewHolder(View notificationsView){

@@ -2226,7 +2226,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
@@ -4396,19 +4396,20 @@ public final class R {
     public static final int user_state_text_view=0x7f080124;
     public static final int user_state_window_users=0x7f080125;
     public static final int username_account=0x7f080126;
-    public static final int view_offset_helper=0x7f080127;
-    public static final int view_pager=0x7f080128;
-    public static final int visible=0x7f080129;
-    public static final int voteImageView=0x7f08012a;
-    public static final int wide=0x7f08012b;
-    public static final int widget_map_image_view=0x7f08012c;
-    public static final int widget_notification_image_view=0x7f08012d;
-    public static final int widget_notification_text_view=0x7f08012e;
-    public static final int widget_profile_image_view=0x7f08012f;
-    public static final int widget_search_image_view=0x7f080130;
-    public static final int withText=0x7f080131;
-    public static final int wrap=0x7f080132;
-    public static final int wrap_content=0x7f080133;
+    public static final int view=0x7f080127;
+    public static final int view_offset_helper=0x7f080128;
+    public static final int view_pager=0x7f080129;
+    public static final int visible=0x7f08012a;
+    public static final int voteImageView=0x7f08012b;
+    public static final int wide=0x7f08012c;
+    public static final int widget_map_image_view=0x7f08012d;
+    public static final int widget_notification_image_view=0x7f08012e;
+    public static final int widget_notification_text_view=0x7f08012f;
+    public static final int widget_profile_image_view=0x7f080130;
+    public static final int widget_search_image_view=0x7f080131;
+    public static final int withText=0x7f080132;
+    public static final int wrap=0x7f080133;
+    public static final int wrap_content=0x7f080134;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -10034,7 +10035,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>

@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">@color/active_tab</color>
     <color name="colorPrimaryDark">#1b5e20</color>
-    <color name="colorAccent">#76ff03</color>
+    <color name="colorAccent">#9C27B0</color>
 
     <color name="colorPrimarySecondary">#ffca28</color>
     <color name="colorPrimaryDarkSecondary">#fffd61</color>

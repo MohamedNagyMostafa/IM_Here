@@ -1,92 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:id="@+id/notification_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/transparent">
 
-    <LinearLayout
-        android:id="@+id/notification_layout"
-        android:layout_width="match_parent"
+
+    <com.here.iam.nagy.mohamed.imhere.ui.cutom_view.CircleImage
+        android:id="@+id/notification_image_view"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="2dp"
-        android:layout_marginEnd="4dp"
-        android:orientation="horizontal">
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:radius="30dp"
+        tools:src="@drawable/me" />
 
-        <ImageView
-            android:id="@+id/notification_image_view"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
-            android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/notification_first_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        android:textColor="#00796B"
+        android:textSize="16sp"
+        android:textStyle="bold|normal"
+        app:layout_constraintStart_toEndOf="@+id/notification_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="First Title" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <TextView
+        android:id="@+id/notification_second_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/notification_first_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/notification_first_text_view"
+        tools:text="First Second" />
 
-            <TextView
-                android:id="@+id/notification_first_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#00796B"
-                android:textStyle="bold|normal"
-                android:textSize="12sp"
-                android:paddingTop="4dp"
-                android:gravity="center_vertical"
-                android:layout_marginStart="8dp" />
+    <TextView
+        android:id="@+id/notification_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/notification_first_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/notification_accept_text_view"
+        tools:text="10, Wed 2017" />
 
-            <TextView
-                android:id="@+id/notification_second_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:textSize="14sp"
-                android:textColor="#000000"
-                android:layout_marginStart="8dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/notification_date_text_view"
-                android:fontFamily="sans-serif-smallcaps"
-                android:textSize="10sp"
-                android:layout_marginTop="6dp"
-                android:layout_marginStart="8dp" />
+    <TextView
+        android:id="@+id/notification_accept_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/notification_ignore_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/notification_second_text_view"
+        tools:text="Accept"
+        tools:visibility="visible" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:orientation="horizontal">
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/notification_accept_text_view"
+        app:layout_constraintStart_toStartOf="@+id/notification_accept_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/notification_accept_text_view" />
 
-                <Button
-                    android:id="@+id/notification_accept_text_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="22dp"
-                    android:visibility="gone"
-                    android:textColor="#2e7d32"
-                    android:layout_margin="4dp"
-                    android:padding="4dp"
-                    android:textSize="10sp"
-                    android:theme="@style/app_button_highlight"
-                    style="@style/Base.Widget.AppCompat.Button.Borderless"
-                    android:layout_marginEnd="4dp"/>
+    <TextView
+        android:id="@+id/notification_ignore_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/notification_accept_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Ignore"
+        tools:visibility="visible" />
 
-                <Button
-                    android:id="@+id/notification_ignore_text_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="22dp"
-                    android:textColor="#2e7d32"
-                    android:visibility="gone"
-                    android:padding="4dp"
-                    android:layout_margin="4dp"
-                    android:textSize="10sp"
-                    style="@style/Base.Widget.AppCompat.Button.Borderless"
-                    android:layout_toLeftOf="@id/notification_ignore_text_view"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/notification_ignore_text_view"
+        app:layout_constraintStart_toStartOf="@+id/notification_ignore_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/notification_ignore_text_view" />
 
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
