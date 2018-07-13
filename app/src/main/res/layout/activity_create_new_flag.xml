@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag.CreateNewFlag">
+    tools:context="com.here.iam.nagy.mohamed.imhere.ui.properties_ui.flag.CreateNewFlag">
 
 
     <include layout="@layout/content_create_new_flag" />

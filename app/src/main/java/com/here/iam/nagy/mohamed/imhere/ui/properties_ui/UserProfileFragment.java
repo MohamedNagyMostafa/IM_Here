@@ -33,6 +33,7 @@ import com.here.iam.nagy.mohamed.imhere.ui.ViewAppHolder;
 import com.here.iam.nagy.mohamed.imhere.ui.properties_ui.location_map.MapActivity;
 import com.here.iam.nagy.mohamed.imhere.user_account.LoginActivity;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.UserAccount;
+import com.here.iam.nagy.mohamed.imhere.widget.WidgetUtils;
 import com.squareup.picasso.Picasso;
 
 /**
@@ -167,6 +168,8 @@ public class UserProfileFragment extends Fragment
                     if(Utility.networkIsConnected(getContext())) {
                         UserDataFirebaseMainActivity.setUserModeOffline();
                         FirebaseAuth.getInstance().signOut();
+                        WidgetUtils.WidgetBroadcast.sendBroadcastToWidgetLogout(getContext());
+
                         Intent loginActivityIntent = new Intent(getContext(), LoginActivity.class);
                         loginActivityIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(loginActivityIntent);
@@ -219,13 +222,13 @@ public class UserProfileFragment extends Fragment
         USER_LINK_FIREBASE = getArguments().getString(Constants.USER_EXTRA);
 
         /// firebase data
-        userDataFirebase = new UserDataFirebase(USER_LINK_FIREBASE,this);
+        userDataFirebase = new UserDataFirebase(USER_LINK_FIREBASE,this, getContext());
 
         // user location
         UserLocation userLocation = new UserLocation(this);
 
         // set geofence system
-        userDataFirebaseGeofence = new UserDataFirebaseGeofence(USER_LINK_FIREBASE);
+        userDataFirebaseGeofence = new UserDataFirebaseGeofence(USER_LINK_FIREBASE, getContext());
         userDataFirebaseGeofence.setGeofenceSystem();
 
 

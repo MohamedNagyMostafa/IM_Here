@@ -18,6 +18,7 @@ import com.here.iam.nagy.mohamed.imhere.R;
 import com.here.iam.nagy.mohamed.imhere.firebase_data.UserDataFirebaseMainActivity;
 import com.here.iam.nagy.mohamed.imhere.helper_classes.Constants;
 import com.here.iam.nagy.mohamed.imhere.ui.ViewAppHolder;
+import com.here.iam.nagy.mohamed.imhere.widget.WidgetUtils;
 
 import java.util.Objects;
 
@@ -35,21 +36,29 @@ public class MainUserActivity extends AppCompatActivity {
 
         handleFirebaseAndPager();
 
-
     }
 
     private void handleFirebaseAndPager(){
         final Bundle USER_LINK_FIREBASE = getIntent().getExtras();
 
+        Integer selectedTap = null;
+
         if(USER_LINK_FIREBASE != null) {
             userDataFirebaseMainActivity = new UserDataFirebaseMainActivity(
                     USER_LINK_FIREBASE.getString(Constants.USER_EXTRA));
+
+            selectedTap = USER_LINK_FIREBASE.getInt(WidgetUtils.Navigation.NAVIGATION_EXTRA);
+
+            // Set To Widget Preference.
+            WidgetUtils.WidgetBroadcast.sendBroadcastToWidgetLogin(getBaseContext(),
+                    USER_LINK_FIREBASE.getString(Constants.USER_EXTRA));
+
         }
 
-        handlePager(USER_LINK_FIREBASE);
+        handlePager(USER_LINK_FIREBASE, selectedTap);
     }
 
-    private void handlePager(final Bundle USER_LINK_FIREBASE){
+    private void handlePager(final Bundle USER_LINK_FIREBASE, Integer selectedTap){
 
         ViewPager viewPager = findViewById(R.id.view_pager);
         tabLayout = findViewById(R.id.tabs);
@@ -63,13 +72,12 @@ public class MainUserActivity extends AppCompatActivity {
 
         createTabIcons();
 
-        tabLayout.setTabTextColors(Color.parseColor("#727272"), Color.parseColor("#ffffff"));
         tabLayout.addOnTabSelectedListener (new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
 
                 if(tab.getPosition() == Constants.USER_NOTIFICATIONS_TAB)
-                    UserDataFirebaseMainActivity.newNotificationsNumberToZero();
+                    UserDataFirebaseMainActivity.newNotificationsNumberToZero(getApplicationContext());
 
                 assert tab.getCustomView() != null;
 
@@ -85,7 +93,7 @@ public class MainUserActivity extends AppCompatActivity {
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
                 if(tab.getPosition() == Constants.USER_NOTIFICATIONS_TAB)
-                    UserDataFirebaseMainActivity.newNotificationsNumberToZero();
+                    UserDataFirebaseMainActivity.newNotificationsNumberToZero(getApplicationContext());
 
                 assert tab.getCustomView() != null;
 
@@ -103,6 +111,9 @@ public class MainUserActivity extends AppCompatActivity {
 
             }
         });
+
+        if(selectedTap != null)
+            viewPager.setCurrentItem(selectedTap);
     }
 
     private void createTabIcons(){

@@ -1,5 +1,6 @@
 package com.here.iam.nagy.mohamed.imhere.firebase_data;
 
+import android.content.Context;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -23,6 +24,7 @@ public class UserDataFirebaseFriendList extends UserDataFirebase{
 
     private UserFriendListUi userFriendListUi;
     private ArrayList<UserAccount> userFriendsList;
+    private Context context;
 
     private ValueEventListener friendListListener =
             new ValueEventListener() {
@@ -44,9 +46,11 @@ public class UserDataFirebaseFriendList extends UserDataFirebase{
             };
 
     public UserDataFirebaseFriendList(String userLinkFirebase,
-                                      UserFriendListUi userFriendListUi) {
+                                      UserFriendListUi userFriendListUi,
+                                      Context context) {
         super(userLinkFirebase);
         this.userFriendListUi = userFriendListUi;
+        this.context  = context;
     }
 
     public void attachFriendListListener(){
@@ -172,7 +176,7 @@ public class UserDataFirebaseFriendList extends UserDataFirebase{
                                 .child(notificationKey).setValue(notification);
 
                         UserDataFirebaseMainActivity
-                                .newNotificationsNumberIncrement(Utility.encodeUserEmail(USER_EMAIL));
+                                .newNotificationsNumberIncrement(Utility.encodeUserEmail(USER_EMAIL), context);
 
                         FirebaseHelper.getUserLocationRequestsSend(USER_LINK_FIREBASE)
                                 .child(Utility.encodeUserEmail(USER_EMAIL))

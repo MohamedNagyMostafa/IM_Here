@@ -59,7 +59,7 @@ public class FriendsListFragment extends Fragment
         final String USER_LINK_FIREBASE = getArguments().getString(Constants.USER_EXTRA);
 
         // get friendsList.
-        userDataFirebaseFriendList = new UserDataFirebaseFriendList(USER_LINK_FIREBASE,this);
+        userDataFirebaseFriendList = new UserDataFirebaseFriendList(USER_LINK_FIREBASE,this, getContext());
     }
 
     @Override

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-66:12
-INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-66:12
-INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-66:12
-INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-66:12
+ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-76:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\Mohamed Nagy\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\8566b7dea0edf4f1910ca2ebf52e777f\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Mohamed Nagy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f0e38d250ce1a8c42e41978f50874022\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-core:16.0.1] C:\Users\Mohamed Nagy\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.1.aar\df2a854b0f1d8fc5cfe93c171ebbb799\AndroidManifest.xml:2:1-9:12
@@ -48,20 +48,20 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Mohamed Nagy\.grad
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Users\Mohamed Nagy\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.0.aar\dae7e7d7b39c8b7a26aeb0b16381fa3f\AndroidManifest.xml:17:1-24:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Mohamed Nagy\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7add3ae342025381f114e1a009a5eba4\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Mohamed Nagy\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ec1f868be3742861aef4ddba6a908874\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-66:12
-INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-66:12
-INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-76:12
 	package
 		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-66:12
+		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-76:12
 		INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-66:12
+		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:1-76:12
 		INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:2:11-69
@@ -126,7 +126,7 @@ MERGED from [com.google.android.gms:play-services-maps:15.0.1] C:\Users\Mohamed 
 	android:required
 		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:18:9-32
 application
-ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:20:5-64:19
+ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:20:5-74:19
 MERGED from [com.google.firebase:firebase-core:16.0.1] C:\Users\Mohamed Nagy\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.1.aar\df2a854b0f1d8fc5cfe93c171ebbb799\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.1] C:\Users\Mohamed Nagy\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.1.aar\df2a854b0f1d8fc5cfe93c171ebbb799\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth:16.0.1] C:\Users\Mohamed Nagy\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.1.aar\bc88d09e195903e56635ffed6eb83ee8\AndroidManifest.xml:22:5-36:19
@@ -235,7 +235,7 @@ ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidM
 		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:55:13-56
 	android:name
 		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:53:13-70
-activity#com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag.FlagDetailsActivity
+activity#com.here.iam.nagy.mohamed.imhere.ui.properties_ui.flag.FlagDetailsActivity
 ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:56:9-59:59
 	android:label
 		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:58:13-40
@@ -243,7 +243,7 @@ ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidM
 		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:59:13-56
 	android:name
 		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:57:13-70
-activity#com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag.CreateNewFlag
+activity#com.here.iam.nagy.mohamed.imhere.ui.properties_ui.flag.CreateNewFlag
 ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:60:9-63:59
 	android:label
 		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:62:13-67
@@ -251,6 +251,22 @@ ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidM
 		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:63:13-56
 	android:name
 		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:61:13-64
+receiver#com.here.iam.nagy.mohamed.imhere.widget.WidgetProvider
+ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:65:9-73:20
+	android:name
+		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:65:19-56
+intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
+ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:66:13-68:29
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:67:17-83
+	android:name
+		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:67:25-81
+meta-data#android.appwidget.provider
+ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:70:13-72:54
+	android:resource
+		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:72:17-52
+	android:name
+		ADDED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml:71:17-58
 uses-sdk
 INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Mohamed Nagy\Desktop\projectv2\IM_Here\app\src\main\AndroidManifest.xml

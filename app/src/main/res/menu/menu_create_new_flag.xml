@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag.CreateNewFlag">
+    tools:context="com.here.iam.nagy.mohamed.imhere.ui.properties_ui.flag.CreateNewFlag">
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

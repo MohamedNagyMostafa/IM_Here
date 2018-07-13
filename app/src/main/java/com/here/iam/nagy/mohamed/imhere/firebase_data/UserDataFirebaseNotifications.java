@@ -11,7 +11,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.here.iam.nagy.mohamed.imhere.helper_classes.Constants;
 import com.here.iam.nagy.mohamed.imhere.helper_classes.FirebaseHelper;
 import com.here.iam.nagy.mohamed.imhere.helper_classes.Utility;
-import com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag.FlagDetailsActivity;
+import com.here.iam.nagy.mohamed.imhere.ui.properties_ui.flag.FlagDetailsActivity;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.FlagsMarkers;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.Notification;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.UserAccount;
@@ -25,6 +25,8 @@ import java.util.List;
 public class UserDataFirebaseNotifications extends UserDataFirebase {
 
     private UserNotificationsUi userNotificationsUi;
+    private Context context;
+
     private ValueEventListener userNotificationListener = new ValueEventListener() {
         @Override
         public void onDataChange(DataSnapshot dataSnapshot) {
@@ -38,9 +40,11 @@ public class UserDataFirebaseNotifications extends UserDataFirebase {
     };
 
     public UserDataFirebaseNotifications(String userLinkFirebase,
-                                         UserNotificationsUi userNotificationsUi) {
+                                         UserNotificationsUi userNotificationsUi,
+                                         Context context) {
         super(userLinkFirebase);
         this.userNotificationsUi = userNotificationsUi;
+        this.context = context;
     }
 
     public void attachUserNotificationListener(){
@@ -207,7 +211,7 @@ public class UserDataFirebaseNotifications extends UserDataFirebase {
                                 .push().setValue(locationAcceptNotification);
 
                         UserDataFirebaseMainActivity.newNotificationsNumberIncrement(
-                                Utility.encodeUserEmail(USER_EMAIL));
+                                Utility.encodeUserEmail(USER_EMAIL), context);
 
                     }
 

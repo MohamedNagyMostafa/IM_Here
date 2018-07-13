@@ -4098,6 +4098,7 @@ public final class R {
     public static final int user_flag=0x7f0700b3;
     public static final int user_marker=0x7f0700b4;
     public static final int user_profile_header_background=0x7f0700b5;
+    public static final int widget_image_background=0x7f0700b6;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
@@ -4400,9 +4401,14 @@ public final class R {
     public static final int visible=0x7f080129;
     public static final int voteImageView=0x7f08012a;
     public static final int wide=0x7f08012b;
-    public static final int withText=0x7f08012c;
-    public static final int wrap=0x7f08012d;
-    public static final int wrap_content=0x7f08012e;
+    public static final int widget_map_image_view=0x7f08012c;
+    public static final int widget_notification_image_view=0x7f08012d;
+    public static final int widget_notification_text_view=0x7f08012e;
+    public static final int widget_profile_image_view=0x7f08012f;
+    public static final int widget_search_image_view=0x7f080130;
+    public static final int withText=0x7f080131;
+    public static final int wrap=0x7f080132;
+    public static final int wrap_content=0x7f080133;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -4505,8 +4511,10 @@ public final class R {
     public static final int user_profile_body_middle=0x7f0a0054;
     public static final int user_profile_body_top=0x7f0a0055;
     public static final int user_profile_header=0x7f0a0056;
-    public static final int window_flag=0x7f0a0057;
-    public static final int window_users=0x7f0a0058;
+    public static final int widget_layout=0x7f0a0057;
+    public static final int widget_layout_sign_out=0x7f0a0058;
+    public static final int window_flag=0x7f0a0059;
+    public static final int window_users=0x7f0a005a;
   }
   public static final class menu {
     public static final int menu_create_new_event=0x7f0b0000;
@@ -16226,5 +16234,8 @@ public final class R {
      * @attr name android:inflatedId
      */
     public static final int ViewStubCompat_android_inflatedId=2;
+  }
+  public static final class xml {
+    public static final int widget_info=0x7f100000;
   }
 }

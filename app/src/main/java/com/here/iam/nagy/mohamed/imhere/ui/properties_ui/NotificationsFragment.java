@@ -62,7 +62,7 @@ public class NotificationsFragment extends Fragment
 
         // get notifications
         userDataFirebaseNotifications
-                = new UserDataFirebaseNotifications(USER_LINK_FIREBASE,this);
+                = new UserDataFirebaseNotifications(USER_LINK_FIREBASE,this, getContext());
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

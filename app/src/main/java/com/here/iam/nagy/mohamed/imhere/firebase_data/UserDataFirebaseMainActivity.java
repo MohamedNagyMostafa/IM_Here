@@ -1,5 +1,6 @@
 package com.here.iam.nagy.mohamed.imhere.firebase_data;
 
+import android.content.Context;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -9,6 +10,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 import com.here.iam.nagy.mohamed.imhere.helper_classes.Constants;
 import com.here.iam.nagy.mohamed.imhere.helper_classes.FirebaseHelper;
+import com.here.iam.nagy.mohamed.imhere.widget.WidgetUtils;
 
 /**
  * Created by mohamednagy on 1/17/2017.
@@ -58,7 +60,7 @@ public class UserDataFirebaseMainActivity {
     }
 
 
-    public static void newNotificationsNumberIncrement(){
+    public static void newNotificationsNumberIncrement(final Context context){
         FirebaseHelper.getUserNewNotificationsNumber(USER_LINK_FIREBASE)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -70,9 +72,13 @@ public class UserDataFirebaseMainActivity {
                             newNotifications++;
                             FirebaseHelper.getUserNewNotificationsNumber(USER_LINK_FIREBASE)
                                     .setValue(newNotifications);
+                            WidgetUtils.WidgetBroadcast.sendBroadcastToWidget(newNotifications, context);
+
                         }else{
                             FirebaseHelper.getUserNewNotificationsNumber(USER_LINK_FIREBASE)
                                     .setValue(1);
+                            WidgetUtils.WidgetBroadcast.sendBroadcastToWidget(1, context);
+
                         }
                     }
 
@@ -83,7 +89,7 @@ public class UserDataFirebaseMainActivity {
                 });
     }
 
-    public static void newNotificationsNumberIncrement(final String userLinkFirebase){
+    public static void newNotificationsNumberIncrement(final String userLinkFirebase, final Context context){
         FirebaseHelper.getUserNewNotificationsNumber(userLinkFirebase)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -93,9 +99,13 @@ public class UserDataFirebaseMainActivity {
                             newNotifications++;
                             FirebaseHelper.getUserNewNotificationsNumber(userLinkFirebase)
                                     .setValue(newNotifications);
+                            WidgetUtils.WidgetBroadcast.sendBroadcastToWidget(newNotifications, context);
+
                         }else{
                             FirebaseHelper.getUserNewNotificationsNumber(userLinkFirebase)
                                     .setValue(1);
+                            WidgetUtils.WidgetBroadcast.sendBroadcastToWidget(1, context);
+
                         }
                     }
 
@@ -106,7 +116,7 @@ public class UserDataFirebaseMainActivity {
                 });
     }
 
-    public static void newNotificationsNumberDecrement(final String userLinkFirebase){
+    public static void newNotificationsNumberDecrement(final String userLinkFirebase, final Context context){
         FirebaseHelper.getUserNewNotificationsNumber(userLinkFirebase)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -116,9 +126,12 @@ public class UserDataFirebaseMainActivity {
                             newNotifications--;
                             FirebaseHelper.getUserNewNotificationsNumber(userLinkFirebase)
                                     .setValue(newNotifications);
+                            WidgetUtils.WidgetBroadcast.sendBroadcastToWidget(newNotifications, context);
                         }else{
                             FirebaseHelper.getUserNewNotificationsNumber(userLinkFirebase)
                                     .setValue(0);
+                            WidgetUtils.WidgetBroadcast.sendBroadcastToWidget(0, context);
+
                         }
                     }
 
@@ -129,9 +142,11 @@ public class UserDataFirebaseMainActivity {
                 });
     }
 
-    public static void newNotificationsNumberToZero(){
+    public static void newNotificationsNumberToZero(Context context){
         FirebaseHelper.getUserNewNotificationsNumber(USER_LINK_FIREBASE)
                 .setValue(0);
+
+        WidgetUtils.WidgetBroadcast.sendBroadcastToWidget(0, context);
     }
 
     public static void setUserModeOnline(){

@@ -1,4 +1,4 @@
-package com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag;
+package com.here.iam.nagy.mohamed.imhere.ui.properties_ui.flag;
 
 import android.content.Intent;
 import android.net.Uri;

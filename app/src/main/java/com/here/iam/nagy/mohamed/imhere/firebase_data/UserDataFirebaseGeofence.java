@@ -1,6 +1,8 @@
 package com.here.iam.nagy.mohamed.imhere.firebase_data;
 
+import android.content.Context;
 import android.location.Location;
+import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.google.firebase.database.ChildEventListener;
@@ -30,10 +32,13 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
     private ChildEventListener detectionGeofenceListener;
     private ValueEventListener userLocationGeofenceListener;
     private ValueEventListener settingsChangedListener;
+    private Context context;
 
 
-    public UserDataFirebaseGeofence(String userLinkFirebase) {
+    public UserDataFirebaseGeofence(String userLinkFirebase, Context context) {
+        
         super(userLinkFirebase);
+        this.context = context;
     }
 
     /**
@@ -82,7 +87,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
         FirebaseHelper.getUserDetection(USER_LINK_FIREBASE)
                 .addChildEventListener(detectionGeofenceListener = new ChildEventListener() {
                     @Override
-                    public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                    public void onChildAdded(@NonNull DataSnapshot dataSnapshot, String s) {
                         Detection detection = dataSnapshot.getValue(Detection.class);
                         FirebaseHelper.getUserDetectionActiveGeofence(USER_LINK_FIREBASE)
                                 .child(dataSnapshot.getKey())
@@ -90,7 +95,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                     }
 
                     @Override
-                    public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                    public void onChildChanged(@NonNull DataSnapshot dataSnapshot, String s) {
                         Log.e("kkkkkkkkkkkkkkkk","kkkkkkkkkkkkkk");
                         Detection detection = dataSnapshot.getValue(Detection.class);
                         HashMap<String, Object> hashMap = new HashMap<>();
@@ -101,19 +106,19 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                     }
 
                     @Override
-                    public void onChildRemoved(DataSnapshot dataSnapshot) {
+                    public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
                         FirebaseHelper.getUserDetectionActiveGeofence(USER_LINK_FIREBASE)
                                 .child(dataSnapshot.getKey())
                                 .removeValue();
                     }
 
                     @Override
-                    public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                    public void onChildMoved(@NonNull DataSnapshot dataSnapshot, String s) {
 
                     }
 
                     @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });
@@ -123,7 +128,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
         FirebaseHelper.getUserFlag(USER_LINK_FIREBASE)
                 .addChildEventListener(userFlagGeofenceListener = new ChildEventListener() {
                     @Override
-                    public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                    public void onChildAdded(@NonNull DataSnapshot dataSnapshot, String s) {
                         HashMap<String,Object> hashMap = new HashMap<>();
                         FlagsMarkers flagsMarkers =
                                 dataSnapshot.getValue(FlagsMarkers.class);
@@ -133,7 +138,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                                 .setValue(hashMap);
                     }
                     @Override
-                    public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                    public void onChildChanged(@NonNull DataSnapshot dataSnapshot, String s) {
                         HashMap<String,Object> hashMap = new HashMap<String, Object>();
 
                         hashMap.put(dataSnapshot.getKey(),dataSnapshot.getValue(FlagsMarkers.class));
@@ -143,18 +148,18 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                     }
 
                     @Override
-                    public void onChildRemoved(DataSnapshot dataSnapshot) {
+                    public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
                         FirebaseHelper.getUserGeofenceUserFlagsActiveList(USER_LINK_FIREBASE)
                                 .child(dataSnapshot.getKey()).removeValue();
                     }
 
                     @Override
-                    public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                    public void onChildMoved(@NonNull DataSnapshot dataSnapshot, String s) {
 
                     }
 
                     @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });
@@ -175,7 +180,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                         FirebaseHelper.getUserLocation(USER_LINK_FIREBASE)
                                 .addListenerForSingleValueEvent(new ValueEventListener() {
                                     @Override
-                                    public void onDataChange(DataSnapshot dataSnapshot) {
+                                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                                         CurrentLocation currentUserLocation =
                                                 dataSnapshot.getValue(CurrentLocation.class);
@@ -195,14 +200,14 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                                     }
 
                                     @Override
-                                    public void onCancelled(DatabaseError databaseError) {
+                                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                                     }
                                 });
                     }
 
                     @Override
-                    public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                    public void onChildChanged(@NonNull DataSnapshot dataSnapshot, String s) {
                         HashMap<String,Object> hashMap = new HashMap<String, Object>();
 
                         hashMap.put(dataSnapshot.getKey(),dataSnapshot.getValue(FlagsMarkers.class));
@@ -211,19 +216,19 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                     }
 
                     @Override
-                    public void onChildRemoved(DataSnapshot dataSnapshot) {
+                    public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
                         FirebaseHelper.getUserGeofenceFriendsFlagsActiveList(
                                 USER_LINK_FIREBASE).child(dataSnapshot.getKey())
                                 .removeValue();
                     }
 
                     @Override
-                    public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                    public void onChildMoved(@NonNull DataSnapshot dataSnapshot, String s) {
 
                     }
 
                     @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
                     }
                 });
     }
@@ -246,7 +251,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                         FirebaseHelper.getUserLocation(USER_LINK_FIREBASE)
                                 .addListenerForSingleValueEvent(new ValueEventListener() {
                                     @Override
-                                    public void onDataChange(DataSnapshot dataSnapshot) {
+                                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                                         CurrentLocation currentUserLocation =
                                                 dataSnapshot.getValue(CurrentLocation.class);
@@ -265,7 +270,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                                     }
 
                                     @Override
-                                    public void onCancelled(DatabaseError databaseError) {
+                                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                                     }
                                 });
@@ -273,7 +278,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                     }
 
                     @Override
-                    public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                    public void onChildChanged(@NonNull DataSnapshot dataSnapshot, String s) {
 
                         HashMap<String,Object> hashMap = new HashMap<String, Object>();
                         Log.e("caaled","changed");
@@ -284,19 +289,19 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                     }
 
                     @Override
-                    public void onChildRemoved(DataSnapshot dataSnapshot) {
+                    public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
                         FirebaseHelper.getUserGeofencePublicFlagsActiveList(
                                 USER_LINK_FIREBASE)
                                 .child(dataSnapshot.getKey()).removeValue();
                     }
 
                     @Override
-                    public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                    public void onChildMoved(@NonNull DataSnapshot dataSnapshot, String s) {
 
                     }
 
                     @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });
@@ -306,7 +311,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
         FirebaseHelper.getUserLocation(USER_LINK_FIREBASE)
                 .addValueEventListener(userLocationGeofenceListener = new ValueEventListener() {
                     @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         CurrentLocation currentUserLocation =
                                 dataSnapshot.getValue(CurrentLocation.class);
                         // get user location.
@@ -322,7 +327,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                     }
 
                     @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });
@@ -333,7 +338,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
         FirebaseHelper.getUserDetectionActiveGeofence(USER_LINK_FIREBASE)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         Log.e("vvvvvvvvvvvvvvvvvvvv2","vvvvvvvvvvvvv");
 
                         for(final DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
@@ -342,7 +347,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                             FirebaseHelper.getUserAccountSettings(dataSnapshot1.getKey())
                                     .addListenerForSingleValueEvent(new ValueEventListener() {
                                         @Override
-                                        public void onDataChange(DataSnapshot dataSnapshot) {
+                                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                             Log.e("vvvvvvvvvvvvvvvvvvvv3","vvvvvvvvvvvvv");
 
                                             AccountSettings accountSettings =
@@ -389,7 +394,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                                                     FirebaseHelper.getUserNotifications(USER_LINK_FIREBASE)
                                                             .push().setValue(notification);
                                                     UserDataFirebaseMainActivity
-                                                            .newNotificationsNumberIncrement(USER_LINK_FIREBASE);
+                                                            .newNotificationsNumberIncrement(USER_LINK_FIREBASE, context);
 
                                                     DETECTION_USER.setDetected(true);
 
@@ -410,7 +415,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                                         }
 
                                         @Override
-                                        public void onCancelled(DatabaseError databaseError) {
+                                        public void onCancelled(@NonNull DatabaseError databaseError) {
 
                                         }
                                     });
@@ -418,7 +423,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                     }
 
                     @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });
@@ -429,7 +434,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
         FirebaseHelper.getUserAccountSettings(USER_LINK_FIREBASE)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                         AccountSettings accountSettings =
                                 dataSnapshot.getValue(AccountSettings.class);
@@ -448,7 +453,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                     }
 
                     @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });
@@ -461,7 +466,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
         FirebaseHelper.getUserAccountSettings(USER_LINK_FIREBASE)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                         AccountSettings accountSettings =
                                 dataSnapshot.getValue(AccountSettings.class);
@@ -481,7 +486,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                     }
 
                     @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });
@@ -492,7 +497,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
         FirebaseHelper.getUserGeofenceUserFlagsActiveList(USER_LINK_FIREBASE)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         // get user flags
                         for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
                             /// visited no handle with flag owner.
@@ -512,7 +517,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                     }
 
                     @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });
@@ -580,7 +585,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                 USER_LINK_FIREBASE)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         // get friends flags
                         for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
                             //TODO .. why this check... !!
@@ -642,7 +647,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                     }
 
                     @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });
@@ -717,7 +722,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
         FirebaseHelper.getUserGeofencePublicFlagsActiveList(USER_LINK_FIREBASE)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         // get public flags
                         Log.e("public flag","after geofencelist");
                         for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
@@ -787,7 +792,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                     }
 
                     @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });
@@ -806,14 +811,14 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
         FirebaseHelper.getUserAccountSettings(USER_LINK_FIREBASE)
                 .addValueEventListener(settingsChangedListener = new ValueEventListener() {
                     @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         final AccountSettings accountSettings =
                                 dataSnapshot.getValue(AccountSettings.class);
 
                         FirebaseHelper.getUserLocation(USER_LINK_FIREBASE)
                                 .addListenerForSingleValueEvent(new ValueEventListener() {
                                     @Override
-                                    public void onDataChange(DataSnapshot dataSnapshot) {
+                                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                         CurrentLocation currentUserLocation =
                                                 dataSnapshot.getValue(CurrentLocation.class);
                                         // get user location.
@@ -836,14 +841,14 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                                         }
                                     }
                                     @Override
-                                    public void onCancelled(DatabaseError databaseError) {
+                                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                                     }
                                 });
                     }
 
                     @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });
@@ -854,7 +859,7 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
         FirebaseHelper.getUserNotifications(USER_LINK_FIREBASE)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         boolean isExist = false;
 
                         for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
@@ -872,13 +877,13 @@ public class UserDataFirebaseGeofence extends UserDataFirebase {
                             FirebaseHelper.getUserNotifications(USER_LINK_FIREBASE)
                                     .child(FLAG_KEY).setValue(notification);
                             // increment new notifications text
-                            UserDataFirebaseMainActivity.newNotificationsNumberIncrement();
+                            UserDataFirebaseMainActivity.newNotificationsNumberIncrement(context);
                             // TODO ... send notification device.
 
                     }
 
                     @Override
-                    public void onCancelled(DatabaseError databaseError) {
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });

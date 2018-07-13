@@ -6,7 +6,6 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.location.Location;
 import android.net.Uri;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -25,7 +24,7 @@ import com.here.iam.nagy.mohamed.imhere.helper_classes.Constants;
 import com.here.iam.nagy.mohamed.imhere.helper_classes.FirebaseHelper;
 import com.here.iam.nagy.mohamed.imhere.helper_classes.Utility;
 import com.here.iam.nagy.mohamed.imhere.ui.ViewAppHolder;
-import com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag.CreateNewFlag;
+import com.here.iam.nagy.mohamed.imhere.ui.properties_ui.flag.CreateNewFlag;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.AccountSettings;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.CurrentLocation;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.Detection;
@@ -48,6 +47,8 @@ public class UserDataFirebase {
     private ValueEventListener userLocationSettingsListeners;
     private UserProfileUi userProfileUi;
     private LocationRequest locationRequest;
+    private Context context;
+
     private ValueEventListener userDetectionLocationListener =
             new ValueEventListener() {
                 @Override
@@ -92,9 +93,10 @@ public class UserDataFirebase {
             };
 
 
-    public UserDataFirebase(String userLinkFirebase, UserProfileUi userProfileUi){
+    public UserDataFirebase(String userLinkFirebase, UserProfileUi userProfileUi, Context context){
         this.USER_LINK_FIREBASE = userLinkFirebase;
         this.userProfileUi = userProfileUi;
+        this.context = context;
     }
 
     public void setUserIdentifiers(){
@@ -217,7 +219,7 @@ public class UserDataFirebase {
         sendFriendRequestNotification(USER_EMAIL);
         // increment notifications number.
         UserDataFirebaseMainActivity.newNotificationsNumberIncrement(
-                Utility.encodeUserEmail(USER_EMAIL));
+                Utility.encodeUserEmail(USER_EMAIL), context);
     }
 
     /**
@@ -241,7 +243,7 @@ public class UserDataFirebase {
         sendFriendAcceptNotification(USER_EMAIL);
         // increment notifications number.
         UserDataFirebaseMainActivity.newNotificationsNumberIncrement(
-                Utility.encodeUserEmail(USER_EMAIL));
+                Utility.encodeUserEmail(USER_EMAIL), context);
         // Add user options.
         setUserDetectionAToB(USER_LINK_FIREBASE, Utility.encodeUserEmail(USER_EMAIL));
         setUserDetectionAToB(Utility.encodeUserEmail(USER_EMAIL), USER_LINK_FIREBASE);
@@ -332,7 +334,7 @@ public class UserDataFirebase {
         removeFriendSendRequestAFromB(USER_EMAIL,Utility.decodeUserEmail(USER_LINK_FIREBASE));
 
         removeFriendRequestBNotificationFromA(USER_EMAIL, Utility.decodeUserEmail(USER_LINK_FIREBASE));
-        UserDataFirebaseMainActivity.newNotificationsNumberDecrement(Utility.encodeUserEmail(USER_EMAIL));
+        UserDataFirebaseMainActivity.newNotificationsNumberDecrement(Utility.encodeUserEmail(USER_EMAIL), context);
 
     }
 
@@ -823,7 +825,7 @@ public class UserDataFirebase {
                                                             );
                                                             // increment notifications number.
                                                             UserDataFirebaseMainActivity.newNotificationsNumberIncrement(
-                                                                    Utility.encodeUserEmail(dataSnapshot1.getValue(String.class)));
+                                                                    Utility.encodeUserEmail(dataSnapshot1.getValue(String.class)), context);
                                                         }
                                                     }
 

@@ -7,7 +7,7 @@
     android:id="@+id/create_flag_scroll_bar"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    tools:context="com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag.CreateNewFlag">
+    tools:context="com.here.iam.nagy.mohamed.imhere.ui.properties_ui.flag.CreateNewFlag">
 
     <LinearLayout
         android:id="@+id/flag_create_content"

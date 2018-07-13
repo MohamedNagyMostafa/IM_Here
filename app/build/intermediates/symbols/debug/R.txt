@@ -950,6 +950,7 @@ int drawable tooltip_frame_light 0x7f0700b2
 int drawable user_flag 0x7f0700b3
 int drawable user_marker 0x7f0700b4
 int drawable user_profile_header_background 0x7f0700b5
+int drawable widget_image_background 0x7f0700b6
 int id ALT 0x7f080000
 int id CTRL 0x7f080001
 int id FUNCTION 0x7f080002
@@ -1250,9 +1251,14 @@ int id view_pager 0x7f080128
 int id visible 0x7f080129
 int id voteImageView 0x7f08012a
 int id wide 0x7f08012b
-int id withText 0x7f08012c
-int id wrap 0x7f08012d
-int id wrap_content 0x7f08012e
+int id widget_map_image_view 0x7f08012c
+int id widget_notification_image_view 0x7f08012d
+int id widget_notification_text_view 0x7f08012e
+int id widget_profile_image_view 0x7f08012f
+int id widget_search_image_view 0x7f080130
+int id withText 0x7f080131
+int id wrap 0x7f080132
+int id wrap_content 0x7f080133
 int integer abc_config_activityDefaultDur 0x7f090000
 int integer abc_config_activityShortDur 0x7f090001
 int integer app_bar_elevation_anim_duration 0x7f090002
@@ -1351,8 +1357,10 @@ int layout user_profile_body_bottom 0x7f0a0053
 int layout user_profile_body_middle 0x7f0a0054
 int layout user_profile_body_top 0x7f0a0055
 int layout user_profile_header 0x7f0a0056
-int layout window_flag 0x7f0a0057
-int layout window_users 0x7f0a0058
+int layout widget_layout 0x7f0a0057
+int layout widget_layout_sign_out 0x7f0a0058
+int layout window_flag 0x7f0a0059
+int layout window_users 0x7f0a005a
 int menu menu_create_new_event 0x7f0b0000
 int menu menu_create_new_flag 0x7f0b0001
 int menu menu_events_list 0x7f0b0002
@@ -2629,3 +2637,4 @@ int[] styleable ViewStubCompat { 0x010100d0, 0x010100f2, 0x010100f3 }
 int styleable ViewStubCompat_android_id 0
 int styleable ViewStubCompat_android_layout 1
 int styleable ViewStubCompat_android_inflatedId 2
+int xml widget_info 0x7f100000

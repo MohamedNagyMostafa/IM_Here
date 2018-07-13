@@ -1,4 +1,4 @@
-package com.here.iam.nagy.mohamed.imhere.ui.properties_ui.Flag;
+package com.here.iam.nagy.mohamed.imhere.ui.properties_ui.flag;
 
 import android.graphics.Color;
 import android.os.Bundle;
