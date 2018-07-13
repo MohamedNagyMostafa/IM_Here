@@ -143,7 +143,7 @@ public class ViewAppHolder {
         public final TextView FRIEND_NAME_TEXT_VIEW;
         public final TextView FRIEND_STATE_TEXT_VIEW;
 
-        public final Button REMOVE_FRIEND_TEXT_VIEW;
+        public final TextView REMOVE_FRIEND_TEXT_VIEW;
 
         public FriendsListViewHolder(View friendsListView){
 

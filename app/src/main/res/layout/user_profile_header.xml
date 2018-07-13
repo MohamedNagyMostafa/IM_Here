@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:radius="40dp"
-        app:strokeColor="@color/colorPrimary"
+        app:strokeColor="@color/colorAccent"
         app:strokeWidth="2dp" />
 
 

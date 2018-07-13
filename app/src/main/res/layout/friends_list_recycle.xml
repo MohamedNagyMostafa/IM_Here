@@ -1,78 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/white">
 
-<ImageView
+    <com.here.iam.nagy.mohamed.imhere.ui.cutom_view.CircleImage
         android:id="@+id/friends_list_user_image"
-        android:layout_width="85dp"
-        android:src="@drawable/me"
-        android:layout_height="85dp"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:radius="30dp"
+        tools:src="@drawable/me" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:padding="4dp">
+    <TextView
+        android:id="@+id/friends_list_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/friends_list_user_image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Mohamed Nagy" />
 
-        <TextView
-            android:id="@+id/friends_list_user_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/dark_green"
-            android:textSize="16sp"
-            android:fontFamily="sans-serif-condensed"
-            android:text="Mohamed Nagy"
-            android:layout_margin="4dp"/>
+    <TextView
+        android:id="@+id/user_state_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/friends_list_user_image"
+        app:layout_constraintTop_toBottomOf="@+id/friends_list_user_name"
+        tools:text="Online" />
 
-        <RelativeLayout
-            android:layout_alignParentBottom="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp">
 
-            <TextView
-                android:id="@+id/user_state_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="online"
-                android:textSize="14sp"
-                android:textStyle="normal|bold"
-                android:fontFamily="sans-serif-condensed"
-                android:layout_centerVertical="true"/>
+    <ImageView
+        android:id="@+id/friends_list_friend_location_image_view"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="6dp"
+        android:src="@drawable/ic_location_on_black_24dp"
+        android:tint="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toTopOf="@+id/friends_list_remove_friend_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_alignParentEnd="true">
+    <TextView
+        android:id="@+id/friends_list_remove_friend_button"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friends_list_user_image"
+        tools:text="@string/remove_friend"
+        tools:visibility="visible" />
 
-                <ImageView
-                    android:id="@+id/friends_list_friend_location_image_view"
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
-                    android:padding="4dp"
-                    android:src="@drawable/ic_location_on_black_24dp"
-                    android:tint="@android:color/holo_red_dark"
-                    android:layout_gravity="center_vertical"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/friends_list_remove_friend_button"
+        app:layout_constraintStart_toStartOf="@+id/friends_list_remove_friend_button" />
 
-                <Button
-                    android:id="@+id/friends_list_remove_friend_button"
-                    style="@style/Base.Widget.AppCompat.Button.Borderless"
-                    android:textColor="#009688"
-                    android:padding="4dp"
-                    android:layout_width="wrap_content"
-                    android:layout_margin="4dp"
-                    android:textSize="12sp"
-                    android:layout_height="22dp"
-                    android:text="@string/remove_friend"/>
-
-            </LinearLayout>
-
-        </RelativeLayout>
-
-    </RelativeLayout>
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
