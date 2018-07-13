@@ -952,6 +952,7 @@ public class UserDataFirebase {
         userProfileViewHolder.RECEIVE_FRIEND_FLAGS.setEnabled(state);
         userProfileViewHolder.RECEIVE_PUBLIC_FLAGS.setEnabled(state);
         userProfileViewHolder.CREATE_FLAG_LAYOUT.setEnabled(state);
+        userProfileViewHolder.DETECTION_LAYOUT.setEnabled(state);
 
 
         if(state){
@@ -960,6 +961,7 @@ public class UserDataFirebase {
             userProfileViewHolder.RECEIVE_FRIEND_FLAGS.setAlpha(1f);
             userProfileViewHolder.RECEIVE_PUBLIC_FLAGS.setAlpha(1f);
             userProfileViewHolder.CREATE_FLAG_LAYOUT.setAlpha(1f);
+            userProfileViewHolder.DETECTION_LAYOUT.setAlpha(1f);
 
 
 
@@ -969,6 +971,8 @@ public class UserDataFirebase {
             userProfileViewHolder.RECEIVE_FRIEND_FLAGS.setAlpha(0.5f);
             userProfileViewHolder.RECEIVE_PUBLIC_FLAGS.setAlpha(0.5f);
             userProfileViewHolder.CREATE_FLAG_LAYOUT.setAlpha(0.5f);
+            userProfileViewHolder.DETECTION_LAYOUT.setAlpha(0.5f);
+
 
 
         }
@@ -990,13 +994,14 @@ public class UserDataFirebase {
         userProfileViewHolder.SIGN_OUT_ICON.setImageTintList(color);
         userProfileViewHolder.CREATE_FLAG_ICON.setImageTintList(color);
         userProfileViewHolder.HELP_ME_ICON.setImageTintList(color);
-
+        userProfileViewHolder.DETECTION_ICON.setImageTintList(color);
 
     }
 
     private void setLinesColor(ViewAppHolder.UserProfileViewHolder userProfileViewHolder,int color){
         userProfileViewHolder.LINE_ONE.setBackgroundColor(color);
         userProfileViewHolder.LINE_TWO.setBackgroundColor(color);
+        userProfileViewHolder.LINE_FOUR.setBackgroundColor(color);
         userProfileViewHolder.LINE_FIVE.setBackgroundColor(color);
         userProfileViewHolder.LINE_SIX.setBackgroundColor(color);
         userProfileViewHolder.LINE_THREE.setBackgroundColor(color);
