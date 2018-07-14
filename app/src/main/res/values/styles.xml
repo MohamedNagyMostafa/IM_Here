@@ -48,4 +48,20 @@
         <item name="android:background">@color/lines_color_safe</item>
     </style>
 
+    <style name="app_buttons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="app_buttons_line">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:background">@color/colorAccent</item>
+
+    </style>
+
 </resources>

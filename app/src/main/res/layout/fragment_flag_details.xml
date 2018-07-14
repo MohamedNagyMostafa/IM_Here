@@ -1,158 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<android.support.v4.widget.SwipeRefreshLayout tools:context="com.here.iam.nagy.mohamed.imhere.ui.properties_ui.flag.FlagDetailsActivityFragment"
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/flag_details_swipe_refresh"
-    tools:showIn="@layout/activity_flag_details"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:background="@android:color/white"
+    tools:context="com.here.iam.nagy.mohamed.imhere.ui.properties_ui.flag.FlagDetailsActivityFragment">
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_gravity="center_horizontal"
-                android:id="@+id/flag_details_image_view"
-                android:src="@drawable/empty_flag_image"
-                android:alpha="1"/>
-
-            <TextView
-                android:id="@+id/flag_details_details_text_view"
-                android:alpha="1"
-                android:layout_gravity="center_horizontal"
-                android:text="flag name"
-                android:paddingTop="10dp"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:fontFamily="sans-serif-condensed"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <TextView
-                android:id="@+id/flag_details_title_text_view"
+            <android.support.v4.widget.SwipeRefreshLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:alpha="0.9"
-                android:textSize="14sp"
-                android:padding="28dp"
-                android:textAlignment="center"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="this is a flag description wich include a lot of detail about flag" />
+                android:layout_height="match_parent"
+                android:id="@+id/flag_details_swipe_refresh">
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:id="@+id/voteImageView"
-                    android:tint="@color/dark_green"
-                    android:src="@drawable/ic_face_black_36dp" />
-
-                <TextView
-                    android:id="@+id/flag_details_user_created_name_text_view"
+                <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:paddingStart="10dp"
-                    android:layout_gravity="center_vertical"
-                    android:text="Ahmed Magdy"
-                    android:alpha="0.9"/>
+                    android:layout_height="match_parent">
+
+                    <com.here.iam.nagy.mohamed.imhere.ui.cutom_view.CircleImage
+                        android:id="@+id/flag_details_image_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/fit_margin"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:radius="40dp"
+                        app:strokeColor="@color/colorAccent"
+                        app:strokeWidth="2dp"
+                        tools:src="@drawable/empty_flag_image" />
+
+                    <TextView
+                        android:id="@+id/flag_details_details_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginEnd="@dimen/fit_margin"
+                        android:layout_marginStart="@dimen/fit_margin"
+                        android:layout_marginTop="24dp"
+                        android:alpha="1"
+                        android:fontFamily="sans-serif-condensed"
+                        android:paddingTop="10dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/flag_details_image_view" />
+
+                    <TextView
+                        android:id="@+id/flag_details_title_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/flag_details_details_text_view" />
 
 
-            </LinearLayout>
+                    <ImageView
+                        android:id="@+id/voteImageView"
+                        android:layout_width="@dimen/user_profile_action_box_line_start_margin"
+                        android:layout_height="@dimen/user_profile_action_box_line_start_margin"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/ic_face_black_36dp"
+                        android:tint="@color/dark_green"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/flag_details_title_text_view"
+                        android:contentDescription="@string/rate_image" />
+
+                    <TextView
+                        android:id="@+id/flag_details_user_created_name_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fit_margin"
+                        android:textSize="14sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+                        app:layout_constraintStart_toEndOf="@+id/textView" />
 
 
-            <TextView
-                android:text="Created By"
-                android:textSize="12sp"
-                android:alpha="0.7"
-                android:paddingStart="28dp"
-                android:gravity="center_vertical"
-                android:textColor="@color/dark_green"
-                android:fontFamily="sans-serif-condensed"
-                android:layout_width="match_parent"
-                android:layout_height="32dp"/>
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fit_margin"
+                        android:layout_marginTop="@dimen/fit_margin"
+                        android:gravity="center_vertical"
+                        android:text="@string/created_by"
+                        android:textColor="@color/dark_green"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/voteImageView"
+                        app:layout_constraintStart_toEndOf="@+id/voteImageView"
+                        app:layout_constraintTop_toTopOf="@+id/voteImageView"
+                        app:layout_constraintVertical_bias="0.32" />
 
 
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:alpha="0.2"
-                android:background="@color/lines_color_safe" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="10dp">
-
-                <ImageView
-                    android:id="@+id/ratingImageView"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:tint="@color/dark_green"
-                    android:src="@drawable/ic_favorite_black_36dp" />
-
-                <TextView
-                    android:id="@+id/flag_details_loves_number_text_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:paddingStart="10dp"
-                    android:layout_gravity="center_vertical"
-                    android:text="15"
-                    android:alpha="0.9"/>
-
-            </LinearLayout>
-
-            <TextView
-                android:text="Likes Count"
-                android:textSize="12sp"
-                android:alpha="0.7"
-                android:paddingStart="28dp"
-                android:gravity="center_vertical"
-                android:textColor="@color/dark_green"
-                android:fontFamily="sans-serif-condensed"
-                android:layout_width="match_parent"
-                android:layout_height="32dp"/>
-
-        </LinearLayout>
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/user_profile_action_box_line_start_margin"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:alpha="0.2"
+                        android:background="@color/lines_color_safe"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/voteImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/voteImageView" />
 
 
+                    <ImageView
+                        android:id="@+id/ratingImageView"
+                        android:layout_width="@dimen/user_profile_action_box_line_start_margin"
+                        android:layout_height="@dimen/user_profile_action_box_line_start_margin"
+                        android:layout_marginTop="@dimen/fit_margin"
+                        android:src="@drawable/ic_favorite_black_36dp"
+                        android:tint="@color/dark_green"
+                        app:layout_constraintStart_toStartOf="@+id/voteImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/view2"
+                        android:contentDescription="@string/rate_image" />
 
-</ScrollView>
+                    <TextView
+                        android:id="@+id/flag_details_loves_number_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/fit_margin"
+                        android:textSize="13sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+                        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fit_margin"
+                        android:layout_marginTop="@dimen/fit_margin"
+                        android:gravity="center_vertical"
+                        android:text="@string/like_count"
+                        android:textColor="@color/dark_green"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/ratingImageView"
+                        app:layout_constraintStart_toEndOf="@+id/ratingImageView"
+                        app:layout_constraintTop_toTopOf="@+id/ratingImageView" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
     <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:tint="@color/active_tab"
-        app:backgroundTint="@android:color/white"
-        android:layout_height="wrap_content"
-        app:fabSize="normal"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:id="@+id/love_flag_btn"/>
+            android:layout_width="wrap_content"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorAccent"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            app:elevation="@dimen/fit_margin"
+            app:useCompatPadding="true"
+            app:pressedTranslationZ="6dp"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_gravity="bottom|end"
+            android:id="@+id/love_flag_btn"/>
 
-</RelativeLayout>
-</android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

@@ -1,4 +1,5 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,19 +7,43 @@
     android:background="@android:color/white"
     tools:context="com.here.iam.nagy.mohamed.imhere.ui.properties_ui.SearchFragment">
 
-    <EditText
-        android:id="@+id/search_edit_text"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="46dp"
-        android:backgroundTint="@color/dark_green"
-        style="@style/Widget.AppCompat.SearchView"
-        android:textSize="12sp"
-        android:fontFamily="sans-serif-condensed"
-        android:hint="@string/search"/>
+        android:layout_height="80dp">
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fit_margin"
+            android:layout_marginStart="@dimen/fit_margin"
+            android:backgroundTint="@color/colorAccent"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="@string/search"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            android:inputType="textEmailAddress" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="4dp"
+            android:src="@drawable/ic_search_black_36dp"
+            android:tint="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+    </android.support.constraint.ConstraintLayout>
 
     <ListView
-        android:layout_below="@id/search_edit_text"
         android:id="@+id/search_list_view"
+        android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
@@ -27,8 +52,9 @@
         android:id="@+id/search_empty_frame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:orientation="vertical">
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -36,14 +62,15 @@
             android:src="@drawable/ic_search_black_36dp"
             android:tint="@color/dark_green"
             android:padding="4dp"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/empty_image" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No search results found."
+            android:text="@string/empty_warning_search"
             android:padding="4dp"/>
 
     </LinearLayout>
 
-</RelativeLayout>
+</FrameLayout>

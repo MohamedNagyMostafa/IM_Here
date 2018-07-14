@@ -26,7 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -34,12 +35,13 @@
             android:src="@drawable/ic_people_black_36dp"
             android:tint="@color/dark_green"
             android:padding="4dp"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/empty_image" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="You don't have any friend yet."
+            android:text="@string/empty_warning_friends"
             android:padding="4dp"/>
 
     </LinearLayout>

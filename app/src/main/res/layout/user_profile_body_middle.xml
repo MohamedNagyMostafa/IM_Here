@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
+    android:layout_marginTop="@dimen/fit_margin"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -18,13 +19,14 @@
             android:layout_gravity="center"
             android:alpha="1"
             android:src="@drawable/ic_wifi_tethering_black_36dp"
-            android:tint="@color/safe_color" />
+            android:tint="@color/safe_color"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Detection"
+            android:text="@string/detection"
             android:textColor="@android:color/black" />
 
         <View
@@ -46,13 +48,14 @@
             android:layout_gravity="center"
             android:alpha="1"
             android:src="@drawable/ic_exit_to_app_black_36dp"
-            android:tint="@color/safe_color" />
+            android:tint="@color/safe_color"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Sign out"
+            android:text="@string/sign_out"
             android:textColor="@android:color/black" />
 
         <View

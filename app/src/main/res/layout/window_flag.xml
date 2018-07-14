@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
@@ -9,7 +10,7 @@
             android:layout_width="wrap_content"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
-            android:textColor="#1b5e20"
+            android:textColor="@color/dark_green"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"/>
 
@@ -31,30 +32,34 @@
             android:gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:baselineAligned="false">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_face_black_24dp"
                     android:tint="@color/lines_color_safe"
-                    android:layout_gravity="start"/>
+                    android:layout_gravity="start"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:textSize="12sp"
-                    android:textColor="#000000"
+                    android:textColor="@android:color/black"
                     android:textStyle="normal"
                     android:id="@+id/flag_window_created_name"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:gravity="center_vertical"
-                    android:paddingLeft="2dp"/>
+                    android:paddingStart="2dp"
+                    tools:ignore="RtlSymmetry" />
 
             </LinearLayout>
 
@@ -62,22 +67,25 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <TextView
                     android:id="@+id/flag_window_like_number"
                     android:layout_width="wrap_content"
-                    android:textColor="#000000"
+                    android:textColor="@android:color/black"
                     android:layout_height="fill_parent"
                     android:gravity="center_vertical"
-                    android:paddingStart="18dp"/>
+                    android:paddingStart="@dimen/over_fit_margin"
+                    tools:ignore="RtlSymmetry" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
                     android:tint="@color/lines_color_safe"
-                    android:src="@drawable/ic_favorite_black_24dp"/>
+                    android:src="@drawable/ic_favorite_black_24dp"
+                    tools:ignore="ContentDescription" />
 
             </LinearLayout>
 
@@ -91,7 +99,7 @@
             android:lines="2"
             android:textSize="12sp"
             android:scrollbars="horizontal"
-            android:text="*You can delete this flag\n by click on this window."/>
+            android:text="@string/flag_delete"/>
 
 
     </LinearLayout>

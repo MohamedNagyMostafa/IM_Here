@@ -8,28 +8,28 @@
         android:id="@+id/location_visible_friend_switch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="@dimen/over_margin"
         android:backgroundTint="@color/active_tab"
         android:text="@string/location_visible_friends"
-        android:textColor="#00796B" />
+        android:textColor="@color/dark_green" />
 
     <Switch
         android:id="@+id/show_public_flags_switch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/location_visible_friend_switch"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="@dimen/over_margin"
         android:text="@string/show_public_flags"
-        android:textColor="#00796B" />
+        android:textColor="@color/dark_green" />
 
     <Switch
         android:id="@+id/show_friend_flags_switch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/show_public_flags_switch"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="@dimen/over_margin"
         android:text="@string/show_friends_flags"
-        android:textColor="#00796B" />
+        android:textColor="@color/dark_green" />
 
 
     <View
@@ -37,11 +37,11 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/location_visible_friend_switch"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/over_margin"
+        android:layout_marginStart="@dimen/over_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:alpha="0"
-        android:background="#1DE9B6" />
+        android:background="@color/lines_color_safe" />
 
 
     <View
@@ -49,10 +49,10 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/show_public_flags_switch"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/over_margin"
+        android:layout_marginStart="@dimen/over_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:alpha="0"
-        android:background="#1DE9B6" />
+        android:background="@color/lines_color_safe" />
 
 </RelativeLayout>

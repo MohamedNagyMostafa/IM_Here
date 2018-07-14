@@ -1,64 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="82dp">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <ImageView
+
+    <com.here.iam.nagy.mohamed.imhere.ui.cutom_view.CircleImage
         android:id="@+id/search_image_view"
-        android:layout_width="62dp"
-        android:src="@drawable/me"
-        android:layout_height="62dp"
-        android:scaleType="centerCrop"/>
-
-    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_toRightOf="@id/search_image_view">
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:radius="@dimen/over_margin"
+        tools:src="@drawable/me" />
 
-        <TextView
-            android:id="@+id/search_first_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:gravity="center_vertical"
-            android:layout_marginLeft="8dp"/>
+    <TextView
+        android:id="@+id/search_first_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/fit_margin"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        android:textColor="@color/dark_green"
+        android:textSize="16sp"
+        android:textStyle="bold|normal"
+        app:layout_constraintStart_toEndOf="@+id/search_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="First Title" />
 
-        <TextView
-            android:id="@+id/search_second_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textSize="12sp"
-            android:layout_marginLeft="8dp"/>
+    <TextView
+        android:id="@+id/search_second_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fit_margin"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/search_first_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/search_first_text_view"
+        tools:text="First Second" />
 
-    </LinearLayout>
+    <TextView
+        android:id="@+id/notification_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fit_margin"
+        android:layout_marginTop="@dimen/fit_margin"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/search_first_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/search_accept_text_view"
+        tools:text="10, Wed 2017" />
 
-    <Button
+
+    <TextView
+        android:id="@+id/search_accept_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:padding="@dimen/fit_margin"
+        android:layout_margin="4dp"
+        android:layout_marginEnd="@dimen/fit_margin"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/search_ignore_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/search_second_text_view"
+        tools:text="Accept"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/view"
+        style="@style/app_buttons_line"
+        app:layout_constraintEnd_toEndOf="@+id/search_accept_text_view"
+        app:layout_constraintStart_toStartOf="@+id/search_accept_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/search_accept_text_view" />
+
+    <TextView
         android:id="@+id/search_ignore_text_view"
         android:layout_width="wrap_content"
-        android:layout_height="23dp"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_alignParentEnd="true"
-        android:textSize="10sp"
-        android:fontFamily="sans-serif-condensed"
-        android:textColor="#009688"
-        android:layout_alignParentBottom="true"
-        android:padding="4dp"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginEnd="@dimen/fit_margin"
+        android:padding="@dimen/fit_margin"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/search_accept_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Ignore"
+        tools:visibility="visible" />
 
-    <Button
-        android:id="@+id/search_accept_text_view"
-        android:layout_toStartOf="@id/search_ignore_text_view"
-        android:layout_alignParentBottom="true"
-        android:textColor="#009688"
-        android:fontFamily="sans-serif-condensed"
-        android:textSize="10sp"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="23dp"
-        android:padding="4dp" />
+    <View
+        style="@style/app_buttons_line"
+        app:layout_constraintEnd_toEndOf="@+id/search_ignore_text_view"
+        app:layout_constraintStart_toStartOf="@+id/search_ignore_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/search_ignore_text_view" />
 
 
-</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

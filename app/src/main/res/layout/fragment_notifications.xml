@@ -28,7 +28,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -36,12 +37,13 @@
             android:src="@drawable/ic_notifications_active_black_36dp"
             android:tint="@color/dark_green"
             android:padding="4dp"
+            android:contentDescription="@string/empty_image"
             android:layout_gravity="center_horizontal"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="You don't have any notifications yet."
+            android:text="@string/empty_warning_notifications"
             android:padding="4dp"/>
 
     </LinearLayout>

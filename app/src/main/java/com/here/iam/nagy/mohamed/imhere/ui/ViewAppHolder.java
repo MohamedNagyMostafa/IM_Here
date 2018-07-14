@@ -17,6 +17,8 @@ import android.widget.TextView;
 
 import com.here.iam.nagy.mohamed.imhere.R;
 
+import org.w3c.dom.Text;
+
 /**
  * Created by mohamednagy on 12/25/2016.
  */
@@ -223,8 +225,8 @@ public class ViewAppHolder {
         public final RadioButton FLAG_PUBLIC_RADIO_BUTTON;
         public final RadioButton FLAG_FRIENDS_RADIO_BUTTON;
 
-        public final Button FLAG_CREATE_BUTTON;
-        public final Button FLAG_CANCEL_BUTTON;
+        public final TextView FLAG_CREATE_BUTTON;
+        public final TextView FLAG_CANCEL_BUTTON;
 
         public final ScrollView FLAG_SCROLL_VIEW;
 

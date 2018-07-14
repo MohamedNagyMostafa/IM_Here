@@ -32,7 +32,8 @@
     <string name="make_me_invisible">Make Me Invisible</string>
     <string name="help_me">Help Me</string>
     <string name="events">Events</string>
-    <string name="create_new_event">Create New Event</string>
+    <string name="detection">Detection</string>
+    <string name="sign_out">Sign out</string>
     <string name="events_list">Open Events List</string>
     <string name="location_visible_friends">Make my location visible to friends</string>
     <string name="show_public_flags">Receive public flags </string>
@@ -60,6 +61,9 @@
     <string name="cancel_event">Cancel</string>
 
     <!-- FlagActivity strings -->
+    <string name="create_flag">Create New Flag</string>
+    <string name="flag_type">Flag Type</string>
+    <string name="flag_screen_note">"*Note: you can choose flag location using map."</string>
     <string name="flag_title">Flag Title</string>
     <string name="flag_description">Flag Details</string>
     <string name="flag_longitude">Lng</string>
@@ -68,12 +72,16 @@
     <string name="public_flag">Public</string>
     <string name="friends_flag">Friends</string>
 
+    <string name="like_count">Likes Count</string>
+    <string name="created_by">like_count</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="search">Search Using Email</string>
     <string name="add_friend">Add Friend</string>
     <string name="accept_friend">Accept</string>
     <string name="ignore_friend">Ignore</string>
     <string name="remove_friend_request">Remove Friend Request</string>
+
     <string name="title_activity_map_">Map_Activity</string>
     <string name="title_activity_event_create">EventCreate</string>
     <string name="title_activity_flag">FlagActivity</string>
@@ -81,7 +89,23 @@
     <string name="title_activity_create_new_flag">CreateNewFlag</string>
     <string name="title_activity_create_new_event">CreateNewEventActivity</string>
     <string name="title_activity_events_list">EventsListActivity</string>
-    <string name="online">ONLINE</string>
-    <string name="offline">OFFLINE</string>
+    <string name="friend_location_on_map">Show friend location on map</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
 
+    <!-- desc -->
+    <string name="create_flag_dec">flag image</string>
+    <string name="create_flag_select_image_dec">To select an image from internal device storage</string>
+    <string name="create_flag_moving_icon">To move the map to you current position</string>
+    <string name="create_flag_invisiable_image">To handle nested scroll</string>
+    <string name="rate_image">describe flag votes count</string>
+    <string name="empty_image">represent empty list screens</string>
+
+
+    <!-- warning -->
+    <string name="empty_warning_friends">You don\'t have any friend yet.</string>
+    <string name="empty_warning_notifications">You don\'t have any notifications yet.</string>
+    <string name="empty_warning_search">No search results found.</string>
+    <string name="flag_delete">*You can delete this flag\n by click on this window.</string>
+    <string name="widget_login">You need to Login to the app at first</string>
 </resources>

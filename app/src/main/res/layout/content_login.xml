@@ -71,7 +71,8 @@
             android:textColor="@color/dark_green"
             android:layout_marginTop="25dp"
             android:layout_gravity="center_horizontal"
-            android:clickable="true"/>
+            android:clickable="true"
+            android:focusable="true" />
 
     </LinearLayout>
 
