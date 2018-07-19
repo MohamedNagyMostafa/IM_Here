@@ -95,7 +95,7 @@ public class MapActivityFragment extends Fragment
                         userDataFirebaseMap.deleteUserFlag();
                 }else{
                     Toast.makeText(getContext(),
-                            "Check your network connection",
+                            getString(R.string.network_connection),
                             Toast.LENGTH_SHORT)
                             .show();
                 }
@@ -135,19 +135,19 @@ public class MapActivityFragment extends Fragment
 
                         case Constants.PUBLIC_FLAGS:
 
-                            infoWindowHolder.FLAG_WINDOW_TYPE.setText("Public Flag");
+                            infoWindowHolder.FLAG_WINDOW_TYPE.setText(getString(R.string.public_flag_map));
                             infoWindowHolder.FLAG_WINDOW_DELETE_TEXT_VIEW.setVisibility(View.GONE);
                             break;
 
                         case Constants.FRIENDS_FLAGS:
 
-                            infoWindowHolder.FLAG_WINDOW_TYPE.setText("Friend Flag");
+                            infoWindowHolder.FLAG_WINDOW_TYPE.setText(getString(R.string.friend_flag_map));
                             infoWindowHolder.FLAG_WINDOW_DELETE_TEXT_VIEW.setVisibility(View.GONE);
                             break;
 
                         case Constants.USER_FLAGS:
 
-                            infoWindowHolder.FLAG_WINDOW_TYPE.setText("Your Flag");
+                            infoWindowHolder.FLAG_WINDOW_TYPE.setText(getString(R.string.your_flag_map));
                             infoWindowHolder.FLAG_WINDOW_DELETE_TEXT_VIEW.setVisibility(View.VISIBLE);
                             break;
 
@@ -177,9 +177,9 @@ public class MapActivityFragment extends Fragment
                         case Constants.USERS:
                             if(Utility.encodeUserEmail(userAccount.getUserEmail())
                                     .equals(userDataFirebaseMap.getUserLinkFirebase())){
-                                usersWindowViewHolder.USER_STATE_WINDOW_TEXT_VIEW.setText("ME");
+                                usersWindowViewHolder.USER_STATE_WINDOW_TEXT_VIEW.setText(getString(R.string.person_info_me));
                             }else{
-                                usersWindowViewHolder.USER_STATE_WINDOW_TEXT_VIEW.setText("FRIEND");
+                                usersWindowViewHolder.USER_STATE_WINDOW_TEXT_VIEW.setText(getString(R.string.person_info_friend));
                             }
                             break;
 
@@ -193,7 +193,7 @@ public class MapActivityFragment extends Fragment
 
                         case Constants.HELP:
                             usersWindowViewHolder.USER_STATE_WINDOW_TEXT_VIEW
-                                    .setText("NEED HELP");
+                                    .setText(getString(R.string.person_info_need_help));
                     }
 
                 }
@@ -217,7 +217,7 @@ public class MapActivityFragment extends Fragment
             userDataFirebaseMap.attachMapListeners();
             googleApiClient.connect();
         }else{
-            Toast.makeText(getContext(),"Check your network connection",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(),getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -267,7 +267,7 @@ public class MapActivityFragment extends Fragment
         if(Utility.networkIsConnected(getContext())) {
             userDataFirebaseMap.updateUserLocation(location);
         }else{
-            Toast.makeText(getContext(),"Your location can't update, please check your network connection",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(),getString(R.string.location_network),Toast.LENGTH_SHORT).show();
         }
     }
 

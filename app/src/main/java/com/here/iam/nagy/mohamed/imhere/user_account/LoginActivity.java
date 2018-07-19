@@ -23,6 +23,8 @@ import com.here.iam.nagy.mohamed.imhere.helper_classes.Utility;
 import com.here.iam.nagy.mohamed.imhere.ui.ViewAppHolder;
 import com.here.iam.nagy.mohamed.imhere.ui.main_ui.MainUserActivity;
 
+import java.util.Objects;
+
 public class LoginActivity extends AppCompatActivity {
 
     private ViewAppHolder.LoginViewHolder loginViewHolder;
@@ -52,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -93,7 +95,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mainActivityIntent.putExtra(
                 Constants.USER_EXTRA,
-                Utility.encodeUserEmail(user.getEmail())
+                Utility.encodeUserEmail(Objects.requireNonNull(user.getEmail()))
         );
 
         startActivity(mainActivityIntent);
@@ -119,19 +121,19 @@ public class LoginActivity extends AppCompatActivity {
                 loginViewHolder.PASSWORD_EDIT_TEXT.getText().toString().isEmpty()) {
 
             if(loginViewHolder.PASSWORD_EDIT_TEXT.getText().toString().isEmpty())
-                loginViewHolder.PASSWORD_EDIT_TEXT.setError("This field can not be empty.");
+                loginViewHolder.PASSWORD_EDIT_TEXT.setError(getString(R.string.empty_field));
 
             if(loginViewHolder.EMAIL_EDIT_TEXT.getText().toString().isEmpty())
-                loginViewHolder.EMAIL_EDIT_TEXT.setError("This field can not be empty.");
+                loginViewHolder.EMAIL_EDIT_TEXT.setError(getString(R.string.empty_field));
 
             return;
         }else if(!isValidEmail(loginViewHolder.EMAIL_EDIT_TEXT.getText().toString())){
 
-            loginViewHolder.EMAIL_EDIT_TEXT.setError("This email is not valid.");
+            loginViewHolder.EMAIL_EDIT_TEXT.setError(getString(R.string.empty_field));
             return;
         }else if(!Utility.networkIsConnected(this)){
 
-            Toast.makeText(this,"Check your network connection",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -139,7 +141,7 @@ public class LoginActivity extends AppCompatActivity {
         final String USER_PASSWORD = loginViewHolder.PASSWORD_EDIT_TEXT.getText().toString();
         final ProgressDialog PROGRESS_DIALOG = new ProgressDialog(this);
 
-        PROGRESS_DIALOG.setMessage("Sing in ....");
+        PROGRESS_DIALOG.setMessage(getString(R.string.loading_sign_in));
         PROGRESS_DIALOG.setCancelable(false);
         PROGRESS_DIALOG.show();
 
@@ -157,13 +159,13 @@ public class LoginActivity extends AppCompatActivity {
                             }else{
                                 PROGRESS_DIALOG.dismiss();
                                 Toast.makeText(getBaseContext(),
-                                        "You need verify your email first",
+                                        getString(R.string.email_verify),
                                         Toast.LENGTH_LONG).show();
                             }
 
                         }else{
                             PROGRESS_DIALOG.dismiss();
-                            loginViewHolder.EMAIL_EDIT_TEXT.setError("This email does not register before.");
+                            loginViewHolder.EMAIL_EDIT_TEXT.setError(getString(R.string.email_reg));
                         }
 
                     }

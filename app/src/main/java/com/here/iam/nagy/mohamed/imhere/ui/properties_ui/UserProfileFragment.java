@@ -1,9 +1,11 @@
 package com.here.iam.nagy.mohamed.imhere.ui.properties_ui;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -35,6 +37,8 @@ import com.here.iam.nagy.mohamed.imhere.user_account.LoginActivity;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.UserAccount;
 import com.here.iam.nagy.mohamed.imhere.widget.WidgetUtils;
 import com.squareup.picasso.Picasso;
+
+import java.util.Objects;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -69,7 +73,7 @@ public class UserProfileFragment extends Fragment
                                 intent, "load photo"),
                                 Constants.RC_PHOTO);
                     }else{
-                        Toast.makeText(getContext(),"Check your network connection",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(),getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
                     }
                 }
             };
@@ -84,7 +88,7 @@ public class UserProfileFragment extends Fragment
 
                         startActivity(mapIntent);
                     }else{
-                        Toast.makeText(getContext(),"Check your network connection",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(),getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
                     }
                 }
             };
@@ -97,7 +101,7 @@ public class UserProfileFragment extends Fragment
                         // check if user create a flag before.
                         userDataFirebase.setCreateNewFlagListenerAction(getContext());
                     }else{
-                        Toast.makeText(getContext(),"Check your network connection",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(),getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
                     }
                 }
             };
@@ -115,7 +119,7 @@ public class UserProfileFragment extends Fragment
                             userDataFirebase.removeUserMarkFromFriendsMap();
                         }
                     }else{
-                        Toast.makeText(getContext(),"Check your network connection",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(),getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
                         userProfileViews.LOCATION_FRIEND_VISIBILITY.setChecked(!result);
                     }
 
@@ -129,7 +133,7 @@ public class UserProfileFragment extends Fragment
                     if(Utility.networkIsConnected(getContext())) {
                         userDataFirebase.setPublicFlagsShow(result);
                     }else{
-                        Toast.makeText(getContext(),"Check your network connection",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(),getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
                         userProfileViews.RECEIVE_PUBLIC_FLAGS.setChecked(!result);
                     }
                 }
@@ -142,7 +146,7 @@ public class UserProfileFragment extends Fragment
                     if(Utility.networkIsConnected(getContext())) {
                         userDataFirebase.setFriendsFlagsShow(b);
                     }else{
-                        Toast.makeText(getContext(),"Check your network connection",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(),getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
                         userProfileViews.RECEIVE_FRIEND_FLAGS.setChecked(!b);
                     }
                 }
@@ -155,7 +159,7 @@ public class UserProfileFragment extends Fragment
                     if(Utility.networkIsConnected(getActivity())) {
                         userDataFirebase.setHelpProcess(userProfileViews, getContext(), false);
                     }else{
-                        Toast.makeText(getContext(),"Check your network connection",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(),getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
                     }
                 }
             };
@@ -174,9 +178,8 @@ public class UserProfileFragment extends Fragment
                         loginActivityIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(loginActivityIntent);
                         getActivity().finish();
-
                     }else{
-                        Toast.makeText(getContext(),"Check your network connection",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(),getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
                     }
 
                 }
@@ -195,7 +198,7 @@ public class UserProfileFragment extends Fragment
             new SwipeRefreshLayout.OnRefreshListener() {
                 @Override
                 public void onRefresh() {
-                    if(Utility.networkIsConnected(getContext())) {
+                    if(Utility.networkIsConnected(Objects.requireNonNull(getContext()))) {
                         if (!googleApiClient.isConnected()) {
                             googleApiClient.connect();
                         }
@@ -206,7 +209,7 @@ public class UserProfileFragment extends Fragment
                     }else{
                         Toast.makeText(
                                 getContext(),
-                                "Check your network connection",
+                                getString(R.string.network_connection),
                                 Toast.LENGTH_SHORT)
                                 .show();
                         userProfileViews.USER_PROFILE_SWIPE_REFRESH.setRefreshing(false);
@@ -219,6 +222,7 @@ public class UserProfileFragment extends Fragment
         super.onCreate(savedInstanceState);
 
         /// Get user Data
+        assert getArguments() != null;
         USER_LINK_FIREBASE = getArguments().getString(Constants.USER_EXTRA);
 
         /// firebase data
@@ -236,7 +240,7 @@ public class UserProfileFragment extends Fragment
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Log.e("createView called","done");
 
@@ -271,7 +275,7 @@ public class UserProfileFragment extends Fragment
         if(Utility.networkIsConnected(getContext())) {
             googleApiClient.connect();
         }else{
-            Toast.makeText(getContext(),"Check your network connection",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(),getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
         }
 
         return rootView;
@@ -279,7 +283,6 @@ public class UserProfileFragment extends Fragment
 
     /**
      * Set Identifiers data for user
-     * @param userAccount
      */
     @Override
     public void setUserIdentifierData(UserAccount userAccount) {
@@ -294,7 +297,7 @@ public class UserProfileFragment extends Fragment
                         .into(userProfileViews.USER_IMAGE_VIEW);
 
             } else {
-                userProfileViews.USER_IMAGE_VIEW.setImageDrawable(getActivity().getDrawable(R.drawable.profile_pic_image));
+                userProfileViews.USER_IMAGE_VIEW.setImageDrawable(Objects.requireNonNull(getActivity()).getDrawable(R.drawable.profile_pic_image));
             }
             // check last value
             userDataFirebase.setSwitchesState(userProfileViews);
@@ -307,22 +310,19 @@ public class UserProfileFragment extends Fragment
 
     /**
      * To get image which selected by user
-     * @param requestCode
-     * @param resultCode
-     * @param data
      */
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         if(requestCode == Constants.RC_PHOTO){
-            if(resultCode == getActivity().RESULT_OK){
+            if(resultCode == Activity.RESULT_OK){
                 Uri profileImage = data.getData();
 
                 userDataFirebase.storeUserImageInDatabase(profileImage);
 
             }else{
-                Toast.makeText(getContext(),"Can't not load this photo",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),getString(R.string.image_loading),Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -332,14 +332,14 @@ public class UserProfileFragment extends Fragment
         super.onStart();
         // test ..
         Log.e("onResume called", "done");
-        if (Utility.networkIsConnected(getActivity())) {
+        if (Utility.networkIsConnected(Objects.requireNonNull(getActivity()))) {
             userDataFirebase.setUserIdentifiers();
             if(getContext() != null && userProfileViews != null){
                 userProfileViews.USER_PROFILE_SWIPE_REFRESH.setRefreshing(true);
             }
 
         } else {
-            Toast.makeText(getContext(), "Check your network connection", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), getString(R.string.network_connection), Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -359,7 +359,7 @@ public class UserProfileFragment extends Fragment
 
     @Override
     public void createGoogleClient(GoogleApiClient.ConnectionCallbacks connectionCallbacks, GoogleApiClient.OnConnectionFailedListener connectionFailedListener) {
-        googleApiClient = new GoogleApiClient.Builder(getContext())
+        googleApiClient = new GoogleApiClient.Builder(Objects.requireNonNull(getContext()))
                 .addApi(LocationServices.API)
                 .addConnectionCallbacks(connectionCallbacks)
                 .addOnConnectionFailedListener(connectionFailedListener)

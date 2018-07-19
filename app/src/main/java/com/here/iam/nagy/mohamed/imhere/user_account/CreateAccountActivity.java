@@ -88,13 +88,13 @@ public class CreateAccountActivity extends AppCompatActivity {
 
 
             if(createAccountViewHolder.USER_NAME_EDIT_TEXT.getText().toString().isEmpty())
-                createAccountViewHolder.USER_NAME_EDIT_TEXT.setError("This field must not be empty");
+                createAccountViewHolder.USER_NAME_EDIT_TEXT.setError(getString(R.string.empty_field));
 
             if(createAccountViewHolder.USER_EMAIL_EDIT_TEXT.getText().toString().isEmpty())
-                createAccountViewHolder.USER_EMAIL_EDIT_TEXT.setError("This filed must not be empty");
+                createAccountViewHolder.USER_EMAIL_EDIT_TEXT.setError(getString(R.string.empty_field));
 
             if(createAccountViewHolder.USER_PASSWORD_EDIT_TEXT.getText().toString().isEmpty())
-                createAccountViewHolder.USER_PASSWORD_EDIT_TEXT.setError("This filed must not be empty");
+                createAccountViewHolder.USER_PASSWORD_EDIT_TEXT.setError(getString(R.string.empty_field));
 
         }else if(Utility.networkIsConnected(this)){
             /// check valid email
@@ -117,12 +117,12 @@ public class CreateAccountActivity extends AppCompatActivity {
                                 if(task.isSuccessful()){
                                     PROGRESS_DIALOG.dismiss();
                                     Toast.makeText(getBaseContext(),
-                                            "Your account is create, " +
-                                                    "check your email inbox to verify your register",
+                                            getString(R.string.email_verify_login),
                                             Toast.LENGTH_LONG).show();
 
                                     FirebaseUser user = userAuth.getCurrentUser();
 
+                                    assert user != null;
                                     userDataFirebaseCreateAccount =
                                             new UserDataFirebaseCreateAccount(user.getEmail());
 
@@ -142,10 +142,10 @@ public class CreateAccountActivity extends AppCompatActivity {
 
             }else if(Utility.networkIsConnected(this)){
 
-                createAccountViewHolder.USER_EMAIL_EDIT_TEXT.setError("This email is not valid");
+                createAccountViewHolder.USER_EMAIL_EDIT_TEXT.setError(getString(R.string.empty_field));
             }else{
 
-                Toast.makeText(this,"Check your network connection",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
             }
         }
 

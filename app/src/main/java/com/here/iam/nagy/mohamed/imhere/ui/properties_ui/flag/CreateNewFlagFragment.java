@@ -80,7 +80,7 @@ public class CreateNewFlagFragment extends Fragment
                     }
                 }else{
                     Toast.makeText(getContext(),
-                            "please check your network connection"
+                            getString(R.string.network_connection)
                             ,Toast.LENGTH_SHORT).show();
                 }
 
@@ -108,7 +108,7 @@ public class CreateNewFlagFragment extends Fragment
                             Constants.RC_PHOTO);
                 }else{
                     Toast.makeText(getContext(),
-                            "please check your network connection"
+                            getString(R.string.network_connection)
                             ,Toast.LENGTH_SHORT).show();
                 }
             }
@@ -190,24 +190,24 @@ public class CreateNewFlagFragment extends Fragment
     boolean createFlagValidation(){
         // Check text fields empty or not
         if(flagCreateViewHolder.FLAG_TITLE_EDIT_TEXT.getText().toString().isEmpty()){
-            flagCreateViewHolder.FLAG_TITLE_EDIT_TEXT.setError("This field must not be empty.");
+            flagCreateViewHolder.FLAG_TITLE_EDIT_TEXT.setError(getString(R.string.empty_field));
             return false;
         }
         if(flagCreateViewHolder.FLAG_DETAILS_TEXT_VIEW.getText().toString().isEmpty()){
-            flagCreateViewHolder.FLAG_DETAILS_TEXT_VIEW.setError("This field must not be empty.");
+            flagCreateViewHolder.FLAG_DETAILS_TEXT_VIEW.setError(getString(R.string.empty_field));
             return false;
         }
         if(flagCreateViewHolder.FLAG_LATITUDE_EDIT_TEXT.getText().toString().isEmpty()){
-            flagCreateViewHolder.FLAG_LATITUDE_EDIT_TEXT.setError("This field must not be empty.");
+            flagCreateViewHolder.FLAG_LATITUDE_EDIT_TEXT.setError(getString(R.string.empty_field));
             return false;
         }
         if(flagCreateViewHolder.FLAG_LONGITUDE_EDIT_TEXT.getText().toString().isEmpty()){
-            flagCreateViewHolder.FLAG_LONGITUDE_EDIT_TEXT.setError("This field must not be empty.");
+            flagCreateViewHolder.FLAG_LONGITUDE_EDIT_TEXT.setError(getString(R.string.empty_field));
             return false;
         }
         if(!flagCreateViewHolder.FLAG_PUBLIC_RADIO_BUTTON.isChecked() &&
                 !flagCreateViewHolder.FLAG_FRIENDS_RADIO_BUTTON.isChecked()){
-            Toast.makeText(getContext(),"You must choose flag type.",Toast.LENGTH_LONG).show();
+            Toast.makeText(getContext(),getString(R.string.flag_req),Toast.LENGTH_LONG).show();
             return false;
         }
 

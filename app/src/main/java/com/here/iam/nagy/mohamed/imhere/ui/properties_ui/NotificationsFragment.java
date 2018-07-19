@@ -43,7 +43,7 @@ public class NotificationsFragment extends Fragment
                     }else{
                         Toast.makeText(
                                 getContext(),
-                                "Check your network connection",
+                                getString(R.string.network_connection),
                                 Toast.LENGTH_SHORT
                         ).show();
                         notificationSwipeRefresh.setRefreshing(false);
@@ -313,7 +313,7 @@ public class NotificationsFragment extends Fragment
         if(Utility.networkIsConnected(getContext())) {
             userDataFirebaseNotifications.attachUserNotificationListener();
         }else{
-            Toast.makeText(getContext(),"Check your network connection",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(),getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
         }
     }
 

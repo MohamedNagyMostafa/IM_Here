@@ -49,7 +49,7 @@ public class SearchFragment extends Fragment
                             userAccountArrayList.clear();
                         }
                     }else{
-                        Toast.makeText(getContext(),"Check your network connection",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(),getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -143,7 +143,7 @@ public class SearchFragment extends Fragment
                             userDataFirebaseSearch.setUserRelation(USER_EMAIL, searchViewHolder);
                         }else{
                             Toast.makeText(getContext(),
-                                    "You can't accept friend request, please check your network connection"
+                                    R.string.accept_friend_network
                                     ,Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -159,7 +159,7 @@ public class SearchFragment extends Fragment
                             userDataFirebaseSearch.setUserRelation(USER_EMAIL, searchViewHolder);
                         }else{
                             Toast.makeText(getContext(),
-                                    "You can't send friend request, please check your network connection"
+                                    getString(R.string.send_friend_network)
                                     ,Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -175,7 +175,7 @@ public class SearchFragment extends Fragment
                             userDataFirebaseSearch.setUserRelation(USER_EMAIL, searchViewHolder);
                         }else{
                             Toast.makeText(getContext(),
-                                    "You can't remove friend, please check your network connection"
+                                    getString(R.string.remove_friend_network)
                                     ,Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -190,7 +190,7 @@ public class SearchFragment extends Fragment
                             userDataFirebaseSearch.setUserRelation(USER_EMAIL, searchViewHolder);
                         }else{
                             Toast.makeText(getContext(),
-                                    "You can't ignore friend request, please check your network connection"
+                                    getString(R.string.ignore_friend_network)
                                     ,Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -207,7 +207,7 @@ public class SearchFragment extends Fragment
                                     USER_EMAIL);
                         }else{
                             Toast.makeText(getContext(),
-                                    "You can't cancel friend request, please check your network connection"
+                                    getString(R.string.cancel_friend_network)
                                     ,Toast.LENGTH_SHORT).show();
                         }
                     }

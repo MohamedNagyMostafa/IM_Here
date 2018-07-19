@@ -89,8 +89,8 @@ public class WidgetUtils {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     Long notificationCount = (Long) dataSnapshot.getValue();
-                    Log.e("aaaaaaaaaa widget","set to view");
-                    if(notificationCount > 0){
+
+                    if(notificationCount != null && notificationCount > 0){
 
                         remoteViews.setTextViewText(R.id.widget_notification_text_view, notificationCount.toString());
                         remoteViews.setViewVisibility(R.id.widget_notification_text_view, View.VISIBLE);

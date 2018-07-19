@@ -35,7 +35,7 @@ public class FlagDetailsActivityFragment extends Fragment{
                                 flagDetailsViewHolder.FLAG_LOVES_NUMBER_TEXT_VIEW);
                     }else{
                         Toast.makeText(getContext(),
-                                "please check your network connection"
+                                getString(R.string.network_connection)
                                 ,Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -51,7 +51,7 @@ public class FlagDetailsActivityFragment extends Fragment{
                         flagDetailsViewHolder.FLAG_SWIPE_REFRESH.setRefreshing(false);
                     }else{
                         Toast.makeText(getContext(),
-                                "please check your network connection"
+                                getString(R.string.network_connection)
                                 ,Toast.LENGTH_SHORT).show();
                         flagDetailsViewHolder.FLAG_SWIPE_REFRESH.setRefreshing(false);
                     }
@@ -83,7 +83,7 @@ public class FlagDetailsActivityFragment extends Fragment{
             userDataFirebaseFlagDetails.setFlagDetailsUi(flagDetailsViewHolder, getContext());
         }else{
             Toast.makeText(getContext(),
-                    "please check your network connection"
+                    getString(R.string.network_connection)
                     ,Toast.LENGTH_SHORT).show();
         }
 

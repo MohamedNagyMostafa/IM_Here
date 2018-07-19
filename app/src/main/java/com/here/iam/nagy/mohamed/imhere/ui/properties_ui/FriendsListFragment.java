@@ -44,7 +44,7 @@ public class FriendsListFragment extends Fragment
                     }else{
                         Toast.makeText(
                                 getContext(),
-                                "Please check your network connection",
+                                getString(R.string.network_connection),
                                 Toast.LENGTH_SHORT
                         ).show();
                         friendsListSwipeRefresh.setRefreshing(false);
@@ -153,7 +153,7 @@ public class FriendsListFragment extends Fragment
             if(friendsListSwipeRefresh != null)
                 friendsListSwipeRefresh.setRefreshing(true);
         }else{
-            Toast.makeText(getContext(),"Check your network connection",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(),getString(R.string.network_connection),Toast.LENGTH_SHORT).show();
             if(friendsListSwipeRefresh != null)
                 friendsListSwipeRefresh.setRefreshing(false);
         }

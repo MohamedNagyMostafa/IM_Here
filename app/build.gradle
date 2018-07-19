@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'IMHere'
+            keyPassword '6991/3/1'
+            storeFile file('C:/Users/Mohamed Nagy/keystores/android.jks')
+            storePassword 'appIMHere'
+        }
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.here.iam.nagy.mohamed.imhere"
@@ -14,6 +22,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
     buildToolsVersion '27.0.3'

@@ -83,6 +83,12 @@
     <string name="remove_friend_request">Remove Friend Request</string>
 
     <string name="title_activity_map_">Map_Activity</string>
+    <string name="public_flag_map">Public Flag</string>
+    <string name="friend_flag_map">Friend Flag</string>
+    <string name="your_flag_map">Your Flag</string>
+    <string name="person_info_me">ME</string>
+    <string name="person_info_friend">FRIEND</string>
+    <string name="person_info_need_help">NEED HELP</string>
     <string name="title_activity_event_create">EventCreate</string>
     <string name="title_activity_flag">FlagActivity</string>
     <string name="title_activity_flag_details">FlagDetailsActivity</string>
@@ -100,7 +106,7 @@
     <string name="create_flag_invisiable_image">To handle nested scroll</string>
     <string name="rate_image">describe flag votes count</string>
     <string name="empty_image">represent empty list screens</string>
-
+    <string name="loading_sign_in">Sing in ....</string>
 
     <!-- warning -->
     <string name="empty_warning_friends">You don\'t have any friend yet.</string>
@@ -108,4 +114,17 @@
     <string name="empty_warning_search">No search results found.</string>
     <string name="flag_delete">*You can delete this flag\n by click on this window.</string>
     <string name="widget_login">You need to Login to the app at first</string>
+    <string name="network_connection">Check your network connection</string>
+    <string name="empty_field">This field can not be empty.</string>
+    <string name="email_verify">You need verify your email first.</string>
+    <string name="email_verify_login">"Your account is create, check your email inbox to verify your register"</string>
+    <string name="email_reg">This email does not register before.</string>
+    <string name="image_loading">Can\'t not load this photo</string>
+    <string name="accept_friend_network">You can\'t accept friend request, please check your network connection</string>
+    <string name="send_friend_network">You can\'t send friend request, please check your network connection</string>
+    <string name="remove_friend_network">You can\'t remove friend, please check your network connection</string>
+    <string name="ignore_friend_network">You can\'t ignore friend request, please check your network connection</string>
+    <string name="cancel_friend_network">You can\'t cancel friend request, please check your network connection</string>
+    <string name="location_network">Your location can\'t update, please check your network connection</string>
+    <string name="flag_req">"You must choose flag type."</string>
 </resources>
