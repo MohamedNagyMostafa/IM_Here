@@ -2,11 +2,11 @@ apply plugin: 'com.android.application'
 
 android {
     signingConfigs {
-        config {
+        release {
             keyAlias 'IMHere'
             keyPassword '6991/3/1'
-            storeFile file('C:/Users/Mohamed Nagy/keystores/android.jks')
-            storePassword 'appIMHere'
+            storeFile file('../release.jks')
+            storePassword '6991/3/1'
         }
     }
     compileSdkVersion 27
@@ -22,10 +22,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config
+            signingConfig signingConfigs.release
         }
     }
     buildToolsVersion '27.0.3'
+    productFlavors {
+    }
 }
 
 dependencies {
