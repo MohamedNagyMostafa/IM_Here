@@ -14,6 +14,7 @@ import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polygon;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -28,7 +29,10 @@ import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.Fl
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.MapMarkers;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.UserAccount;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Objects;
 
 /**
  * Created by mohamednagy on 12/27/2016.
@@ -37,6 +41,9 @@ public class UserDataFirebaseMap extends UserDataFirebase {
 
     private GoogleMap googleMap;
     private Context context;
+    // Hold friends ids which need to track.
+    // and have access location is available.
+    private HashMap<String, Polygon> friendsTrack;
     // user , friends and help markers
     private HashMap<String, Marker> usersMarkersHashMap;
     // public and friends flags
@@ -59,6 +66,7 @@ public class UserDataFirebaseMap extends UserDataFirebase {
 
         usersMarkersHashMap = new HashMap<>();
         flagsMarkersHashMap = new HashMap<>();
+        friendsTrack = new HashMap<>();
         usersMarkersConnectionListenersHashMap = new HashMap<>();
         flagsCircleHashMap = new HashMap<>();
         this.context = context;
@@ -268,6 +276,9 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                         usersMarkersHashMap.put(dataSnapshot.getKey(), friendMarker);
 
                         setupFriendsMarkersListenerConnection(dataSnapshot.getKey());
+
+                        //** Tracking **//
+                        setupTrackForPerson(dataSnapshot.getKey());
                     }
 
                     @Override
@@ -287,6 +298,8 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                                         Utility.decodeUserEmail(dataSnapshot.getKey()),
                                         mapMarkers.getUserImage()));
 
+                        //** Tracking **//
+                        updateTrackForPerson(dataSnapshot.getKey());
                     }
 
                     @Override
@@ -302,6 +315,8 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                         // remove listener from the HashMap
                         usersMarkersConnectionListenersHashMap.remove(dataSnapshot.getKey());
 
+                        //** Tracking **//
+                        removeTrackForPerson(dataSnapshot.getKey());
                     }
 
                     @Override
@@ -615,7 +630,62 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                 });
     }
 
+    private void setupTrackForPerson(final String USER_EMAIL){
+        FirebaseHelper.getUserTrack(USER_EMAIL).addListenerForSingleValueEvent(
+                new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        // Draw Track
+                        Polygon polygon;
 
+                        friendsTrack.put(USER_EMAIL, polygon);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                }
+        );
+    }
+
+    private void updateTrackForPerson(final String USER_EMAIL){
+        FirebaseHelper.getUserTrack(USER_EMAIL).addListenerForSingleValueEvent(
+                new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        // redraw Track
+                        Polygon polygon;
+
+                        friendsTrack.put(USER_EMAIL, polygon);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                }
+        );
+    }
+
+    private void removeTrackForPerson(final String USER_EMAIL){
+        FirebaseHelper.getUserTrack(USER_EMAIL).addListenerForSingleValueEvent(
+                new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        // remove Track
+                        Polygon polygon;
+
+                        friendsTrack.remove(USER_EMAIL);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                }
+        );
+    }
 /**
  * Connect changing value of friends list location and
  * their values in friends marker
