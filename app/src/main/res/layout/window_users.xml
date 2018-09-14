@@ -36,6 +36,11 @@
             android:textSize="12sp"
             tools:ignore="RtlSymmetry" />
 
+        <TextView
+            android:id="@+id/user_track_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
     </LinearLayout>
 
 </LinearLayout>

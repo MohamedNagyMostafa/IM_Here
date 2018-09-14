@@ -27,6 +27,7 @@ import com.here.iam.nagy.mohamed.imhere.R;
 import com.here.iam.nagy.mohamed.imhere.helper_classes.Constants;
 import com.here.iam.nagy.mohamed.imhere.helper_classes.FirebaseHelper;
 import com.here.iam.nagy.mohamed.imhere.helper_classes.Utility;
+import com.here.iam.nagy.mohamed.imhere.ui.properties_ui.location_map.InfoWindowData;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.AccountSettings;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.CurrentLocation;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.FlagsMarkers;
@@ -36,6 +37,7 @@ import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.Us
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
@@ -231,7 +233,7 @@ public class UserDataFirebaseMap extends UserDataFirebase {
 
                                                 Marker userMarker = googleMap.addMarker(markerOptions);
 
-                                                userMarker.setTag(userAccount);
+                                                userMarker.setTag(new InfoWindowData(userAccount, null, null));
 
                                                 usersMarkersHashMap.put(USER_LINK_FIREBASE, userMarker);
                                             }
@@ -275,11 +277,13 @@ public class UserDataFirebaseMap extends UserDataFirebase {
 
                         Marker friendMarker = googleMap.addMarker(markerOptions);
 
-                        friendMarker.setTag(
+                        updateInfoWindowData(
+                                friendMarker,
                                 new UserAccount(
-                                        mapMarkers.getUserName(),
-                                        Utility.decodeUserEmail(dataSnapshot.getKey()),
-                                        mapMarkers.getUserImage()));
+                                mapMarkers.getUserName(),
+                                Utility.decodeUserEmail(dataSnapshot.getKey()),
+                                mapMarkers.getUserImage()),
+                                dataSnapshot, false);
 
                         usersMarkersHashMap.put(dataSnapshot.getKey(), friendMarker);
 
@@ -301,11 +305,15 @@ public class UserDataFirebaseMap extends UserDataFirebase {
 
                         usersMarkersHashMap.get(dataSnapshot.getKey()).setPosition(friendLatLong);
 
-                        usersMarkersHashMap.get(dataSnapshot.getKey()).setTag(
+                        updateInfoWindowData(
+                                usersMarkersHashMap.get(dataSnapshot.getKey()),
                                 new UserAccount(
                                         mapMarkers.getUserName(),
                                         Utility.decodeUserEmail(dataSnapshot.getKey()),
-                                        mapMarkers.getUserImage()));
+                                        mapMarkers.getUserImage()),
+                                dataSnapshot,
+                                true
+                                );
 
                         //** Tracking **//
                         if(USER_LINK_FIREBASE.equals(Constants.USER_ADMIN))
@@ -984,4 +992,29 @@ public class UserDataFirebaseMap extends UserDataFirebase {
         return false;
     }
 
+    // Set Info Window Data to specific marker
+    private void updateInfoWindowData(Marker marker, UserAccount userAccount,
+                                      DataSnapshot locationDataSnapshot,
+                                      boolean show){
+        if(!Utility.encodeUserEmail(userAccount.getUserEmail()).equals(Constants.USER_ADMIN)) {
+            marker.setTag(new InfoWindowData(userAccount, null, null));
+            return;
+        }
+
+        Iterator<DataSnapshot> iterator = locationDataSnapshot.child(Constants.TRACK).getChildren().iterator();
+        Long startDate = iterator.next().getValue(Track.class).getDate();
+        Long endDate = startDate;
+
+        while (iterator.hasNext()){
+            endDate = iterator.next().getValue(Track.class).getDate();
+        }
+
+        InfoWindowData infoWindowData = new InfoWindowData(userAccount, startDate, endDate);
+
+        marker.setTag(infoWindowData);
+
+        // Redisplay info window with updated data.
+        if(show && marker.isInfoWindowShown())
+            marker.showInfoWindow();
+    }
 }

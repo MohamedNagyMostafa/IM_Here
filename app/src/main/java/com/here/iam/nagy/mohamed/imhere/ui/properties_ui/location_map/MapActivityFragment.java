@@ -87,7 +87,7 @@ public class MapActivityFragment extends Fragment
         setMarkerWindowInfo(googleMap);
     }
 
-    private void setMarkerWindowInfo(GoogleMap googleMap){
+    private void setMarkerWindowInfo(final GoogleMap googleMap){
         // deleting flag.
 
         googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
@@ -160,25 +160,33 @@ public class MapActivityFragment extends Fragment
                     infoView =
                             getActivity().getLayoutInflater().inflate(R.layout.window_users,null);
 
-                    UserAccount userAccount = (UserAccount) marker.getTag();
+                    InfoWindowData infoWindowData = (InfoWindowData) marker.getTag();
 
                     ViewAppHolder.UsersWindowViewHolder usersWindowViewHolder =
                             new ViewAppHolder.UsersWindowViewHolder(infoView);
 
-                    if(userAccount.getUserImage() == null){
+                    if(infoWindowData.getUserAccount().getUserImage() == null){
                         usersWindowViewHolder.USER_IMAGE_WINDOW_IMAGE_VIEW
                                 .setImageDrawable(getActivity().getDrawable(R.drawable.me));
                     }else{
-                        Picasso.with(getActivity()).load(userAccount.getUserImage())
+                        Picasso.with(getActivity()).load(infoWindowData.getUserAccount().getUserImage())
                                 .into(usersWindowViewHolder.USER_IMAGE_WINDOW_IMAGE_VIEW);
                     }
 
-                    usersWindowViewHolder.USER_NAME_WINDOW_TEXT_VIEW.setText(userAccount.getUserName());
+                    usersWindowViewHolder.USER_NAME_WINDOW_TEXT_VIEW.setText(infoWindowData.getUserAccount()
+                            .getUserName());
+
+                    if(infoWindowData.getStartDate() != null && infoWindowData.getEndDate() != null){
+                        String duration = getString(R.string.mark_window_duration) +
+                                Utility.getTrackDuration(infoWindowData.getStartDate(), infoWindowData.getEndDate());
+
+                        usersWindowViewHolder.USER_DURATIION_WINDOW_TEXT_VIEW.setText(duration);
+                    }
 
                     switch (marker.getTitle()){
 
                         case Constants.USERS:
-                            if(Utility.encodeUserEmail(userAccount.getUserEmail())
+                            if(Utility.encodeUserEmail(infoWindowData.getUserAccount().getUserEmail())
                                     .equals(userDataFirebaseMap.getUserLinkFirebase())){
                                 usersWindowViewHolder.USER_STATE_WINDOW_TEXT_VIEW.setText(getString(R.string.person_info_me));
                             }else{

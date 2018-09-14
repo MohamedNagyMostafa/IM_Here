@@ -42,6 +42,12 @@ public class Utility {
         return DateFormat.format("EEE, MMM d, h:mm a" , calendar).toString();
     }
 
+    public static String getTrackDuration(long date1, long date2){
+        Calendar calendar = Calendar.getInstance(Locale.ENGLISH);
+        calendar.setTimeInMillis(date2 - date1);
+        return DateFormat.format("hh:mm:ss" ,calendar).toString();
+    }
+
     public static Long getCurrentDate(){
         return Calendar.getInstance().getTimeInMillis();
     }

@@ -312,13 +312,14 @@ public class ViewAppHolder {
 
         public final TextView USER_NAME_WINDOW_TEXT_VIEW;
         public final TextView USER_STATE_WINDOW_TEXT_VIEW;
-
+        public final TextView USER_DURATIION_WINDOW_TEXT_VIEW;
         public final ImageView USER_IMAGE_WINDOW_IMAGE_VIEW;
 
         public UsersWindowViewHolder(View usersWindowView){
 
             USER_NAME_WINDOW_TEXT_VIEW   =  usersWindowView.findViewById(R.id.user_name_window_users);
             USER_STATE_WINDOW_TEXT_VIEW  =  usersWindowView.findViewById(R.id.user_state_window_users);
+            USER_DURATIION_WINDOW_TEXT_VIEW  =  usersWindowView.findViewById(R.id.user_track_duration);
             USER_IMAGE_WINDOW_IMAGE_VIEW =  usersWindowView.findViewById(R.id.user_image_window_users);
 
         }

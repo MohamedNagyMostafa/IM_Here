@@ -12,20 +12,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f131193c-e1ce-4664-8601-2192f57c4c48" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebase.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebase.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebaseMap.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebaseMap.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebaseNotifications.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebaseNotifications.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/Constants.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/Constants.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/FirebaseHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/FirebaseHelper.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/Utility.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/Utility.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/ViewAppHolder.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/ViewAppHolder.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/FriendsListFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/FriendsListFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/NotificationsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/NotificationsFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/SearchFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/SearchFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/UserProfileFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/UserProfileFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/location_map/MapActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/location_map/MapActivity.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/location_map/MapActivityFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/location_map/MapActivityFragment.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/window_users.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/window_users.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,8 +48,8 @@
       <file leaf-file-name="UserDataFirebaseMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebaseMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="229" column="78" lean-forward="true" selection-start-line="229" selection-start-column="78" selection-end-line="229" selection-end-column="78" />
+            <state relative-caret-position="798">
+              <caret line="652" column="79" lean-forward="true" selection-start-line="652" selection-start-column="79" selection-end-line="653" selection-end-column="42" />
               <folding>
                 <element signature="method#detachMapListeners#0;class#UserDataFirebaseMap#0" expanded="false" />
                 <element signature="method#attachMapListeners#0;class#UserDataFirebaseMap#0" expanded="false" />
@@ -96,67 +88,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Utility.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/Utility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="217">
+              <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="52" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Marker.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/3fe2551a37e219c7a3cfe1784d066db7/jars/classes.jar!/com/google/android/gms/maps/model/Marker.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-              <folding>
-                <marker date="1530867788372" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1530867788372" expanded="false" signature="157:488" ph="..." />
-                <marker date="1530867788372" expanded="false" signature="574:585" ph=" { " />
-                <marker date="1530867788372" expanded="false" signature="635:641" ph=" }" />
-                <marker date="1530867788372" expanded="true" signature="674:830" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="864:1026" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="1084:1423" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="1463:1631" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="1677:1840" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="1877:2043" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="2108:2439" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="2497:2666" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="2734:2913" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="2969:3131" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="3168:3333" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="3391:3555" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="3594:3761" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="3812:3978" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="4019:4187" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="4228:4392" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="4433:4597" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="4644:4818" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="4867:5031" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="5070:5236" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="5282:5443" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="5479:5642" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="5690:5855" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="5894:6062" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="6107:6269" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="6305:6470" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="6524:6701" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="6750:6932" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="6979:7272" ph="{...}" />
-                <marker date="1530867788372" expanded="true" signature="7306:7466" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -165,89 +102,95 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/location_map/MapActivityFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="141" column="37" lean-forward="true" selection-start-line="141" selection-start-column="37" selection-end-line="141" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserProfileFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/UserProfileFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="372" column="39" lean-forward="false" selection-start-line="372" selection-start-column="39" selection-end-line="372" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoogleApiClient.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/7468eb38d80b75c4ab23fedc40613728/jars/classes.jar!/com/google/android/gms/common/api/GoogleApiClient.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="153" column="25" lean-forward="false" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
+              <caret line="231" column="23" lean-forward="true" selection-start-line="231" selection-start-column="23" selection-end-line="231" selection-end-column="23" />
               <folding>
-                <marker date="1530867789714" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1530867789714" expanded="false" signature="157:2438" ph="..." />
-                <marker date="1530867789714" expanded="true" signature="2849:2856" ph="{}" />
-                <marker date="1530867789714" expanded="true" signature="2956:3409" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="3482:3578" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="3705:3763" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="3887:3945" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="4030:4088" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="4094:4118" ph="@{...}" />
-                <marker date="1530867789714" expanded="true" signature="4192:4250" ph="{...}" />
-                <marker date="1530867789714" expanded="false" signature="4315:4326" ph=" { " />
-                <marker date="1530867789714" expanded="false" signature="4368:4374" ph=" }" />
-                <marker date="1530867789714" expanded="false" signature="4585:4596" ph=" { " />
-                <marker date="1530867789714" expanded="false" signature="4638:4644" ph=" }" />
-                <marker date="1530867789714" expanded="false" signature="4691:4702" ph=" { " />
-                <marker date="1530867789714" expanded="false" signature="4744:4750" ph=" }" />
-                <marker date="1530867789714" expanded="true" signature="4830:4888" ph="{...}" />
-                <marker date="1530867789714" expanded="false" signature="4936:4947" ph=" { " />
-                <marker date="1530867789714" expanded="false" signature="4989:4995" ph=" }" />
-                <marker date="1530867789714" expanded="false" signature="5067:5078" ph=" { " />
-                <marker date="1530867789714" expanded="false" signature="5120:5126" ph=" }" />
-                <marker date="1530867789714" expanded="false" signature="6414:6425" ph=" { " />
-                <marker date="1530867789714" expanded="false" signature="6467:6473" ph=" }" />
-                <marker date="1530867789714" expanded="false" signature="6505:6516" ph=" { " />
-                <marker date="1530867789714" expanded="false" signature="6558:6564" ph=" }" />
-                <marker date="1530867789714" expanded="true" signature="6620:16891" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="7534:8130" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="8307:8582" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="8663:8815" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="8936:9080" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="9215:9359" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="9443:9580" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="9657:9798" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="9894:10059" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="10162:10454" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="10583:10788" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="10904:11273" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="11415:11693" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="11768:11882" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="11949:12023" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="12100:12166" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="12331:12608" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="12763:12831" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="12841:12879" ph="@{...}" />
-                <marker date="1530867789714" expanded="true" signature="12938:13259" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="13306:16432" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="16524:16885" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="16941:17013" ph="{...}" />
-                <marker date="1530867789714" expanded="true" signature="17056:17240" ph="{...}" />
+                <element signature="e#3549#4138#0" expanded="true" />
+                <element signature="e#3972#4010#0" expanded="true" />
+                <element signature="e#4137#4138#0" expanded="true" />
+                <element signature="e#4293#4294#0" expanded="true" />
+                <element signature="e#4336#4337#0" expanded="true" />
+                <element signature="e#5567#5602#0" expanded="true" />
+                <element signature="e#5866#5901#0" expanded="true" />
+                <element signature="e#6162#6195#0" expanded="true" />
+                <element signature="e#7600#7640#0" expanded="true" />
+                <element signature="e#8259#8293#0" expanded="true" />
+                <element signature="e#8421#8459#0" expanded="true" />
+                <element signature="e#8999#9040#0" expanded="true" />
+                <element signature="e#10022#10060#0" expanded="true" />
+                <element signature="e#11869#11905#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserLocation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/location_service/UserLocation.java">
+      <file leaf-file-name="InfoWindowData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/location_map/InfoWindowData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="129">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="e#605#606#0" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#694#695#0" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
+                <element signature="e#846#847#0" expanded="true" />
+                <element signature="e#878#879#0" expanded="true" />
+                <element signature="e#909#910#0" expanded="true" />
+                <element signature="e#943#944#0" expanded="true" />
+                <element signature="e#976#977#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1054#1055#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="132" column="49" lean-forward="false" selection-start-line="132" selection-start-column="49" selection-end-line="132" selection-end-column="49" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewAppHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/ViewAppHolder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="321" column="101" lean-forward="false" selection-start-line="321" selection-start-column="101" selection-end-line="321" selection-end-column="101" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="window_flag.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/window_flag.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#925#4034#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="window_users.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/window_users.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="41" column="49" lean-forward="false" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
@@ -279,8 +222,11 @@
       <find>onDestr</find>
       <find>stop</find>
       <find>dest</find>
-      <find>showInfoWindow</find>
       <find>googleMap.addMar</find>
+      <find>Map</find>
+      <find>setTag</find>
+      <find>showInfoWindow</find>
+      <find>updateInfoWindow</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2343,9 +2289,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/user_account/account_property/objects/CurrentLocation.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/user_account/account_property/objects/Path.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/user_account/account_property/objects/Track.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/Utility.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebaseTrack.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/ViewAppHolder.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/Constants.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/FirebaseHelper.java" />
@@ -2357,8 +2301,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/NotificationsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/FriendsListFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/UserProfileFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/location_map/MapActivityFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/window_flag.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/window_users.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/Utility.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/ViewAppHolder.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/location_map/InfoWindowData.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebaseMap.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/location_map/MapActivityFragment.java" />
       </list>
     </option>
   </component>
@@ -2485,6 +2435,23 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="imhere" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="widget" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IM_Here" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="IM_Here" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="IM_Here" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -2864,14 +2831,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/ViewAppHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="198" column="29" lean-forward="false" selection-start-line="198" selection-start-column="29" selection-end-line="198" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/FirebaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -3025,8 +2984,8 @@
         <state relative-caret-position="251">
           <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding>
-            <element signature="e#1614#2265#0" expanded="true" />
-            <element signature="e#2264#2265#0" expanded="true" />
+            <element signature="e#1614#2265#0" expanded="false" />
+            <element signature="e#2264#2265#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3078,14 +3037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3164,10 +3115,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/window_flag.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#925#4034#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/window_users.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="41" column="49" lean-forward="false" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/ViewAppHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="321" column="101" lean-forward="false" selection-start-line="321" selection-start-column="101" selection-end-line="321" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="132" column="49" lean-forward="false" selection-start-line="132" selection-start-column="49" selection-end-line="132" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/location_map/MapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/flag/FlagDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/location_map/InfoWindowData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebaseMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="229" column="78" lean-forward="true" selection-start-line="229" selection-start-column="78" selection-end-line="229" selection-end-column="78" />
+        <state relative-caret-position="798">
+          <caret line="652" column="79" lean-forward="true" selection-start-line="652" selection-start-column="79" selection-end-line="653" selection-end-column="42" />
           <folding>
             <element signature="method#detachMapListeners#0;class#UserDataFirebaseMap#0" expanded="false" />
             <element signature="method#attachMapListeners#0;class#UserDataFirebaseMap#0" expanded="false" />
@@ -3185,27 +3221,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/flag/FlagDetailsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/location_map/MapActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/ui/properties_ui/location_map/MapActivityFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="141" column="37" lean-forward="true" selection-start-line="141" selection-start-column="37" selection-end-line="141" selection-end-column="37" />
-          <folding />
+          <caret line="231" column="23" lean-forward="true" selection-start-line="231" selection-start-column="23" selection-end-line="231" selection-end-column="23" />
+          <folding>
+            <element signature="e#3549#4138#0" expanded="true" />
+            <element signature="e#3972#4010#0" expanded="true" />
+            <element signature="e#4137#4138#0" expanded="true" />
+            <element signature="e#4293#4294#0" expanded="true" />
+            <element signature="e#4336#4337#0" expanded="true" />
+            <element signature="e#5567#5602#0" expanded="true" />
+            <element signature="e#5866#5901#0" expanded="true" />
+            <element signature="e#6162#6195#0" expanded="true" />
+            <element signature="e#7600#7640#0" expanded="true" />
+            <element signature="e#8259#8293#0" expanded="true" />
+            <element signature="e#8421#8459#0" expanded="true" />
+            <element signature="e#8999#9040#0" expanded="true" />
+            <element signature="e#10022#10060#0" expanded="true" />
+            <element signature="e#11869#11905#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

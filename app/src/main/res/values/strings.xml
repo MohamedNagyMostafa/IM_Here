@@ -127,4 +127,8 @@
     <string name="cancel_friend_network">You can\'t cancel friend request, please check your network connection</string>
     <string name="location_network">Your location can\'t update, please check your network connection</string>
     <string name="flag_req">"You must choose flag type."</string>
+
+    <string name="mark_window_duration">Path Duration</string>
+    <string name="time_format">hh:mm:ss</string>
+    <string name="date_format">EEE, MMM d, h:mm a</string>
 </resources>
