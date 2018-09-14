@@ -43,9 +43,11 @@ public class Utility {
     }
 
     public static String getTrackDuration(long date1, long date2){
-        Calendar calendar = Calendar.getInstance(Locale.ENGLISH);
-        calendar.setTimeInMillis(date2 - date1);
-        return DateFormat.format("hh:mm:ss" ,calendar).toString();
+        long timeInMills = Math.abs(date1 - date2);
+        int minutes = (int) timeInMills/(1000*60);
+        int seconds = (int)(timeInMills - (minutes * 1000 * 60))/1000;
+
+        return minutes + ":" + seconds;
     }
 
     public static Long getCurrentDate(){

@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -283,7 +284,7 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                                 mapMarkers.getUserName(),
                                 Utility.decodeUserEmail(dataSnapshot.getKey()),
                                 mapMarkers.getUserImage()),
-                                dataSnapshot, false);
+                                false);
 
                         usersMarkersHashMap.put(dataSnapshot.getKey(), friendMarker);
 
@@ -311,7 +312,6 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                                         mapMarkers.getUserName(),
                                         Utility.decodeUserEmail(dataSnapshot.getKey()),
                                         mapMarkers.getUserImage()),
-                                dataSnapshot,
                                 true
                                 );
 
@@ -993,28 +993,42 @@ public class UserDataFirebaseMap extends UserDataFirebase {
     }
 
     // Set Info Window Data to specific marker
-    private void updateInfoWindowData(Marker marker, UserAccount userAccount,
-                                      DataSnapshot locationDataSnapshot,
-                                      boolean show){
-        if(!Utility.encodeUserEmail(userAccount.getUserEmail()).equals(Constants.USER_ADMIN)) {
+    private void updateInfoWindowData(final Marker marker, final UserAccount userAccount,
+                                      final boolean show) {
+        if (!USER_LINK_FIREBASE.equals(Constants.USER_ADMIN)) {
+            Toast.makeText(context, "not admin", Toast.LENGTH_SHORT).show();
+
             marker.setTag(new InfoWindowData(userAccount, null, null));
             return;
         }
 
-        Iterator<DataSnapshot> iterator = locationDataSnapshot.child(Constants.TRACK).getChildren().iterator();
-        Long startDate = iterator.next().getValue(Track.class).getDate();
-        Long endDate = startDate;
+        FirebaseHelper.getUserTrack(Utility.encodeUserEmail(userAccount.getUserEmail())).addListenerForSingleValueEvent(
+                new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        Iterator<DataSnapshot> iterator = dataSnapshot.getChildren().iterator();
+                        Long endDate = iterator.next().getValue(Track.class).getDate();
+                        Long startDate = endDate;
 
-        while (iterator.hasNext()){
-            endDate = iterator.next().getValue(Track.class).getDate();
-        }
+                        while (iterator.hasNext()){
+                            startDate = iterator.next().getValue(Track.class).getDate();
+                        }
 
-        InfoWindowData infoWindowData = new InfoWindowData(userAccount, startDate, endDate);
+                        InfoWindowData infoWindowData = new InfoWindowData(userAccount, startDate, endDate);
 
-        marker.setTag(infoWindowData);
+                        marker.setTag(infoWindowData);
 
-        // Redisplay info window with updated data.
-        if(show && marker.isInfoWindowShown())
-            marker.showInfoWindow();
+                        // Redisplay info window with updated data.
+                        if(show && marker.isInfoWindowShown())
+                            marker.showInfoWindow();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                }
+        );
     }
+
 }

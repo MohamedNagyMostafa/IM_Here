@@ -39,7 +39,10 @@
         <TextView
             android:id="@+id/user_track_duration"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 
