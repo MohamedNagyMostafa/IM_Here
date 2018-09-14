@@ -138,7 +138,7 @@ public class FriendsListFragment extends Fragment
         this.friendsAccountList = friendsAccountList;
 
         userFriendsListAdapter.clear();
-        userFriendsListAdapter.setNotifyOnChange(true);
+        userFriendsListAdapter.notifyDataSetChanged();
 
         if(friendsListSwipeRefresh != null)
             friendsListSwipeRefresh.setRefreshing(false);

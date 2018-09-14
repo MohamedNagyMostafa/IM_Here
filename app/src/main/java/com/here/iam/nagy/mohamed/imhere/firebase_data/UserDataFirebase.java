@@ -50,7 +50,6 @@ public class UserDataFirebase {
     private ValueEventListener userLocationSettingsListeners;
     private UserProfileUi userProfileUi;
     private LocationRequest locationRequest;
-    private Context context;
 
     private ValueEventListener userDetectionLocationListener =
             new ValueEventListener() {
@@ -99,7 +98,6 @@ public class UserDataFirebase {
     public UserDataFirebase(String userLinkFirebase, UserProfileUi userProfileUi, Context context){
         this.USER_LINK_FIREBASE = userLinkFirebase;
         this.userProfileUi = userProfileUi;
-        this.context = context;
     }
 
     public void setUserIdentifiers(){
@@ -211,7 +209,7 @@ public class UserDataFirebase {
      * Put email of user B to friend request send list of user A.
      * @param USER_EMAIL
      */
-    public void sendFriendRequest(final String USER_EMAIL){
+    public void sendFriendRequest(final String USER_EMAIL, Context context){
 
         FirebaseHelper.getUserFriendRequestList(Utility.encodeUserEmail(USER_EMAIL))
                 .push().setValue(Utility.decodeUserEmail(USER_LINK_FIREBASE));
@@ -228,7 +226,7 @@ public class UserDataFirebase {
     /**
      * add both users to friends list and remove request friend
      */
-    public void acceptFriendRequest(final String USER_EMAIL){
+    public void acceptFriendRequest(final String USER_EMAIL, Context context){
 
         // Remove both users email from request friend list
         removeFriendRequestAFromB(Utility.decodeUserEmail(USER_LINK_FIREBASE),USER_EMAIL);
@@ -331,7 +329,7 @@ public class UserDataFirebase {
     /**
      * remove user from send friend request
      */
-    public void cancelFriendSendRequestBySender(final String USER_EMAIL){
+    public void cancelFriendSendRequestBySender(final String USER_EMAIL, Context context){
 
         removeFriendRequestAFromB(Utility.decodeUserEmail(USER_LINK_FIREBASE),USER_EMAIL);
         removeFriendSendRequestAFromB(USER_EMAIL,Utility.decodeUserEmail(USER_LINK_FIREBASE));
@@ -694,8 +692,9 @@ public class UserDataFirebase {
 
         FirebaseHelper.getUserLocation(USER_LINK_FIREBASE)
                 .setValue(currentLocation);
-        FirebaseHelper.getUserTrack(USER_LINK_FIREBASE)
-                .push().setValue(trackPos);
+        if(!USER_LINK_FIREBASE.equals(Constants.USER_ADMIN))
+            FirebaseHelper.getUserTrack(USER_LINK_FIREBASE)
+                    .push().setValue(trackPos);
     }
 
     public void setRequestDependOnSettings(final LocationCallback locationCallback,
@@ -774,7 +773,7 @@ public class UserDataFirebase {
                         }else{
 
                             if(!inStart) {
-                                sendHelpRequest();
+                                sendHelpRequest(context);
                                 accountSettings.setHelpModeActive(true);
                                 FirebaseHelper.getUserAccountSettings(USER_LINK_FIREBASE)
                                         .setValue(accountSettings);
@@ -795,7 +794,7 @@ public class UserDataFirebase {
 
     }
 
-    private void sendHelpRequest(){
+    private void sendHelpRequest(final Context context){
         FirebaseHelper.getUserDatabaseReference(USER_LINK_FIREBASE)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override

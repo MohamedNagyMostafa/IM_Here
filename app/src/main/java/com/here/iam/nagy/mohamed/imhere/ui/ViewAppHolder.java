@@ -195,8 +195,8 @@ public class ViewAppHolder {
         public final TextView SEARCH_FIRST_TEXT_VIEW;
         public final TextView SEARCH_SECOND_TEXT_VIEW;
 
-        public final Button SEARCH_ACCEPT_TEXT_VIEW;
-        public final Button SEARCH_IGNORE_TEXT_VIEW;
+        public final TextView SEARCH_ACCEPT_TEXT_VIEW;
+        public final TextView SEARCH_IGNORE_TEXT_VIEW;
 
         public SearchViewHolder(View searchView){
 

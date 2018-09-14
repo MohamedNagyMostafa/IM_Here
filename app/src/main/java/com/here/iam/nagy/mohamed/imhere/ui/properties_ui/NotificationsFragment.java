@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,7 +39,7 @@ public class NotificationsFragment extends Fragment
                 @Override
                 public void onRefresh() {
 
-                    if(Utility.networkIsConnected(getContext())) {
+                    if(Utility.networkIsConnected(getActivity())) {
                         userDataFirebaseNotifications.attachUserNotificationListener();
                     }else{
                         Toast.makeText(
@@ -55,14 +56,14 @@ public class NotificationsFragment extends Fragment
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         // get data
         final String USER_LINK_FIREBASE = getArguments().getString(Constants.USER_EXTRA);
 
         // get notifications
+        if(getActivity() == null)
+            Log.e("null", "fuuuuuuuuuuuuuuuuk");
         userDataFirebaseNotifications
-                = new UserDataFirebaseNotifications(USER_LINK_FIREBASE,this, getContext());
+                = new UserDataFirebaseNotifications(USER_LINK_FIREBASE,this, getActivity());
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -77,6 +78,7 @@ public class NotificationsFragment extends Fragment
         notificationsAdapter = new UserPropertiesAdapter(getContext(),this);
         notificationArrayList = new ArrayList<>();
         notificationSwipeRefresh = (SwipeRefreshLayout) rootView.findViewById(R.id.notification_refresh_swipe);
+
 
         if(notificationSwipeRefresh != null) {
             notificationSwipeRefresh.setColorSchemeResources(R.color.active_tab);
@@ -239,7 +241,7 @@ public class NotificationsFragment extends Fragment
                     @Override
                     public void onClick(View view) {
                         userDataFirebaseNotifications.acceptFriendRequest(
-                                notification.getNotificationData().get(0));
+                                notification.getNotificationData().get(0), getContext());
                     }
                 });
 

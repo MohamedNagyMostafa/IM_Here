@@ -138,7 +138,7 @@ public class SearchFragment extends Fragment
                     @Override
                     public void onClick(View view) {
                         if(Utility.networkIsConnected(getContext())) {
-                            userDataFirebaseSearch.acceptFriendRequest(USER_EMAIL);
+                            userDataFirebaseSearch.acceptFriendRequest(USER_EMAIL, getContext());
                             userDataFirebaseSearch.setFriendsFlag(USER_EMAIL);
                             userDataFirebaseSearch.setUserRelation(USER_EMAIL, searchViewHolder);
                         }else{
@@ -155,7 +155,7 @@ public class SearchFragment extends Fragment
                     public void onClick(View view) {
 
                         if(Utility.networkIsConnected(getContext())) {
-                            userDataFirebaseSearch.sendFriendRequest(USER_EMAIL);
+                            userDataFirebaseSearch.sendFriendRequest(USER_EMAIL, getContext());
                             userDataFirebaseSearch.setUserRelation(USER_EMAIL, searchViewHolder);
                         }else{
                             Toast.makeText(getContext(),
@@ -201,7 +201,7 @@ public class SearchFragment extends Fragment
                     @Override
                     public void onClick(View view) {
                         if(Utility.networkIsConnected(getContext())) {
-                            userDataFirebaseSearch.cancelFriendSendRequestBySender(USER_EMAIL);
+                            userDataFirebaseSearch.cancelFriendSendRequestBySender(USER_EMAIL, getContext());
                             setUserView(false, false,
                                     false, searchViewHolder,
                                     USER_EMAIL);

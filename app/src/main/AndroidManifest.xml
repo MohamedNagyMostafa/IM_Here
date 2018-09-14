@@ -52,6 +52,7 @@
         <activity
             android:name=".ui.properties_ui.location_map.MapActivity"
             android:label="@string/title_activity_map_"
+            android:parentActivityName=".ui.main_ui.MainUserActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.properties_ui.flag.FlagDetailsActivity"

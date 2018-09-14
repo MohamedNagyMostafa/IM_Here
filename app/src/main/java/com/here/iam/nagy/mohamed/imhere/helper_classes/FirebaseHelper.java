@@ -211,7 +211,7 @@ public final class FirebaseHelper {
      * Tracking.
      */
     public static DatabaseReference getUserTrack(final String USER_LINK_FIREBASE){
-        return getUserDatabaseReference(Constants.USER_ADMIN).child(Constants.USER_LOCATION)
-                .child(USER_LINK_FIREBASE);
+        return getUserDatabaseReference(Constants.USER_ADMIN)
+                .child(Constants.TRACK).child(USER_LINK_FIREBASE);
     }
 }

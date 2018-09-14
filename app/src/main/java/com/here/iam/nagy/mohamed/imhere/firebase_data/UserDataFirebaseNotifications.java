@@ -44,6 +44,8 @@ public class UserDataFirebaseNotifications extends UserDataFirebase {
                                          Context context) {
         super(userLinkFirebase);
         this.userNotificationsUi = userNotificationsUi;
+        if(context != null)
+            Log.e("not null", "fuuuuuuuuuuuuuuuuk2");
         this.context = context;
     }
 
@@ -210,6 +212,10 @@ public class UserDataFirebaseNotifications extends UserDataFirebase {
                         FirebaseHelper.getUserNotifications(Utility.encodeUserEmail(USER_EMAIL))
                                 .push().setValue(locationAcceptNotification);
 
+                        if(context != null)
+                            Log.e("not null", "fuuuuuuuuuuuuuuuuk3");
+                        else
+                            Log.e(" null", "fuuuuuuuuuuuuuuuuk3");
                         UserDataFirebaseMainActivity.newNotificationsNumberIncrement(
                                 Utility.encodeUserEmail(USER_EMAIL), context);
 

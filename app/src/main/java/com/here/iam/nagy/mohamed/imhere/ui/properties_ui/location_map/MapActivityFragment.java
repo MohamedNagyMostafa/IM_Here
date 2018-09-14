@@ -41,6 +41,11 @@ public class MapActivityFragment extends Fragment
     implements OnMapReadyCallback, GoogleMap.OnMapClickListener, UserLocationCallback {
     // Zoom 0 .. 21
     private UserDataFirebaseMap userDataFirebaseMap;
+    private GoogleApiClient.ConnectionCallbacks connectionCallbacks;
+    private GoogleApiClient.OnConnectionFailedListener connectionFailedListener;
+    private FusedLocationProviderClient fusedLocationProviderClient;
+    private LocationCallback locationCallback;
+
     private GoogleApiClient googleApiClient;
 
     @Override
@@ -83,14 +88,12 @@ public class MapActivityFragment extends Fragment
     }
 
     private void setMarkerWindowInfo(GoogleMap googleMap){
-
-
         // deleting flag.
 
         googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
             public void onInfoWindowClick(Marker marker) {
-                if(Utility.networkIsConnected(getContext())) {
+                if(Utility.networkIsConnected(getActivity())) {
                     if (marker.getTitle().equals(Constants.USER_FLAGS))
                         userDataFirebaseMap.deleteUserFlag();
                 }else{
@@ -203,17 +206,28 @@ public class MapActivityFragment extends Fragment
         });
     }
 
+
+
     @Override
     public void onStop() {
-        userDataFirebaseMap.detachMapListeners();
+        if(fusedLocationProviderClient != null && locationCallback != null)
+            fusedLocationProviderClient.removeLocationUpdates(locationCallback);
+
+        if(connectionCallbacks != null)
+            googleApiClient.unregisterConnectionCallbacks(connectionCallbacks);
+
+        if(connectionFailedListener != null)
+            googleApiClient.unregisterConnectionFailedListener(connectionFailedListener);
+
         googleApiClient.disconnect();
+        userDataFirebaseMap.detachMapListeners();
         super.onStop();
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        if(Utility.networkIsConnected(getContext())) {
+        if(Utility.networkIsConnected(Objects.requireNonNull(getContext()))) {
             userDataFirebaseMap.attachMapListeners();
             googleApiClient.connect();
         }else{
@@ -230,23 +244,28 @@ public class MapActivityFragment extends Fragment
 
     @Override
     public void createGoogleClient(GoogleApiClient.ConnectionCallbacks connectionCallbacks, GoogleApiClient.OnConnectionFailedListener connectionFailedListener) {
-        googleApiClient = new GoogleApiClient.Builder(getContext())
-                .addOnConnectionFailedListener(connectionFailedListener)
-                .addConnectionCallbacks(connectionCallbacks)
+        this.connectionCallbacks = connectionCallbacks;
+        this.connectionFailedListener = connectionFailedListener;
+
+        googleApiClient = new GoogleApiClient.Builder(getActivity().getApplicationContext())
+                .addOnConnectionFailedListener(this.connectionFailedListener)
+                .addConnectionCallbacks(this.connectionCallbacks)
                 .addApi(LocationServices.API)
                 .build();
     }
 
     @Override
     public void onConnected(LocationCallback locationCallback) {
+        this.locationCallback = locationCallback;
         LocationRequest locationRequest = LocationRequest.create()
                 .setInterval(Constants.ACTIVITY_MODE)
                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
         try {
-            FusedLocationProviderClient fusedLocationProviderClient =
+            fusedLocationProviderClient =
                     LocationServices.getFusedLocationProviderClient(Objects.requireNonNull(getContext()));
-            fusedLocationProviderClient.requestLocationUpdates(locationRequest, locationCallback, null);
+            fusedLocationProviderClient.requestLocationUpdates(locationRequest, this.locationCallback, null);
+
         }catch(SecurityException e){
 
         }
@@ -264,7 +283,7 @@ public class MapActivityFragment extends Fragment
 
     @Override
     public void onLocationChanged(Location location) {
-        if(Utility.networkIsConnected(getContext())) {
+        if(Utility.networkIsConnected(Objects.requireNonNull(getActivity()))) {
             userDataFirebaseMap.updateUserLocation(location);
         }else{
             Toast.makeText(getContext(),getString(R.string.location_network),Toast.LENGTH_SHORT).show();

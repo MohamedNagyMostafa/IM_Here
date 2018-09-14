@@ -1,6 +1,7 @@
 package com.here.iam.nagy.mohamed.imhere.firebase_data;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -16,6 +17,8 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.PolygonOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -45,7 +48,7 @@ public class UserDataFirebaseMap extends UserDataFirebase {
     private Context context;
     // Hold friends ids which need to track.
     // and have access location is available.
-    private HashMap<String, Polygon> friendsTrack;
+    private HashMap<String, Polyline> friendsTrack;
     // user , friends and help markers
     private HashMap<String, Marker> usersMarkersHashMap;
     // public and friends flags
@@ -256,6 +259,9 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                 .addChildEventListener(friendMarksListener = new ChildEventListener() {
                     @Override
                     public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                        if(usersMarkersHashMap.containsKey(dataSnapshot.getKey()))
+                            return;
+
                         MapMarkers mapMarkers = dataSnapshot.getValue(MapMarkers.class);
 
                         LatLng friendLatLng = new LatLng(
@@ -280,7 +286,8 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                         setupFriendsMarkersListenerConnection(dataSnapshot.getKey());
 
                         //** Tracking **//
-                        setupTrackForPerson(dataSnapshot.getKey());
+                        if(USER_LINK_FIREBASE.equals(Constants.USER_ADMIN))
+                            setupTrackForPerson(dataSnapshot.getKey());
                     }
 
                     @Override
@@ -301,7 +308,8 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                                         mapMarkers.getUserImage()));
 
                         //** Tracking **//
-                        updateTrackForPerson(dataSnapshot.getKey());
+                        if(USER_LINK_FIREBASE.equals(Constants.USER_ADMIN))
+                            updateTrackForPerson(dataSnapshot.getKey());
                     }
 
                     @Override
@@ -318,7 +326,8 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                         usersMarkersConnectionListenersHashMap.remove(dataSnapshot.getKey());
 
                         //** Tracking **//
-                        removeTrackForPerson(dataSnapshot.getKey());
+                        if(USER_LINK_FIREBASE.equals(Constants.USER_ADMIN))
+                            removeTrackForPerson(dataSnapshot.getKey());
                     }
 
                     @Override
@@ -640,13 +649,14 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                         // Draw Track
                         List<LatLng> latLngs = new ArrayList<>();
                         for(DataSnapshot trackDataSnapshot: dataSnapshot.getChildren()){
-                            Track track = (Track) trackDataSnapshot.getValue();
+                            Log.e("trace", trackDataSnapshot.getKey());
+                            Track track = trackDataSnapshot.getValue(Track.class);
                             latLngs.add(new LatLng(track.getLat(), track.getLng()));
                         }
 
-                        Polygon polygon = drawTrackOnMap(latLngs);
+                        Polyline polyline = drawTrackOnMap(latLngs);
 
-                        friendsTrack.put(USER_EMAIL, polygon);
+                        friendsTrack.put(USER_EMAIL, polyline);
 
                     }
 
@@ -668,13 +678,13 @@ public class UserDataFirebaseMap extends UserDataFirebase {
 
                         List<LatLng> latLngs = new ArrayList<>();
                         for(DataSnapshot trackDataSnapshot: dataSnapshot.getChildren()){
-                            Track track = (Track) trackDataSnapshot.getValue();
+                            Track track = trackDataSnapshot.getValue(Track.class);
                             latLngs.add(new LatLng(track.getLat(), track.getLng()));
                         }
 
-                        Polygon polygon = drawTrackOnMap(latLngs);
+                        Polyline polyline = drawTrackOnMap(latLngs);
 
-                        friendsTrack.put(USER_EMAIL, polygon);
+                        friendsTrack.put(USER_EMAIL, polyline);
                     }
 
                     @Override
@@ -703,10 +713,12 @@ public class UserDataFirebaseMap extends UserDataFirebase {
         );
     }
 
-    private Polygon drawTrackOnMap(List<LatLng> latLngs){
-        return googleMap.addPolygon(
-                new PolygonOptions()
+    private Polyline drawTrackOnMap(List<LatLng> latLngs){
+        return googleMap.addPolyline(
+                new PolylineOptions()
                 .addAll(latLngs)
+                .width(13)
+                .color(Color.BLUE)
         );
     }
 /**

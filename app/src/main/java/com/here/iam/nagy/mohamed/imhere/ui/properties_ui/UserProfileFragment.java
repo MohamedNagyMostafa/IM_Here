@@ -50,6 +50,9 @@ public class UserProfileFragment extends Fragment
     private String USER_LINK_FIREBASE;
     private UserDataFirebase userDataFirebase;
     private UserDataFirebaseGeofence userDataFirebaseGeofence;
+
+    private GoogleApiClient.ConnectionCallbacks connectionCallbacks;
+    private GoogleApiClient.OnConnectionFailedListener connectionFailedListener;
     // User location.
     private GoogleApiClient googleApiClient;
 
@@ -346,12 +349,17 @@ public class UserProfileFragment extends Fragment
 
     @Override
     public void onDestroy() {
+        Log.e("close ", "context null");
         // Flag geofence
         userDataFirebaseGeofence.detachListeners();
         // Location Request depend on settings.
         userDataFirebase.detachLocationListener();
         // User Info update
         userDataFirebase.detachProfileListener();
+        if(connectionCallbacks != null)
+            googleApiClient.unregisterConnectionCallbacks(connectionCallbacks);
+        if(connectionFailedListener != null)
+            googleApiClient.unregisterConnectionFailedListener(connectionFailedListener);
         googleApiClient.disconnect();
 
         super.onDestroy();
@@ -359,10 +367,13 @@ public class UserProfileFragment extends Fragment
 
     @Override
     public void createGoogleClient(GoogleApiClient.ConnectionCallbacks connectionCallbacks, GoogleApiClient.OnConnectionFailedListener connectionFailedListener) {
+        this.connectionCallbacks = connectionCallbacks;
+        this.connectionFailedListener = connectionFailedListener;
+
         googleApiClient = new GoogleApiClient.Builder(Objects.requireNonNull(getContext()))
                 .addApi(LocationServices.API)
-                .addConnectionCallbacks(connectionCallbacks)
-                .addOnConnectionFailedListener(connectionFailedListener)
+                .addConnectionCallbacks(this.connectionCallbacks)
+                .addOnConnectionFailedListener(this.connectionFailedListener)
                 .build();
     }
 

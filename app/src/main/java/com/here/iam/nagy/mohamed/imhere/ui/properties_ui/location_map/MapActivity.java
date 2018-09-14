@@ -1,8 +1,10 @@
 package com.here.iam.nagy.mohamed.imhere.ui.properties_ui.location_map;
 
 import android.os.Bundle;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.WindowManager;
 
 import com.here.iam.nagy.mohamed.imhere.R;
