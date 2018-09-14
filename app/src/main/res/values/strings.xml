@@ -129,6 +129,4 @@
     <string name="flag_req">"You must choose flag type."</string>
 
     <string name="mark_window_duration">Path Duration</string>
-    <string name="time_format">hh:mm:ss</string>
-    <string name="date_format">EEE, MMM d, h:mm a</string>
 </resources>

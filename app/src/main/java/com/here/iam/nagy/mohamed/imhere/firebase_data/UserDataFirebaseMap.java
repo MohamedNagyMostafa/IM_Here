@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -996,7 +995,6 @@ public class UserDataFirebaseMap extends UserDataFirebase {
     private void updateInfoWindowData(final Marker marker, final UserAccount userAccount,
                                       final boolean show) {
         if (!USER_LINK_FIREBASE.equals(Constants.USER_ADMIN)) {
-            Toast.makeText(context, "not admin", Toast.LENGTH_SHORT).show();
 
             marker.setTag(new InfoWindowData(userAccount, null, null));
             return;

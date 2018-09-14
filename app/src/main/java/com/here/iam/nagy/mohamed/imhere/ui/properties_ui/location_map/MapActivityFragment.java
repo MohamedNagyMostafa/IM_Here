@@ -177,7 +177,6 @@ public class MapActivityFragment extends Fragment
                             .getUserName());
 
                     if(infoWindowData.getStartDate() != null && infoWindowData.getEndDate() != null){
-                        Toast.makeText(getContext(), "admin", Toast.LENGTH_SHORT).show();
                         String duration = getString(R.string.mark_window_duration) +
                                 Utility.getTrackDuration(infoWindowData.getStartDate(), infoWindowData.getEndDate());
 
