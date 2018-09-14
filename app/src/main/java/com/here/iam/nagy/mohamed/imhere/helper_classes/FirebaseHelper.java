@@ -206,4 +206,12 @@ public final class FirebaseHelper {
         return getUserDatabaseReference(USER_LINK_FIREBASE).child(Constants.GEOFENCES)
                 .child(Constants.ACTIVE).child(Constants.USER_DETECT);
     }
+
+    /**
+     * Tracking.
+     */
+    public static DatabaseReference getUserTrack(final String USER_LINK_FIREBASE){
+        return getUserDatabaseReference(USER_LINK_FIREBASE).child(Constants.USER_LOCATION)
+                .child(Constants.USER_PATH);
+    }
 }

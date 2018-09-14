@@ -267,6 +267,7 @@ public class UserDataFirebaseMap extends UserDataFirebase {
 
                         setupFriendsMarkersListenerConnection(dataSnapshot.getKey());
 
+                        // drawFriendTrack();
                     }
 
                     @Override
@@ -286,6 +287,7 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                                         Utility.decodeUserEmail(dataSnapshot.getKey()),
                                         mapMarkers.getUserImage()));
 
+                        // updateFriendTrack(friendLatLong);
                     }
 
                     @Override
@@ -300,6 +302,8 @@ public class UserDataFirebaseMap extends UserDataFirebase {
 
                         // remove listener from the HashMap
                         usersMarkersConnectionListenersHashMap.remove(dataSnapshot.getKey());
+
+                        // removeFriendTrack();
                     }
 
                     @Override
