@@ -8,8 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f131193c-e1ce-4664-8601-2192f57c4c48" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebaseMap.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebaseMap.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/Constants.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/Constants.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/FirebaseHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/helper_classes/FirebaseHelper.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,8 +50,8 @@
       <file leaf-file-name="UserDataFirebaseMap.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebaseMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="632" column="0" lean-forward="false" selection-start-line="632" selection-start-column="0" selection-end-line="632" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="653" column="62" lean-forward="true" selection-start-line="653" selection-start-column="62" selection-end-line="653" selection-end-column="62" />
               <folding>
                 <element signature="method#detachMapListeners#0;class#UserDataFirebaseMap#0" expanded="false" />
                 <element signature="method#attachMapListeners#0;class#UserDataFirebaseMap#0" expanded="false" />
@@ -2580,7 +2578,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -2782,8 +2782,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/here/iam/nagy/mohamed/imhere/firebase_data/UserDataFirebaseMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="632" column="0" lean-forward="false" selection-start-line="632" selection-start-column="0" selection-end-line="632" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="653" column="62" lean-forward="true" selection-start-line="653" selection-start-column="62" selection-end-line="653" selection-end-column="62" />
           <folding>
             <element signature="method#detachMapListeners#0;class#UserDataFirebaseMap#0" expanded="false" />
             <element signature="method#attachMapListeners#0;class#UserDataFirebaseMap#0" expanded="false" />

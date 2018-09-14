@@ -15,6 +15,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polygon;
+import com.google.android.gms.maps.model.PolygonOptions;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -27,6 +28,7 @@ import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.Ac
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.CurrentLocation;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.FlagsMarkers;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.MapMarkers;
+import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.Track;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.UserAccount;
 
 import java.util.ArrayList;
@@ -636,9 +638,16 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         // Draw Track
-                        Polygon polygon;
+                        List<LatLng> latLngs = new ArrayList<>();
+                        for(DataSnapshot trackDataSnapshot: dataSnapshot.getChildren()){
+                            Track track = (Track) trackDataSnapshot.getValue();
+                            latLngs.add(new LatLng(track.getLat(), track.getLng()));
+                        }
+
+                        Polygon polygon = drawTrackOnMap(latLngs);
 
                         friendsTrack.put(USER_EMAIL, polygon);
+
                     }
 
                     @Override
@@ -655,7 +664,15 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         // redraw Track
-                        Polygon polygon;
+                        friendsTrack.get(USER_EMAIL).remove();
+
+                        List<LatLng> latLngs = new ArrayList<>();
+                        for(DataSnapshot trackDataSnapshot: dataSnapshot.getChildren()){
+                            Track track = (Track) trackDataSnapshot.getValue();
+                            latLngs.add(new LatLng(track.getLat(), track.getLng()));
+                        }
+
+                        Polygon polygon = drawTrackOnMap(latLngs);
 
                         friendsTrack.put(USER_EMAIL, polygon);
                     }
@@ -674,8 +691,7 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         // remove Track
-                        Polygon polygon;
-
+                        friendsTrack.get(USER_EMAIL).remove();
                         friendsTrack.remove(USER_EMAIL);
                     }
 
@@ -684,6 +700,13 @@ public class UserDataFirebaseMap extends UserDataFirebase {
 
                     }
                 }
+        );
+    }
+
+    private Polygon drawTrackOnMap(List<LatLng> latLngs){
+        return googleMap.addPolygon(
+                new PolygonOptions()
+                .addAll(latLngs)
         );
     }
 /**
