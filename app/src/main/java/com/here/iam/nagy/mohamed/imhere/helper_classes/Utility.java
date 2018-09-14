@@ -42,6 +42,10 @@ public class Utility {
         return DateFormat.format("EEE, MMM d, h:mm a" , calendar).toString();
     }
 
+    public static Long getCurrentDate(){
+        return Calendar.getInstance().getTimeInMillis();
+    }
+
     /**
      * Get the state of networking connection of the current mobile
      * @return the network is connected in mobile or not

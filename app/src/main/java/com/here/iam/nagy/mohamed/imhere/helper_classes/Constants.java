@@ -21,6 +21,7 @@ public class Constants {
     public static final String USER_FRIEND_LOCATION_REQUESTS = "friendLocation";
     public static final String USER_FRIEND_REQUESTS = "friendRequest";
     public static final String USER_LOCATION = "userLocation";
+    public static final String USER_PATH = "path";
     public static final String New_NOTIFICATIONS_NUMBER = "newNotifications";
 
     // Account Settings

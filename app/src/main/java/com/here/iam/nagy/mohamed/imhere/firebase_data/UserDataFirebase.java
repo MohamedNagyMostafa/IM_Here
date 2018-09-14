@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.graphics.Path;
 import android.location.Location;
 import android.net.Uri;
 import android.util.Log;
@@ -31,6 +32,7 @@ import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.Cu
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.Detection;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.MapMarkers;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.Notification;
+import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.Track;
 import com.here.iam.nagy.mohamed.imhere.user_account.account_property.objects.UserAccount;
 
 import java.util.ArrayList;
@@ -78,7 +80,7 @@ public class UserDataFirebase {
 
                                                 }
                                             });
-                                }
+                                    }
 
                                 @Override
                                 public void onCancelled(DatabaseError databaseError) {
@@ -688,8 +690,12 @@ public class UserDataFirebase {
         CurrentLocation currentLocation =
                 new CurrentLocation(location.getLongitude(),location.getLatitude()," ");
 
+        Track trackPos = new Track(location.getLatitude(), location.getLongitude(), Utility.getCurrentDate());
+
         FirebaseHelper.getUserLocation(USER_LINK_FIREBASE)
                 .setValue(currentLocation);
+        FirebaseHelper.getUserTrack(USER_LINK_FIREBASE)
+                .push().setValue(trackPos);
     }
 
     public void setRequestDependOnSettings(final LocationCallback locationCallback,
@@ -1196,10 +1202,5 @@ public class UserDataFirebase {
 
                     }
                 });
-    }
-
-    /** Tracking **/
-    public void addUserMovement(LatLng latLng, final String USER_EMAIL){
-        FirebaseHelper.getUserTracking
     }
 }

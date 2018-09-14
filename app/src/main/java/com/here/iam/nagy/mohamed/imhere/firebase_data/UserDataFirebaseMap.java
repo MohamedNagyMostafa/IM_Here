@@ -1,6 +1,8 @@
 package com.here.iam.nagy.mohamed.imhere.firebase_data;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.util.Log;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -266,8 +268,6 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                         usersMarkersHashMap.put(dataSnapshot.getKey(), friendMarker);
 
                         setupFriendsMarkersListenerConnection(dataSnapshot.getKey());
-
-                        // drawFriendTrack();
                     }
 
                     @Override
@@ -287,7 +287,6 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                                         Utility.decodeUserEmail(dataSnapshot.getKey()),
                                         mapMarkers.getUserImage()));
 
-                        // updateFriendTrack(friendLatLong);
                     }
 
                     @Override
@@ -303,7 +302,6 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                         // remove listener from the HashMap
                         usersMarkersConnectionListenersHashMap.remove(dataSnapshot.getKey());
 
-                        // removeFriendTrack();
                     }
 
                     @Override
@@ -616,6 +614,7 @@ public class UserDataFirebaseMap extends UserDataFirebase {
                     }
                 });
     }
+
 
 /**
  * Connect changing value of friends list location and
